@@ -1,0 +1,19 @@
+;decompressed data size: 576 bytes
+DB $0c, $0d, $0e, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $ff, $ff, $5f, $5e, $3f, $7d, $7e, $7f, $ff, $ff, $ff, $ff
+DB $1c, $1d, $1e, $2d, $2d, $00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0a, $2d, $2d, $2d, $2d, $ff, $ff, $6f, $6e, $4f, $8d, $8e, $8f, $ff, $ff, $ff, $ff
+DB $2c, $2d, $2d, $2d, $2d, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $1a, $2d, $2d, $2d, $2d, $ff, $ff, $5d, $5e, $3f, $7d, $7e, $7f, $ff, $ff, $ff, $ff
+DB $2c, $2d, $2d, $2d, $2d, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $2a, $2d, $2d, $2d, $2d, $ff, $ff, $6d, $6e, $4f, $8d, $8e, $8f, $ff, $ff, $ff, $ff
+DB $2c, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $ff, $ff, $4c, $4d, $3f, $7d, $7e, $7f, $ff, $ff, $ff, $ff
+DB $2c, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $ff, $ff, $3c, $3d, $4f, $8d, $8e, $8f, $ff, $ff, $ff, $ff
+DB $2c, $2d, $2d, $2d, $40, $41, $42, $43, $44, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $ff, $ff, $4c, $4d, $3f, $ff, $ff, $7f, $ff, $ff, $ff, $ff
+DB $2c, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $ff, $ff, $3c, $3d, $4f, $ff, $ff, $7f, $ff, $ff, $ff, $ff
+DB $2c, $2d, $2d, $2d, $50, $51, $52, $53, $54, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $7f, $ff, $ff, $ff, $7f, $ff, $ff, $ff, $7f, $ff, $ff, $ff
+DB $2c, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $7f, $ff, $ff, $ff, $7f, $ff, $ff, $ff, $7f, $ff, $ff, $ff
+DB $2c, $2d, $2d, $2d, $60, $61, $62, $63, $64, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $9f, $7f, $ff, $ff, $9f, $7f, $ff, $ff, $9f, $7f, $ff, $ff
+DB $2c, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $ff, $ff, $4c, $4d, $4e, $6c, $7f, $ff, $ff, $ff, $ff, $ff
+DB $2c, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $2d, $ff, $ff, $3c, $3d, $3e, $8c, $9f, $7f, $ff, $ff, $ff, $ff
+DB $2c, $2d, $b0, $b1, $b1, $b1, $b1, $b1, $b1, $b1, $b1, $b1, $b1, $b1, $b1, $b1, $b1, $b1, $b2, $2d, $42, $43, $44, $2d, $2d, $6c, $af, $8f, $ff, $ff, $ff, $ff
+DB $2c, $2d, $b3, $a0, $a1, $a2, $a3, $a4, $a5, $a6, $a7, $a8, $c2, $c2, $c2, $c2, $c2, $c2, $b4, $2d, $45, $46, $47, $48, $49, $8c, $9d, $9e, $ff, $ff, $ff, $ff
+DB $2c, $2d, $b3, $c2, $c2, $c2, $dd, $de, $df, $c2, $c2, $c2, $bd, $be, $bf, $c2, $c2, $c2, $b4, $2d, $ff, $ff, $4c, $4d, $4e, $6c, $ad, $ae, $ff, $ff, $ff, $ff
+DB $2c, $2d, $b3, $c2, $c2, $c2, $ed, $ee, $ef, $c2, $c2, $c2, $cd, $ce, $cf, $c2, $c2, $c2, $b4, $2d, $ff, $ff, $3c, $3d, $3e, $8c, $9d, $9c, $ff, $ff, $ff, $ff
+DB $2c, $2d, $b5, $b6, $b6, $b6, $b6, $b6, $b6, $b6, $b6, $b6, $b6, $b6, $b6, $b6, $b6, $b6, $b7, $2d, $ff, $ff, $4c, $4d, $4e, $6c, $ad, $ac, $ff, $ff, $ff, $ff

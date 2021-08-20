@@ -1,0 +1,4 @@
+place original "Mobile Golf (Japan).gbc" rom as "mobile_golf_jp.gbc"
+CRC32: 35fc5b32
+MD5:   fbf1ffe76883dffcca299228c81f171f
+SHA1:  fde414fc9efef2c3d1a9ea2ed35ad2efc0edee
