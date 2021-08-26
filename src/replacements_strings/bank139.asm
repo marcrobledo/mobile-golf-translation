@@ -1331,9 +1331,9 @@ _STRING8B_196: ;originally $4f8c
 	DB END_STRING
 
 _STRING8B_197: ;originally $4f9d
-	DB $80, $80, $de, $72, $8f, $20, $7b, $72, $7c, $9d, $7c, $de, $6e, $73, $8e, $73, $66 ;ただいま さいしんじょうほうを
+	DB "Receiving latest" ;ただいま さいしんじょうほうを
 	DB BR
-	DB $7c, $de, $6d, $7c, $9d, $7c, $83, $72, $8f, $7d, $61 ;じゅしんしています。
+	DB "information..." ;じゅしんしています。
 	DB END_STRING
 
 _STRING8B_198: ;originally $4fbb
@@ -1853,19 +1853,19 @@ _STRING8B_274: ;originally $594e
 	DB END_STRING
 
 _STRING8B_275: ;originally $5966
-	DB "Do not remove link" ;つうしんちゅうは ぜったいに
+	DB "Do not remove ca" ;つうしんちゅうは ぜったいに
 	DB BR
-	DB "cable during call." ;ケーブルを ぬかないでください!
+	DB "ble during call." ;ケーブルを ぬかないでください!
 	DB END_STRING
 
 _STRING8B_276: ;originally $598a
-	DB $be, $da, $b8, $c4, $84, $20, $41, $ce, $de, $c0, $dd, $83, $de ;セレクトと Aボタンで
+	DB "Press A to" ;セレクトと Aボタンで
 	DB BR
-	DB $82, $73, $7c, $9d, $66, $20, $81, $6d, $73, $7c, $20, $83, $de, $77, $8f, $7d, $61 ;つうしんを ちゅうし できます。
+	DB "send msg." ;つうしんを ちゅうし できます。
 	DB END_STRING
 
 _STRING8B_277: ;originally $59aa
-	DB $82, $73, $7c, $9d, $81, $6d, $73 ;つうしんちゅう
+	DB "Calling..." ;つうしんちゅう
 	DB END_STRING
 
 _STRING8B_278: ;originally $59b2
@@ -1873,11 +1873,11 @@ _STRING8B_278: ;originally $59b2
 	DB END_STRING
 
 _STRING8B_279: ;originally $59bd
-	DB $7e, $82, $7f, $de, $78, $81, $6d, $73 ;せつぞくちゅう
+	DB "Connecting..." ;せつぞくちゅう
 	DB END_STRING
 
 _STRING8B_280: ;originally $59c6
-	DB "Stoping..." ;せつだんちゅう
+	DB "Stopping..." ;せつだんちゅう
 	DB END_STRING
 
 _STRING8B_281: ;originally $59cf
@@ -2149,11 +2149,11 @@ _STRING8B_323: ;originally $5f09
 	DB END_STRING
 
 _STRING8B_324: ;originally $5f2b
-	DB $79, $de, $9d, $7b, $de, $72, $20, $7c, $96, $73, $7c, $83, $72, $99 ;げんざい しようしている
+	DB "Please enter the" ;げんざい しようしている
 	DB BR
-	DB $d3, $ca, $de, $b2, $d9, $b1, $c0, $de, $cc, $df, $c0, $89, $ca, $df, $bd, $dc, $b0, $c4, $de, $66 ;モバイルアダプタのパスワードを
+	DB "password for this";モバイルアダプタのパスワードを
 	DB BR
-	DB $86, $6d, $73, $98, $6e, $78, $7c, $83, $78, $80, $de, $7b, $72, $61 ;にゅうりょくしてください。
+	DB "Mobile Adapter." ;にゅうりょくしてください。
 	DB END_STRING
 
 _STRING8B_325: ;originally $5f5e
@@ -3242,21 +3242,21 @@ _STRING8B_492: ;originally $7630
 	DB END_STRING
 
 _STRING8B_493: ;originally $7671
-	DB $76, $72, $7e, $9d, $76, $de, $7a, $9d, $83, $de, $72, $99, $76 ;かいせんがこんでいるか
+	DB "Communication" ;かいせんがこんでいるか
 	DB BR
-	DB $bb, $b0, $ca, $de, $89, $b4, $d7, $b0, $89, $80, $92 ;サーバのエラーのため
+	DB "failed." ;サーバのエラーのため
 	DB BR
-	DB $82, $73, $7c, $9d, $76, $de, $83, $de, $77, $8f, $7e, $9d, $61 ;つうしんができません。
+	DB "The line is busy" ;つうしんができません。
 	DB BR
-	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
+	DB "or there is a" ;しばらくまって
 	DB BR
-	DB $82, $73, $7c, $9d, $7c, $85, $75, $7c, $83, $78, $80, $de, $7b, $72 ;つうしんしなおしてください
+	DB "server error." ;つうしんしなおしてください
 	DB BR
-	DB $78, $9c, $7c, $78, $8a ;くわしくは
+	DB "Please wait a" ;くわしくは
 	DB BR
-	DB $84, $98, $71, $82, $76, $72, $7e, $82, $92, $72, $7c, $6e, $66 ;とりあつかいせつめいしょを
+	DB "while and try" ;とりあつかいせつめいしょを
 	DB BR
-	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
+	DB "again." ;ごらんください。
 	DB END_STRING
 
 _STRING8B_494: ;originally $76d0

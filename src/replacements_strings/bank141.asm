@@ -1106,20 +1106,18 @@ _STRING8D_39: ;originally $4ac2
 _STRING8D_40: ;originally $4ae0
 	DB $04
 	DB BR
-	DB $09
-	DB $72 ;い
+	DB "Place: ", $09 ;い
 	DB BR
-	DB $89, $d2, $c0, $de, $d9, $76, $de, $76, $7b, $de, $97, $9a, $83, $72, $99, $61 ;のメダルがかざられている。
+	DB "medal." ;のメダルがかざられている。
 	DB PAUSE
 	DB END_STRING
 
 _STRING8D_41: ;originally $4af7
 	DB $04
 	DB BR
-	DB $09
-	DB $72 ;い
+	DB "Place: ", $09 ;い
 	DB BR
-	DB $89, $80, $83, $76, $de, $76, $7b, $de, $97, $9a, $83, $72, $99, $61 ;のたてがかざられている。
+	DB "diploma." ;のたてがかざられている。
 	DB PAUSE
 	DB END_STRING
 

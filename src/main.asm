@@ -36,6 +36,7 @@ INCLUDE "./replacements_strings/name_type.asm"
 INCLUDE "./replacements_strings/menu_drawing_strings_coord.asm"
 INCLUDE "./replacements_strings/music_3d_view_yes_no.asm"
 INCLUDE "./replacements_strings/select_character_straight_position.asm"
+INCLUDE "./replacements_strings/net_clubhouse_error_window.asm"
 
 ; DATA BANK REPLACEMENTS
 INCLUDE "./replacements_data/bank7/bank7.asm"

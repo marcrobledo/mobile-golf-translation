@@ -19,7 +19,7 @@ DB $a8, $e0, $fe, $ed, $38, $e0, $e0, $00, $00
 
 
 SECTION "Bank 67 - Options BG", ROMX[$5f00],BANK[$43]
-;compressed data size: 2663 bytes (saved 1433 bytes, 34.989999999999995%)
+;compressed data size: 2751 bytes (saved 1345 bytes, 32.84%)
 DB $ff, $00, $ff, $01, $fe, $02, $fc, $06, $f8, $ff, $0a, $f0, $1a, $e0, $2a, $c0
 DB $6a, $80, $e5, $00, $ff, $ed, $ff, $f1, $ed, $fe, $eb, $1e, $31, $77, $ff, $77
 DB $4c, $ef, $db, $dc, $d7, $b8, $f6, $ff, $b9, $eb, $b5, $e5, $bb, $f7, $f8, $0d
@@ -183,10 +183,15 @@ DB $d0, $47, $f8, $e3, $e3, $5f, $c3, $34, $e7, $24, $e7, $fc, $e1, $2c, $fc, $e
 DB $88, $80, $cd, $00, $dd, $f0, $ed, $a6, $04, $80, $fc, $e1, $00, $e1, $1f, $e7
 DB $1f, $0a, $00, $88, $41, $06, $e3, $cc, $ff, $37, $dd, $33, $b0, $c0, $bd, $e5
 DB $bd, $fc, $e3, $a7, $bd, $7f, $1d, $18, $0a, $00, $32, $fe, $02, $fe, $e0, $0d
-DB $32, $04, $e2, $cd, $cc, $10, $ff, $f0, $ed, $04, $e1, $70, $89, $96, $04, $e1
-DB $73, $df, $10, $67, $64, $90, $8e, $d8, $21, $f6, $01, $e6, $b0, $55, $80, $cd
-DB $00, $ed, $4e, $5f, $fe, $ff, $fe, $ff, $fe, $f7, $00, $e0, $df, $f0, $ff, $f0
-DB $ff, $f0, $e7, $00, $ed, $00, $00
+DB $32, $04, $e2, $cd, $cc, $10, $ff, $f0, $ed, $04, $e1, $70, $89, $fe, $04, $e1
+DB $73, $df, $df, $8f, $08, $0f, $08, $eb, $0f, $09, $fe, $e0, $64, $90, $82, $f7
+DB $f7, $28, $f3, $ef, $10, $aa, $62, $d8, $23, $ff, $ef, $50, $df, $bf, $20, $ff
+DB $27, $ff, $26, $fe, $b0, $43, $ff, $0b, $ff, $c3, $6a, $c0, $9d, $ec, $a0, $80
+DB $cd, $00, $ed, $4e, $5f, $b0, $fe, $ff, $fe, $ff, $fe, $f7, $f0, $dd, $a8, $0f
+DB $20, $81, $59, $be, $04, $e2, $07, $06, $0a, $00, $13, $72, $60, $f0, $ef, $df
+DB $53, $1f, $13, $fe, $e0, $0d, $0c, $0a, $bb, $00, $21, $f0, $e0, $2c, $ef, $3c
+DB $6c, $a0, $21, $ff, $ff, $df, $de, $0a, $00, $84, $fc, $c2, $ff, $fe, $b2, $be
+DB $f2, $fe, $83, $fe, $86, $07, $fc, $7d, $78, $b0, $ef, $00, $ed, $00, $00
 
 
 
@@ -237,18 +242,8 @@ DB $e1, $04, $f8, $f6, $e5, $fd, $98, $c0, $f0, $c0, $00, $20, $c0, $20, $c0, $f
 DB $c0, $00, $80, $00, $40, $80, $40, $80, $61, $80, $f0, $e6, $ff, $ff, $ff, $ff
 DB $ff, $ff, $00, $00, $00, $00
 
-SECTION "Bank 67 - Options MOBILE", ROMX[$6ff7],BANK[$43]
-;compressed data size: 153 bytes (saved 359 bytes, 70.12%)
-DB $79, $00, $ff, $ff, $ff, $fa, $03, $00, $04, $03, $fe, $ef, $f9, $03, $c7, $ff
-DB $ff, $e4, $19, $00, $a6, $19, $a4, $ff, $1b, $a4, $1b, $44, $bb, $04, $fb, $a4
-DB $fb, $5b, $e4, $f6, $e0, $a4, $1b, $a6, $19, $19, $fc, $c7, $ff, $ff, $e4, $e7
-DB $00, $18, $e7, $08, $f7, $ff, $c9, $36, $c9, $36, $c8, $37, $c8, $37, $3e, $f8
-DB $e1, $08, $f7, $18, $e7, $e7, $c7, $ff, $ff, $e4, $ff, $cd, $00, $32, $cd, $12
-DB $ed, $92, $6d, $fb, $92, $6d, $f8, $e5, $12, $ed, $32, $cd, $cd, $fc, $c7, $ff
-DB $ff, $e4, $87, $00, $48, $87, $48, $87, $ef, $49, $86, $49, $86, $f8, $e3, $79
-DB $86, $08, $cf, $f7, $08, $f7, $f7, $c7, $ff, $ff, $e4, $c0, $00, $ff, $20, $c0
-DB $20, $c0, $c0, $00, $80, $00, $1f, $40, $80, $40, $80, $80, $f0, $e6, $ff, $ff
-DB $ff, $ff, $06, $ff, $ff, $00, $00, $00, $00
+SECTION "Bank 67 - Options MOBILE PASS (Old)", ROMX[$6ff7],BANK[$43]
+_OPTIONS_MOBILE_PASS_OLD:
 
 
 SECTION "Bank 67 - Options HEADER", ROMX[$6f1d],BANK[$43]
@@ -264,3 +259,28 @@ DB $fe, $e2, $9c, $bf, $fb, $1c, $1c, $e0, $e0, $e3, $00, $f7, $e3, $ff, $df, $e
 DB $ff, $ef, $ff, $ee, $fe, $e0, $ef, $ff, $7f, $e7, $f7, $e3, $f3, $e1, $ff, $e1
 DB $f6, $e0, $da, $fe, $e0, $ef, $e0, $e0, $c0, $00, $74, $e7, $80, $00, $1b, $c0
 DB $80, $64, $e6, $80, $80, $ee, $e0, $00, $00
+
+
+
+SECTION "Bank 67 - Pointer to Options MOBILE PASS", ROMX[$5bd6],BANK[$43]
+;DW _OPTIONS_MOBILE_PASS_OLD
+DW _OPTIONS_MOBILE_PASS_NEW
+
+SECTION "Bank 67 - Free space", ROMX[$7a50],BANK[$43]
+_OPTIONS_MOBILE_PASS_NEW:
+;compressed data size: 230 bytes (saved 282 bytes, 55.08%)
+DB $79, $00, $ff, $ff, $ff, $fa, $03, $00, $04, $03, $fe, $ef, $f9, $03, $c7, $ff
+DB $ff, $e4, $19, $00, $a6, $19, $a4, $ff, $1b, $a4, $1b, $44, $bb, $04, $fb, $a4
+DB $fb, $5b, $e4, $f6, $e0, $a4, $1b, $a6, $19, $1f, $ff, $00, $10, $0f, $10, $0f
+DB $13, $0c, $13, $d5, $0c, $f8, $e3, $12, $fe, $e2, $0c, $c0, $f0, $e7, $00, $ff
+DB $18, $e7, $08, $f7, $c9, $36, $c9, $36, $ef, $c8, $37, $c8, $37, $f8, $e1, $08
+DB $f7, $18, $ff, $e7, $ef, $00, $50, $8f, $20, $df, $26, $fd, $d9, $fe, $e1, $60
+DB $9f, $a0, $1f, $26, $19, $fa, $fe, $e1, $19, $c0, $f0, $cd, $00, $32, $cd, $12
+DB $df, $ed, $92, $6d, $92, $6d, $f8, $e5, $12, $ed, $ff, $32, $cd, $df, $00, $a1
+DB $1e, $41, $be, $ff, $4f, $b0, $4d, $b0, $43, $bc, $61, $9e, $ff, $59, $86, $79
+DB $86, $41, $be, $43, $bc, $fd, $bc, $c0, $f0, $87, $00, $48, $87, $48, $87, $ef
+DB $49, $86, $49, $86, $f8, $e3, $79, $86, $08, $ff, $f7, $08, $f7, $ff, $00, $84
+DB $78, $04, $ff, $f8, $38, $c0, $30, $c0, $08, $f0, $84, $ff, $78, $64, $18, $e4
+DB $18, $04, $f8, $08, $fb, $f0, $f0, $c0, $f0, $c0, $00, $20, $c0, $20, $ff, $c0
+DB $c0, $00, $80, $00, $40, $80, $40, $c3, $80, $80, $f0, $e6, $ff, $ff, $ff, $ff
+DB $ff, $ff, $00, $00, $00, $00
