@@ -1027,12 +1027,11 @@ _STRING8D_31: ;originally $49ba
 	DB END_STRING
 
 _STRING8D_32: ;originally $49d2
-	DB $c4, $db, $cc, $a8, $b0, $89, $80, $de, $72, $7b, $de, $76, $de, $71, $99 ;トロフィーのだいざがある
+	DB "The plate reads:" ;トロフィーのだいざがある
 	DB BR
-	DB $07
-	DB $8a, $20, $c4, $db, $cc, $a8, $b0, $66, $76, $7b, $de, $99 ;は トロフィーをかざる
+	DB "\"reserved for" ;は トロフィーをかざる
 	DB BR
-	DB $79, $6f, $7c, $9d, $66, $7c, $80, $61 ;けっしんをした。
+	DB $07, "'s trophy\"." ;けっしんをした。
 	DB PAUSE
 	DB END_STRING
 
@@ -1046,14 +1045,15 @@ _STRING8D_33: ;originally $49fa
 	DB END_STRING
 
 _STRING8D_34: ;originally $4a18
-	DB $07
-	DB $8a, $20, $cc, $df, $da, $b0, $c4, $66, $7c, $97, $8d, $de, $80, $61 ;は プレートをしらべた。
+	DB $07, " checked"
+	DB BR
+	DB "behind the sign." ;は プレートをしらべた。
 	DB NEXT_DIALOG
-	DB $85, $9d, $84, $21, $20, $73, $97, $76, $de, $9c, $76, $97, $83, $de, $8a ;なんと! うらがわからでは
+	DB "What a surprise!" ;なんと! うらがわからでは
 	DB BR
-	DB $85, $86, $76, $de, $76, $72, $83, $71, $99, $89, $76 ;なにがかいてあるのか
+	DB "There is nothing" ;なにがかいてあるのか
 	DB BR
-	DB $9c, $76, $97, $85, $76, $6f, $80, $21 ;わからなかった!
+	DB "on the back!" ;わからなかった!
 	DB PAUSE
 	DB END_STRING
 
