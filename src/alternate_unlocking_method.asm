@@ -41,6 +41,10 @@ UNLOCKED_CLUBS_5_ALL EQU %11000000 ;b6=GAMBLING WOOD, b7=HYPERSPIN WEDGE
 _RAM_CURRENT_SLOT_MOBILE_POINTS EQU $ca3e
 
 
+;returns hl - checksum that will be stored in $a010
+SECTION "Bank 3 - Calculate checksum", ROMX[$49ab],BANK[$03]
+calculate_checksum:
+
 
 SECTION "Bank 3 - Save to SRAM", ROMX[$4c04],BANK[$03]
 save_sram:
