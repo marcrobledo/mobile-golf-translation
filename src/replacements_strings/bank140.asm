@@ -2406,7 +2406,7 @@ _STRING8C_178: ;originally $6ba6
 	DB NEXT_DIALOG
 	DB "Talk to the girls" ;おくにあるカウンターが
 	DB BR
-	DB "in the counter." ;まどぐちになっているわよ。
+	DB "at the counter." ;まどぐちになっているわよ。
 	DB PAUSE
 	DB END_STRING
 

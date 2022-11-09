@@ -2958,7 +2958,7 @@ _STRING8B_471: ;originally $704a
 	DB BR
 	DB "results here" ;あなたのつくった コメントの
 	DB BR
-	DB "and comments." ;こうしんなどができます。
+	DB "and notes." ;こうしんなどができます。
 	DB END_STRING
 
 _STRING8B_472: ;originally $7078
@@ -2986,7 +2986,7 @@ _STRING8B_475: ;originally $70d1
 _STRING8B_476: ;originally $70e6
 	DB "We cannot leave a" ;ここの コンペの
 	DB BR
-	DB "comment without" ;そうしんデータがないときは
+	DB "note without" ;そうしんデータがないときは
 	DB BR
 	DB "a saved score." ;コメントにゅうりょくできません。
 	DB PAUSE
@@ -2997,14 +2997,14 @@ _STRING8B_477: ;originally $7113
 	DB BR
 	DB "ended. We cannot" ;しゅうりょうしていますので
 	DB BR
-	DB "leave a comment." ;コメントにゅうりょくはできません。
+	DB "leave a note." ;コメントにゅうりょくはできません。
 	DB PAUSE
 	DB END_STRING
 
 _STRING8B_478: ;originally $7146
-	DB "Mobile adapter is" ;モバイルアダプタがただしく
+	DB "The Mobile Adapter" ;モバイルアダプタがただしく
 	DB BR
-	DB "not connected" ;さしこまれていません。
+	DB "is not connected" ;さしこまれていません。
 	DB BR
 	DB "properly."
 	DB BR

@@ -2612,7 +2612,7 @@ _DIALOG459: ;originally $5f18
 	DB END_STRING
 
 _DIALOG460: ;originally $5f1f
-	DB "Is it okay?" ;これでいいですか?
+	DB "Is this OK?" ;これでいいですか?
 	DB END_STRING
 
 _DIALOG461: ;originally $5f2b
@@ -2633,7 +2633,7 @@ _DIALOG464: ;originally $5f54
 	DB END_STRING
 
 _DIALOG465: ;Character creation confirmation
-	DB "Is it okay?" ;これでいいですか?
+	DB "Is this OK?" ;これでいいですか?
 	DB END_STRING
 
 _DIALOG466: ;originally $5f6c
@@ -2741,11 +2741,11 @@ _DIALOG493: ;originally $6074
 	DB END_STRING
 
 _DIALOG494: ;originally $6088
-	DB "Select this?" ;このキャラでいいですか?
+	DB "Is this OK?" ;このキャラでいいですか?
 	DB END_STRING
 
 _DIALOG495: ;originally $6097
-	DB "Enter your name." ;なまえを にゅうりょくしてください
+	DB "What is your name?" ;なまえを にゅうりょくしてください
 	DB END_STRING
 
 _DIALOG496: ;originally $60aa
@@ -2756,10 +2756,10 @@ _DIALOG497: ;originally $60b9
 	DB END_STRING
 
 _DIALOG498: ;originally $60c6
-	DB "Enter your hobby," ;しゅっしんちなど すきなことばを
+	DB "What is your" ;しゅっしんちなど すきなことばを
 	DB END_STRING
 _DIALOG499: ;originally $60d9
-	DB "please." ;にゅうりょくしてください
+	DB "hobby?" ;にゅうりょくしてください
 	DB END_STRING
 _DIALOG500: ;originally $60e7
 	DB "Enter birth year," ;あなたの うまれたとしを せいれきで
@@ -2791,23 +2791,23 @@ _DIALOG507: ;originally $614f
 	DB END_STRING
 
 _DIALOG508: ;originally $6161
-	DB $89 ;の
+	DB "-" ;の
 	DB END_STRING
 
 _DIALOG509: ;originally $6163
-	DB "Y" ;ねん
+	DB " Y" ;ねん
 	DB END_STRING
 
 _DIALOG510: ;originally $6166
-	DB "M" ;がつ
+	DB " M" ;がつ
 	DB END_STRING
 
 _DIALOG511: ;originally $616a
-	DB "D" ;にち
+	DB " D" ;にち
 	DB END_STRING
 
 _DIALOG512: ;originally $616d
-	DB "GNDR" ;せいべつ
+	DB "GENDER" ;せいべつ
 	DB END_STRING
 
 _DIALOG513: ;originally $6173
@@ -2815,11 +2815,11 @@ _DIALOG513: ;originally $6173
 	DB END_STRING
 
 _DIALOG514: ;originally $617b
-	DB "Mal" ;おとこ
+	DB "  M" ;おとこ
 	DB END_STRING
 
 _DIALOG515: ;originally $617f
-	DB "Fem" ;おんな
+	DB "  F" ;おんな
 	DB END_STRING
 
 _DIALOG516: ;originally $6183
