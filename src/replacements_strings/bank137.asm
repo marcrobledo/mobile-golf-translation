@@ -2222,227 +2222,227 @@ _STRING89_196: ;originally $6177
 
 
 ; GLOSSARY
-_STRING89_197: DB "1W", END_STRING ;アイアン
-_STRING89_198: DB "3W", END_STRING ;アイランドグリーン
-_STRING89_199: DB "4W", END_STRING ;アウト
-_STRING89_200: DB "Address", END_STRING ;アウトサイドイン
-_STRING89_201: DB "Against", END_STRING ;アゲンスト
-_STRING89_202: DB "Age shoot", END_STRING ;アップヒル
-_STRING89_203: DB "Albatross", END_STRING ;アップライト
-_STRING89_204: DB "Alternate", END_STRING ;アドレス
-_STRING89_205: DB "Approach", END_STRING ;アプローチ
-_STRING89_206: DB "Approach wedge", END_STRING ;アベレージ
-_STRING89_207: DB "At the turn", END_STRING ;アルバトロス
-_STRING89_208: DB "Average", END_STRING ;アンジュレーション
-_STRING89_209: DB "Average drive", END_STRING ;アンダーパー
-_STRING89_210: DB "Average putts", END_STRING ;アンプレヤブル
-_STRING89_211: DB "Average score", END_STRING ;イーグル
-_STRING89_212: DB "AW", END_STRING ;イーブンパー
-_STRING89_213: DB "Back", END_STRING ;イップス
-_STRING89_214: DB "Back tee", END_STRING ;イン
-_STRING89_215: DB "Backspin", END_STRING ;インサイドアウト
-_STRING89_216: DB "Backswing", END_STRING ;インテンショナル
-_STRING89_217: DB "Baffy", END_STRING ;インパクト
-_STRING89_218: DB "Ball", END_STRING ;ウエストエリア
-_STRING89_219: DB "Bare ground", END_STRING ;ウェッジ
-_STRING89_220: DB "Beach bunker", END_STRING ;ウォーターハザード
-_STRING89_221: DB "Best drive", END_STRING ;ウッド
-_STRING89_222: DB "Best gross", END_STRING ;エージシュート
-_STRING89_223: DB "Best position", END_STRING ;エクスプロージョン
-_STRING89_224: DB "Best score", END_STRING ;オーケー(パット)
-_STRING89_225: DB "Bet", END_STRING ;オーバードライブ
-_STRING89_226: DB "Birdie", END_STRING ;オーバーパー
-_STRING89_227: DB "Blind", END_STRING ;オービー
-_STRING89_228: DB "Bogey", END_STRING ;オナー
-_STRING89_229: DB "Caddie", END_STRING ;オルタネイト
-_STRING89_230: DB "Caddie master", END_STRING ;オン
-_STRING89_231: DB "Carry", END_STRING ;ガードバンカー
-_STRING89_232: DB "Cavity back", END_STRING ;カップ
-_STRING89_233: DB "Chip shot", END_STRING ;カップイン
-_STRING89_234: DB "Chip-in", END_STRING ;キザみ
-_STRING89_235: DB "Cleek", END_STRING ;ギブアップ
-_STRING89_236: DB "Closest to pin", END_STRING ;キャディ
-_STRING89_237: DB "Club", END_STRING ;キャディバッグ
-_STRING89_238: DB "Club champion", END_STRING ;キャディマスター
-_STRING89_239: DB "Club chmpnship.", END_STRING ;キャビティバック (club championship)
-_STRING89_240: DB "Club set", END_STRING ;キャリー
-_STRING89_241: DB "Clubhouse", END_STRING ;ギャンブルショット
-_STRING89_242: DB "Concede", END_STRING ;グースネック
-_STRING89_243: DB "Course", END_STRING ;グラスバンカー
-_STRING89_244: DB "Course layout", END_STRING ;クラブ
-_STRING89_245: DB "Course manegmnt", END_STRING ;クラブセット (course management)
-_STRING89_246: DB "Course rating", END_STRING ;クラブせんしゅけん
-_STRING89_247: DB "Creek", END_STRING ;クラブチャンピオン
-_STRING89_248: DB "Cross-bunker", END_STRING ;クラブハウス
-_STRING89_249: DB "Cup", END_STRING ;クリーク
-_STRING89_250: DB "Cup in", END_STRING ;クリーク
-_STRING89_251: DB "Dead", END_STRING ;グリーン
-_STRING89_252: DB "Deep rough", END_STRING ;グリーンエッジ
-_STRING89_253: DB "Defending champ", END_STRING ;グリップ (defending champ)
-_STRING89_254: DB "Dimple", END_STRING ;グロス
-_STRING89_255: DB "Divot", END_STRING ;クロスバンカー
-_STRING89_256: DB "Dogleg", END_STRING ;ケガ
-_STRING89_257: DB "Dormie", END_STRING ;コース
-_STRING89_258: DB "Double bogey", END_STRING ;コースマネジメント
-_STRING89_259: DB "Double par", END_STRING ;コースレイアウト
-_STRING89_260: DB "Downhill lie", END_STRING ;コースレート
-_STRING89_261: DB "Downswing", END_STRING ;ゴルファー
-_STRING89_262: DB "Draw", END_STRING ;ゴルフクラブ
-_STRING89_263: DB "Drive", END_STRING ;こわざ
-_STRING89_264: DB "Driver", END_STRING ;コンシード
-_STRING89_265: DB "Drv-in-frw rat.", END_STRING ;サイドバンカー (drives-in-fairway ratio)
-_STRING89_266: DB "Driving contest", END_STRING ;サドンデス
-_STRING89_267: DB "Drop", END_STRING ;サンドウェッジ
-_STRING89_268: DB "Duff", END_STRING ;サンドセーブりつ
-_STRING89_269: DB "Eagle", END_STRING ;シャフト
-_STRING89_270: DB "Even par", END_STRING ;シャンク
-_STRING89_271: DB "Explosion", END_STRING ;ショート
-_STRING89_272: DB "Face", END_STRING ;ショートアイアン
-_STRING89_273: DB "Fade", END_STRING ;ショートカット
-_STRING89_274: DB "Fairway", END_STRING ;ショートホール
-_STRING89_275: DB "Fairway bunker", END_STRING ;ショット
-_STRING89_276: DB "Fairway wood", END_STRING ;スイートエリア
-_STRING89_277: DB "Flat", END_STRING ;スイング
-_STRING89_278: DB "Flier", END_STRING ;スエー
-_STRING89_279: DB "Follow through", END_STRING ;スクラッチ
-_STRING89_280: DB "Fore", END_STRING ;スコア
-_STRING89_281: DB "Fork", END_STRING ;スコアメイク
-_STRING89_282: DB "Front", END_STRING ;スコアライン
-_STRING89_283: DB "Gallery", END_STRING ;スタート
-_STRING89_284: DB "Gamble shot", END_STRING ;スタイミー
-_STRING89_285: DB "Gimme", END_STRING ;スタンス
-_STRING89_286: DB "Give up", END_STRING ;ステディ
-_STRING89_287: DB "Golf bag", END_STRING ;ストローク
-_STRING89_288: DB "Golf club", END_STRING ;スピン
-_STRING89_289: DB "Golfer", END_STRING ;スプーン
-_STRING89_290: DB "Gooseneck", END_STRING ;スライス
-_STRING89_291: DB "Grass bunker", END_STRING ;スルーザグリーン
-_STRING89_292: DB "Green", END_STRING ;スロープレイ
-_STRING89_293: DB "Green edge", END_STRING ;セミラフ
-_STRING89_294: DB "Grip", END_STRING ;ソール
-_STRING89_295: DB "Gross", END_STRING ;ダウンスイング
-_STRING89_296: DB "Guard bunker", END_STRING ;ダウンヒル
-_STRING89_297: DB "Handicap", END_STRING ;タフ
-_STRING89_298: DB "Hazard", END_STRING ;ダフリ
-_STRING89_299: DB "Head", END_STRING ;ダブルパー
-_STRING89_300: DB "Heath", END_STRING ;ダブルボギー
-_STRING89_301: DB "Hole", END_STRING ;チップイン
-_STRING89_302: DB "Hole in one", END_STRING ;チップショット
-_STRING89_303: DB "Hole out", END_STRING ;チョロ
-_STRING89_304: DB "Home hole", END_STRING ;ティー
-_STRING89_305: DB "Honor", END_STRING ;ティーアップ
-_STRING89_306: DB "Hook", END_STRING ;ティーグラウンド
-_STRING89_307: DB "Impact", END_STRING ;ティーショット
-_STRING89_308: DB "Inside-out", END_STRING ;ディープラフ
-_STRING89_309: DB "Intentional", END_STRING ;ティーマーカー
-_STRING89_310: DB "Island green", END_STRING ;ディフェンディングチャンピオン
-_STRING89_311: DB "Iron", END_STRING ;ディボット
-_STRING89_312: DB "Lat. Wtr hazard", END_STRING ;ディンプル (lateral water hazard)
-_STRING89_313: DB "Lay up", END_STRING ;テークバック
-_STRING89_314: DB "Leading edge", END_STRING ;デッド
-_STRING89_315: DB "Lie", END_STRING ;テンプラ
-_STRING89_316: DB "Line", END_STRING ;トーナメント
-_STRING89_317: DB "Links", END_STRING ;ドーミー
-_STRING89_318: DB "Lob shot", END_STRING ;ドッグレッグ
-_STRING89_319: DB "Loft", END_STRING ;トップ
-_STRING89_320: DB "Long hole", END_STRING ;トップスイング
-_STRING89_321: DB "Long iron", END_STRING ;トップスピン
-_STRING89_322: DB "Lost ball", END_STRING ;ドライバー
-_STRING89_323: DB "Marker", END_STRING ;ドラコン
-_STRING89_324: DB "Match play", END_STRING ;トラブルショット
-_STRING89_325: DB "Meet area", END_STRING ;トリプルボギー
-_STRING89_326: DB "Member", END_STRING ;ドロー
-_STRING89_327: DB "Middle hole", END_STRING ;ドロップ
-_STRING89_328: DB "Middle iron", END_STRING ;ナッソー
-_STRING89_329: DB "Mis-hit", END_STRING ;ニアピン
-_STRING89_330: DB "Mound", END_STRING ;ネック
-_STRING89_331: DB "Nassau", END_STRING ;ネット
-_STRING89_332: DB "Near-pin", END_STRING ;パー
-_STRING89_333: DB "Neck", END_STRING ;パーオン
-_STRING89_334: DB "Net", END_STRING ;パーオンりつ
-_STRING89_335: DB "OB", END_STRING ;パーセーブ
-_STRING89_336: DB "On", END_STRING ;パーセーブりつ
-_STRING89_337: DB "On frw percent.", END_STRING ;バーディ (on fairway percentage)
-_STRING89_338: DB "Outside-in", END_STRING ;ハーフターン
-_STRING89_339: DB "Over par", END_STRING ;パープレイ
-_STRING89_340: DB "Par", END_STRING ;パーブレイク
-_STRING89_341: DB "Par on", END_STRING ;パーブレイクりつ
-_STRING89_342: DB "Par on percent.", END_STRING ;ハザード (par on percentage)
-_STRING89_343: DB "Par play", END_STRING ;パター
-_STRING89_344: DB "Par save", END_STRING ;バックスイング
-_STRING89_345: DB "Par saves %", END_STRING ;バックスピン (par saves percentage)
-_STRING89_346: DB "Partner", END_STRING ;パッティングライン
-_STRING89_347: DB "Penalty", END_STRING ;バッフィー
-_STRING89_348: DB "Pin", END_STRING ;はなみち
-_STRING89_349: DB "Pitch shot", END_STRING ;バンカー
-_STRING89_350: DB "Pitching wedge", END_STRING ;ハンデキャップ
-_STRING89_351: DB "Playoff", END_STRING ;ヒース
-_STRING89_352: DB "Pot bunker", END_STRING ;ビジター
-_STRING89_353: DB "Putter", END_STRING ;ピッチショット
-_STRING89_354: DB "Putt out", END_STRING ;ピッチングウェッジ
-_STRING89_355: DB "Putting line", END_STRING ;ピン
-_STRING89_356: DB "PW", END_STRING ;ピンデッド
-_STRING89_357: DB "Rake", END_STRING ;ファー
-_STRING89_358: DB "Recovery", END_STRING ;フィニッシュ
-_STRING89_359: DB "Rough", END_STRING ;フェアウェイ
-_STRING89_360: DB "Round", END_STRING ;フェアウェイウッド
-_STRING89_361: DB "Run", END_STRING ;フェアウェイキープりつ
-_STRING89_362: DB "Running", END_STRING ;フェアウェイバンカー
-_STRING89_363: DB "Sand saves %", END_STRING ;フェース (sand saves percentage)
-_STRING89_364: DB "Sand wedge", END_STRING ;フェード
-_STRING89_365: DB "Score", END_STRING ;フォーク
-_STRING89_366: DB "Scratch", END_STRING ;フォロー
-_STRING89_367: DB "Semi-rough", END_STRING ;フォロースルー
-_STRING89_368: DB "Shaft", END_STRING ;ふつうのウォーターハザード
-_STRING89_369: DB "Shank", END_STRING ;フック
-_STRING89_370: DB "Short", END_STRING ;フライヤー
-_STRING89_371: DB "Short hole", END_STRING ;ブラインド
-_STRING89_372: DB "Short iron", END_STRING ;フラット
-_STRING89_373: DB "Shortcut", END_STRING ;プレイオフ
-_STRING89_374: DB "Shot", END_STRING ;ベアグラウンド
-_STRING89_375: DB "Side bunker", END_STRING ;へいきんスコア
-_STRING89_376: DB "Sink", END_STRING ;へいきんドライブ
-_STRING89_377: DB "Slice", END_STRING ;へいきんパットすう
-_STRING89_378: DB "Slow play", END_STRING ;ベスグロ
-_STRING89_379: DB "Sole", END_STRING ;ベストスコア
-_STRING89_380: DB "Spin", END_STRING ;ベストドライブ
-_STRING89_381: DB "Spoon", END_STRING ;ベストポジション
-_STRING89_382: DB "Stance", END_STRING ;ベタピン
-_STRING89_383: DB "Starter", END_STRING ;ヘッド
-_STRING89_384: DB "Starting hole", END_STRING ;ベット
-_STRING89_385: DB "Steady", END_STRING ;ペナルティ
-_STRING89_386: DB "Stroke", END_STRING ;ヘビーラフ
-_STRING89_387: DB "Stymie", END_STRING ;ホームホール
-_STRING89_388: DB "Sudden death", END_STRING ;ホームラン
-_STRING89_389: DB "Sway", END_STRING ;ホール
-_STRING89_390: DB "Sweet spot", END_STRING ;ボール
-_STRING89_391: DB "Swing", END_STRING ;ホールアウト
-_STRING89_392: DB "Tailwind", END_STRING ;ホールイン
-_STRING89_393: DB "Tee", END_STRING ;ホールインワン
-_STRING89_394: DB "Tee box", END_STRING ;ボギー
-_STRING89_395: DB "Tee ground", END_STRING ;ポットバンカー
-_STRING89_396: DB "Tee marker", END_STRING ;マーカー
-_STRING89_397: DB "Tee shot", END_STRING ;マーク
-_STRING89_398: DB "Tee up", END_STRING ;マウンド
-_STRING89_399: DB "Top", END_STRING ;マッスルバック
-_STRING89_400: DB "Topspin", END_STRING ;マッチプレイ
-_STRING89_401: DB "Total drv dist.", END_STRING ;ミートエリア (total drive distance)
-_STRING89_402: DB "Tournament", END_STRING ;ミートりつ
-_STRING89_403: DB "Triple bogey", END_STRING ;ミスショット
-_STRING89_404: DB "Trouble shot", END_STRING ;ミドルアイアン
-_STRING89_405: DB "Under par", END_STRING ;ミドルホール
-_STRING89_406: DB "Undulation", END_STRING ;メンバー
-_STRING89_407: DB "Unplayable", END_STRING ;ヤーデージ
-_STRING89_408: DB "Uphill", END_STRING ;ヤード
-_STRING89_409: DB "Upright", END_STRING ;よせワン
-_STRING89_410: DB "Visitor", END_STRING ;ライ
-_STRING89_411: DB "Waste area", END_STRING ;ライン
-_STRING89_412: DB "Water hazard", END_STRING ;ラウンド
-_STRING89_413: DB "Wedge", END_STRING ;ラテラルウォーターハザード
-_STRING89_414: DB "Wood", END_STRING ;ラフ
-_STRING89_415: DB "Yard", END_STRING ;ラン
-_STRING89_416: DB "Yardage", END_STRING ;ランニング
-_STRING89_417: DB "Yips", END_STRING ;リーディングエッジ
+_STRING89_197: DB "1w", END_STRING ;アイアン
+_STRING89_198: DB "3w", END_STRING ;アイランドグリーン
+_STRING89_199: DB "4w", END_STRING ;アウト
+_STRING89_200: DB "address", END_STRING ;アウトサイドイン
+_STRING89_201: DB "against", END_STRING ;アゲンスト
+_STRING89_202: DB "age shoot", END_STRING ;アップヒル
+_STRING89_203: DB "albatross", END_STRING ;アップライト
+_STRING89_204: DB "alternate", END_STRING ;アドレス
+_STRING89_205: DB "approach", END_STRING ;アプローチ
+_STRING89_206: DB "approach wedge", END_STRING ;アベレージ
+_STRING89_207: DB "at the turn", END_STRING ;アルバトロス
+_STRING89_208: DB "average", END_STRING ;アンジュレーション
+_STRING89_209: DB "average drive", END_STRING ;アンダーパー
+_STRING89_210: DB "average putts", END_STRING ;アンプレヤブル
+_STRING89_211: DB "average score", END_STRING ;イーグル
+_STRING89_212: DB "aw", END_STRING ;イーブンパー
+_STRING89_213: DB "back", END_STRING ;イップス
+_STRING89_214: DB "back tee", END_STRING ;イン
+_STRING89_215: DB "backspin", END_STRING ;インサイドアウト
+_STRING89_216: DB "backswing", END_STRING ;インテンショナル
+_STRING89_217: DB "baffy", END_STRING ;インパクト
+_STRING89_218: DB "ball", END_STRING ;ウエストエリア
+_STRING89_219: DB "bare ground", END_STRING ;ウェッジ
+_STRING89_220: DB "beach bunker", END_STRING ;ウォーターハザード
+_STRING89_221: DB "best drive", END_STRING ;ウッド
+_STRING89_222: DB "best gross", END_STRING ;エージシュート
+_STRING89_223: DB "best position", END_STRING ;エクスプロージョン
+_STRING89_224: DB "best score", END_STRING ;オーケー(パット)
+_STRING89_225: DB "bet", END_STRING ;オーバードライブ
+_STRING89_226: DB "birdie", END_STRING ;オーバーパー
+_STRING89_227: DB "blind", END_STRING ;オービー
+_STRING89_228: DB "bogey", END_STRING ;オナー
+_STRING89_229: DB "caddie", END_STRING ;オルタネイト
+_STRING89_230: DB "caddie master", END_STRING ;オン
+_STRING89_231: DB "carry", END_STRING ;ガードバンカー
+_STRING89_232: DB "cavity back", END_STRING ;カップ
+_STRING89_233: DB "chip shot", END_STRING ;カップイン
+_STRING89_234: DB "chip-in", END_STRING ;キザみ
+_STRING89_235: DB "cleek", END_STRING ;ギブアップ
+_STRING89_236: DB "closest to pin", END_STRING ;キャディ
+_STRING89_237: DB "club", END_STRING ;キャディバッグ
+_STRING89_238: DB "club champion", END_STRING ;キャディマスター
+_STRING89_239: DB "club chmpnship.", END_STRING ;キャビティバック (club championship)
+_STRING89_240: DB "club set", END_STRING ;キャリー
+_STRING89_241: DB "clubhouse", END_STRING ;ギャンブルショット
+_STRING89_242: DB "concede", END_STRING ;グースネック
+_STRING89_243: DB "course", END_STRING ;グラスバンカー
+_STRING89_244: DB "course layout", END_STRING ;クラブ
+_STRING89_245: DB "course manegmnt", END_STRING ;クラブセット (course management)
+_STRING89_246: DB "course rating", END_STRING ;クラブせんしゅけん
+_STRING89_247: DB "creek", END_STRING ;クラブチャンピオン
+_STRING89_248: DB "cross-bunker", END_STRING ;クラブハウス
+_STRING89_249: DB "cup", END_STRING ;クリーク
+_STRING89_250: DB "cup in", END_STRING ;クリーク
+_STRING89_251: DB "dead", END_STRING ;グリーン
+_STRING89_252: DB "deep rough", END_STRING ;グリーンエッジ
+_STRING89_253: DB "defending champ", END_STRING ;グリップ (defending champ)
+_STRING89_254: DB "dimple", END_STRING ;グロス
+_STRING89_255: DB "divot", END_STRING ;クロスバンカー
+_STRING89_256: DB "dogleg", END_STRING ;ケガ
+_STRING89_257: DB "dormie", END_STRING ;コース
+_STRING89_258: DB "double bogey", END_STRING ;コースマネジメント
+_STRING89_259: DB "double par", END_STRING ;コースレイアウト
+_STRING89_260: DB "downhill lie", END_STRING ;コースレート
+_STRING89_261: DB "downswing", END_STRING ;ゴルファー
+_STRING89_262: DB "draw", END_STRING ;ゴルフクラブ
+_STRING89_263: DB "drive", END_STRING ;こわざ
+_STRING89_264: DB "driver", END_STRING ;コンシード
+_STRING89_265: DB "drv-in-frw rat.", END_STRING ;サイドバンカー (drives-in-fairway ratio)
+_STRING89_266: DB "driving contest", END_STRING ;サドンデス
+_STRING89_267: DB "drop", END_STRING ;サンドウェッジ
+_STRING89_268: DB "duff", END_STRING ;サンドセーブりつ
+_STRING89_269: DB "eagle", END_STRING ;シャフト
+_STRING89_270: DB "even par", END_STRING ;シャンク
+_STRING89_271: DB "explosion", END_STRING ;ショート
+_STRING89_272: DB "face", END_STRING ;ショートアイアン
+_STRING89_273: DB "fade", END_STRING ;ショートカット
+_STRING89_274: DB "fairway", END_STRING ;ショートホール
+_STRING89_275: DB "fairway bunker", END_STRING ;ショット
+_STRING89_276: DB "fairway wood", END_STRING ;スイートエリア
+_STRING89_277: DB "flat", END_STRING ;スイング
+_STRING89_278: DB "flier", END_STRING ;スエー
+_STRING89_279: DB "follow through", END_STRING ;スクラッチ
+_STRING89_280: DB "fore", END_STRING ;スコア
+_STRING89_281: DB "fork", END_STRING ;スコアメイク
+_STRING89_282: DB "front", END_STRING ;スコアライン
+_STRING89_283: DB "gallery", END_STRING ;スタート
+_STRING89_284: DB "gamble shot", END_STRING ;スタイミー
+_STRING89_285: DB "gimme", END_STRING ;スタンス
+_STRING89_286: DB "give up", END_STRING ;ステディ
+_STRING89_287: DB "golf bag", END_STRING ;ストローク
+_STRING89_288: DB "golf club", END_STRING ;スピン
+_STRING89_289: DB "golfer", END_STRING ;スプーン
+_STRING89_290: DB "gooseneck", END_STRING ;スライス
+_STRING89_291: DB "grass bunker", END_STRING ;スルーザグリーン
+_STRING89_292: DB "green", END_STRING ;スロープレイ
+_STRING89_293: DB "green edge", END_STRING ;セミラフ
+_STRING89_294: DB "grip", END_STRING ;ソール
+_STRING89_295: DB "gross", END_STRING ;ダウンスイング
+_STRING89_296: DB "guard bunker", END_STRING ;ダウンヒル
+_STRING89_297: DB "handicap", END_STRING ;タフ
+_STRING89_298: DB "hazard", END_STRING ;ダフリ
+_STRING89_299: DB "head", END_STRING ;ダブルパー
+_STRING89_300: DB "heath", END_STRING ;ダブルボギー
+_STRING89_301: DB "hole", END_STRING ;チップイン
+_STRING89_302: DB "hole in one", END_STRING ;チップショット
+_STRING89_303: DB "hole out", END_STRING ;チョロ
+_STRING89_304: DB "home hole", END_STRING ;ティー
+_STRING89_305: DB "honor", END_STRING ;ティーアップ
+_STRING89_306: DB "hook", END_STRING ;ティーグラウンド
+_STRING89_307: DB "impact", END_STRING ;ティーショット
+_STRING89_308: DB "inside-out", END_STRING ;ディープラフ
+_STRING89_309: DB "intentional", END_STRING ;ティーマーカー
+_STRING89_310: DB "island green", END_STRING ;ディフェンディングチャンピオン
+_STRING89_311: DB "iron", END_STRING ;ディボット
+_STRING89_312: DB "lat. wtr hazard", END_STRING ;ディンプル (lateral water hazard)
+_STRING89_313: DB "lay up", END_STRING ;テークバック
+_STRING89_314: DB "leading edge", END_STRING ;デッド
+_STRING89_315: DB "lie", END_STRING ;テンプラ
+_STRING89_316: DB "line", END_STRING ;トーナメント
+_STRING89_317: DB "links", END_STRING ;ドーミー
+_STRING89_318: DB "lob shot", END_STRING ;ドッグレッグ
+_STRING89_319: DB "loft", END_STRING ;トップ
+_STRING89_320: DB "long hole", END_STRING ;トップスイング
+_STRING89_321: DB "long iron", END_STRING ;トップスピン
+_STRING89_322: DB "lost ball", END_STRING ;ドライバー
+_STRING89_323: DB "marker", END_STRING ;ドラコン
+_STRING89_324: DB "match play", END_STRING ;トラブルショット
+_STRING89_325: DB "meet area", END_STRING ;トリプルボギー
+_STRING89_326: DB "member", END_STRING ;ドロー
+_STRING89_327: DB "middle hole", END_STRING ;ドロップ
+_STRING89_328: DB "middle iron", END_STRING ;ナッソー
+_STRING89_329: DB "mis-hit", END_STRING ;ニアピン
+_STRING89_330: DB "mound", END_STRING ;ネック
+_STRING89_331: DB "nassau", END_STRING ;ネット
+_STRING89_332: DB "near-pin", END_STRING ;パー
+_STRING89_333: DB "neck", END_STRING ;パーオン
+_STRING89_334: DB "net", END_STRING ;パーオンりつ
+_STRING89_335: DB "ob", END_STRING ;パーセーブ
+_STRING89_336: DB "on", END_STRING ;パーセーブりつ
+_STRING89_337: DB "on frw percent.", END_STRING ;バーディ (on fairway percentage)
+_STRING89_338: DB "outside-in", END_STRING ;ハーフターン
+_STRING89_339: DB "over par", END_STRING ;パープレイ
+_STRING89_340: DB "par", END_STRING ;パーブレイク
+_STRING89_341: DB "par on", END_STRING ;パーブレイクりつ
+_STRING89_342: DB "par on percent.", END_STRING ;ハザード (par on percentage)
+_STRING89_343: DB "par play", END_STRING ;パター
+_STRING89_344: DB "par save", END_STRING ;バックスイング
+_STRING89_345: DB "par saves %", END_STRING ;バックスピン (par saves percentage)
+_STRING89_346: DB "partner", END_STRING ;パッティングライン
+_STRING89_347: DB "penalty", END_STRING ;バッフィー
+_STRING89_348: DB "pin", END_STRING ;はなみち
+_STRING89_349: DB "pitch shot", END_STRING ;バンカー
+_STRING89_350: DB "pitching wedge", END_STRING ;ハンデキャップ
+_STRING89_351: DB "playoff", END_STRING ;ヒース
+_STRING89_352: DB "pot bunker", END_STRING ;ビジター
+_STRING89_353: DB "putter", END_STRING ;ピッチショット
+_STRING89_354: DB "putt out", END_STRING ;ピッチングウェッジ
+_STRING89_355: DB "putting line", END_STRING ;ピン
+_STRING89_356: DB "pw", END_STRING ;ピンデッド
+_STRING89_357: DB "rake", END_STRING ;ファー
+_STRING89_358: DB "recovery", END_STRING ;フィニッシュ
+_STRING89_359: DB "rough", END_STRING ;フェアウェイ
+_STRING89_360: DB "round", END_STRING ;フェアウェイウッド
+_STRING89_361: DB "run", END_STRING ;フェアウェイキープりつ
+_STRING89_362: DB "running", END_STRING ;フェアウェイバンカー
+_STRING89_363: DB "sand saves %", END_STRING ;フェース (sand saves percentage)
+_STRING89_364: DB "sand wedge", END_STRING ;フェード
+_STRING89_365: DB "score", END_STRING ;フォーク
+_STRING89_366: DB "scratch", END_STRING ;フォロー
+_STRING89_367: DB "semi-rough", END_STRING ;フォロースルー
+_STRING89_368: DB "shaft", END_STRING ;ふつうのウォーターハザード
+_STRING89_369: DB "shank", END_STRING ;フック
+_STRING89_370: DB "short", END_STRING ;フライヤー
+_STRING89_371: DB "short hole", END_STRING ;ブラインド
+_STRING89_372: DB "short iron", END_STRING ;フラット
+_STRING89_373: DB "shortcut", END_STRING ;プレイオフ
+_STRING89_374: DB "shot", END_STRING ;ベアグラウンド
+_STRING89_375: DB "side bunker", END_STRING ;へいきんスコア
+_STRING89_376: DB "sink", END_STRING ;へいきんドライブ
+_STRING89_377: DB "slice", END_STRING ;へいきんパットすう
+_STRING89_378: DB "slow play", END_STRING ;ベスグロ
+_STRING89_379: DB "sole", END_STRING ;ベストスコア
+_STRING89_380: DB "spin", END_STRING ;ベストドライブ
+_STRING89_381: DB "spoon", END_STRING ;ベストポジション
+_STRING89_382: DB "stance", END_STRING ;ベタピン
+_STRING89_383: DB "starter", END_STRING ;ヘッド
+_STRING89_384: DB "starting hole", END_STRING ;ベット
+_STRING89_385: DB "steady", END_STRING ;ペナルティ
+_STRING89_386: DB "stroke", END_STRING ;ヘビーラフ
+_STRING89_387: DB "stymie", END_STRING ;ホームホール
+_STRING89_388: DB "sudden death", END_STRING ;ホームラン
+_STRING89_389: DB "sway", END_STRING ;ホール
+_STRING89_390: DB "sweet spot", END_STRING ;ボール
+_STRING89_391: DB "swing", END_STRING ;ホールアウト
+_STRING89_392: DB "tailwind", END_STRING ;ホールイン
+_STRING89_393: DB "tee", END_STRING ;ホールインワン
+_STRING89_394: DB "tee box", END_STRING ;ボギー
+_STRING89_395: DB "tee ground", END_STRING ;ポットバンカー
+_STRING89_396: DB "tee marker", END_STRING ;マーカー
+_STRING89_397: DB "tee shot", END_STRING ;マーク
+_STRING89_398: DB "tee up", END_STRING ;マウンド
+_STRING89_399: DB "top", END_STRING ;マッスルバック
+_STRING89_400: DB "topspin", END_STRING ;マッチプレイ
+_STRING89_401: DB "total drv dist.", END_STRING ;ミートエリア (total drive distance)
+_STRING89_402: DB "tournament", END_STRING ;ミートりつ
+_STRING89_403: DB "triple bogey", END_STRING ;ミスショット
+_STRING89_404: DB "trouble shot", END_STRING ;ミドルアイアン
+_STRING89_405: DB "under par", END_STRING ;ミドルホール
+_STRING89_406: DB "undulation", END_STRING ;メンバー
+_STRING89_407: DB "unplayable", END_STRING ;ヤーデージ
+_STRING89_408: DB "uphill", END_STRING ;ヤード
+_STRING89_409: DB "upright", END_STRING ;よせワン
+_STRING89_410: DB "visitor", END_STRING ;ライ
+_STRING89_411: DB "waste area", END_STRING ;ライン
+_STRING89_412: DB "water hazard", END_STRING ;ラウンド
+_STRING89_413: DB "wedge", END_STRING ;ラテラルウォーターハザード
+_STRING89_414: DB "wood", END_STRING ;ラフ
+_STRING89_415: DB "yard", END_STRING ;ラン
+_STRING89_416: DB "yardage", END_STRING ;ランニング
+_STRING89_417: DB "yips", END_STRING ;リーディングエッジ
 _STRING89_418: DB $a4, "Mobile Golf", END_STRING ;リカバリー
 _STRING89_419: DB $a4, "Mobile Adapter", END_STRING ;レイアップ
 _STRING89_420: DB $a4, "eGuide", END_STRING ;レーキ

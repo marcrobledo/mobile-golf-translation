@@ -1317,13 +1317,13 @@ _STRING8B_193: ;originally $4f32
 _STRING8B_194: ;originally $4f56
 	DB "Content will cost" ;さらに コンテンツりょうが
 	DB BR
-	DB $09, " yen." ;えん かかります。
+	DB $09, " cents." ;えん かかります。
 	DB END_STRING
 
 _STRING8B_195: ;originally $4f70
-	DB "Is the mobile" ;モバイルアダプタの
+	DB "Is the Mobile" ;モバイルアダプタの
 	DB BR
-	DB "adapt.ready?" ;じゅんびはいいですか?
+	DB "Adapter set?" ;じゅんびはいいですか?
 	DB END_STRING
 
 _STRING8B_196: ;originally $4f8c
@@ -1853,9 +1853,9 @@ _STRING8B_274: ;originally $594e
 	DB END_STRING
 
 _STRING8B_275: ;originally $5966
-	DB "Do not remove ca" ;つうしんちゅうは ぜったいに
+	DB "Do not remove" ;つうしんちゅうは ぜったいに
 	DB BR
-	DB "ble during call." ;ケーブルを ぬかないでください!
+	DB "Mobile Adapter." ;ケーブルを ぬかないでください!
 	DB END_STRING
 
 _STRING8B_276: ;originally $598a
@@ -1929,7 +1929,7 @@ _STRING8B_290: ;originally $5a6a
 	DB END_STRING
 
 _STRING8B_291: ;originally $5a72
-	DB "Last call time" ;ただいまの つうわじかんは
+	DB "Call time" ;ただいまの つうわじかんは
 	DB BR
 	DB "T:   m    s" ;やく   ふん   びょう でした。
 	DB END_STRING

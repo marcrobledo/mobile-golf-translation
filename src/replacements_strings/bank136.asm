@@ -778,7 +778,7 @@ DW _DIALOG767 - _STRINGS
 SECTION "Bank 136 - Dialogs - strings", ROMX[$4604],BANK[$88]
 _STRINGS:
 _DIALOG0: ;originally $4604
-	DB $85, $7c ;なし
+	DB "None" ;なし
 	DB END_STRING
 
 _DIALOG1: ;originally $4607
@@ -792,7 +792,7 @@ _DIALOG2: ;originally $4609
 	DB END_STRING
 
 _DIALOG3: ;originally $4610
-	DB $c0, $de, $d0, $b0, $ba, $b0, $bd ;ダミーコース
+	DB "Dummy Course" ;ダミーコース
 	DB END_STRING
 
 
@@ -1701,55 +1701,55 @@ _DIALOG293: ;originally $5158
 	DB END_STRING
 
 _DIALOG294: ;originally $516d
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $31 ;ダミークラブその1
+	DB "Dummy Club 1" ;ダミークラブその1
 	DB END_STRING
 
 _DIALOG295: ;originally $5179
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $32 ;ダミークラブその2
+	DB "Dummy Club 2" ;ダミークラブその2
 	DB END_STRING
 
 _DIALOG296: ;originally $5185
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $33 ;ダミークラブその3
+	DB "Dummy Club 3" ;ダミークラブその3
 	DB END_STRING
 
 _DIALOG297: ;originally $5191
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $34 ;ダミークラブその4
+	DB "Dummy Club 4" ;ダミークラブその4
 	DB END_STRING
 
 _DIALOG298: ;originally $519d
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $35 ;ダミークラブその5
+	DB "Dummy Club 5" ;ダミークラブその5
 	DB END_STRING
 
 _DIALOG299: ;originally $51a9
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $36 ;ダミークラブその6
+	DB "Dummy Club 6" ;ダミークラブその6
 	DB END_STRING
 
 _DIALOG300: ;originally $51b5
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $37 ;ダミークラブその7
+	DB "Dummy Club 7" ;ダミークラブその7
 	DB END_STRING
 
 _DIALOG301: ;originally $51c1
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $38 ;ダミークラブその8
+	DB "Dummy Club 8" ;ダミークラブその8
 	DB END_STRING
 
 _DIALOG302: ;originally $51cd
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $39 ;ダミークラブその9
+	DB "Dummy Club 9" ;ダミークラブその9
 	DB END_STRING
 
 _DIALOG303: ;originally $51d9
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $31, $30 ;ダミークラブその10
+	DB "Dummy Club 10" ;ダミークラブその10
 	DB END_STRING
 
 _DIALOG304: ;originally $51e6
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $31, $31 ;ダミークラブその11
+	DB "Dummy Club 11" ;ダミークラブその11
 	DB END_STRING
 
 _DIALOG305: ;originally $51f3
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $31, $32 ;ダミークラブその12
+	DB "Dummy Club 12" ;ダミークラブその12
 	DB END_STRING
 
 _DIALOG306: ;originally $5200
-	DB $c0, $de, $d0, $b0, $b8, $d7, $cc, $de, $7f, $89, $31, $33 ;ダミークラブその13
+	DB "Dummy Club 13" ;ダミークラブその13
 	DB END_STRING
 
 
@@ -1767,7 +1767,7 @@ _DIALOG309:
 	DB END_STRING
 
 _DIALOG310:
-	DB $ba, $dd, $c4, $db, $b0, $d9, $b1, $af, $cc, $df, $20, $8b, $77, $6e, $98, $c0, $de, $b3, $dd ;コントロールアップ ひきょりダウン
+	DB "Control+ Distance-" ;コントロールアップ ひきょりダウン
 	DB END_STRING
 
 _DIALOG311: ;originally $5252
@@ -1795,15 +1795,15 @@ _DIALOG316: ;originally $52ac
 	DB END_STRING
 
 _DIALOG317: ;originally $52c0
-	DB $8b, $78, $72, $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $76, $de, $73, $83, $99 ;ひくいバックスピンがうてる
+	DB "Weak backspin" ;ひくいバックスピンがうてる
 	DB END_STRING
 
 _DIALOG318: ;originally $52d1
-	DB $82, $96, $78, $83, $80, $76, $72, $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $76, $de, $73, $83, $99 ;つよくてたかいバックスピンがうてる
+	DB "High backspin" ;つよくてたかいバックスピンがうてる
 	DB END_STRING
 
 _DIALOG319: ;originally $52e6
-	DB $d0, $b0, $c4, $7c, $86, $78, $72, $79, $84, $de, $20, $71, $80, $99, $84, $7d, $7a, $de, $72 ;ミートしにくいけど あたるとすごい
+	DB "Hard to hit with" ;ミートしにくいけど あたるとすごい
 	DB END_STRING
 
 _DIALOG320: ;originally $52fa
@@ -2023,10 +2023,10 @@ _DIALOG374: ;originally $55df
 	DB " With Link Cable!" ;ケーブルつないで ふたりでたいせん!
 	DB END_STRING
 _DIALOG375: ;originally $55f5
-	DB "ONLINE" ;ネットワーク
+	DB "NETWORK" ;ネットワーク
 	DB END_STRING
 _DIALOG376: ;originally $55fc
-	DB "  Compete online!" ;つうしんゲームで せかいがひろがる!
+	DB "Expand your world!" ;つうしんゲームで せかいがひろがる!
 	DB END_STRING
 _DIALOG377: ;originally $5613
 	DB "SETUP" ;キャラせってい
@@ -2815,11 +2815,11 @@ _DIALOG513: ;originally $6173
 	DB END_STRING
 
 _DIALOG514: ;originally $617b
-	DB "  M" ;おとこ
+	DB "R M" ;おとこ
 	DB END_STRING
 
 _DIALOG515: ;originally $617f
-	DB "  F" ;おんな
+	DB "R F" ;おんな
 	DB END_STRING
 
 _DIALOG516: ;originally $6183
@@ -3008,7 +3008,7 @@ _DIALOG560: ;originally $62ea
 _DIALOG561:
 	DB "Camera" ;カメラモード
 	DB BR
-	DB "Full Map" ;コースぜんたいず
+	DB "Course Map" ;コースぜんたいず
 	DB BR
 	DB "Scoreboard" ;スコアカード
 	DB BR
@@ -3041,13 +3041,13 @@ _DIALOG562: ;originally $6322
 
 
 _DIALOG563: ;originally $6349
-	DB "Character" ;キャラデータ
+	DB "Char. Data" ;キャラデータ
 	DB BR
-	DB "Select clubs" ;クラブせってい
+	DB "Select Clubs" ;クラブせってい
 	DB BR
-	DB "Msg Spd." ;メッセージ       
+	DB "Message" ;メッセージ       
 	DB BR
-	DB "Save&Exit" ;ちゅうだんする
+	DB "Quit" ;ちゅうだんする
 	DB END_STRING
 
 _DIALOG564: ;originally $6371
@@ -3057,16 +3057,17 @@ _DIALOG564: ;originally $6371
 	DB BR
 	DB $bd, $c0, $b0, $b9, $de, $af, $c4 ;スターゲット
 	DB BR
-	DB "Msg Spd." ;メッセージ       
+	DB "Message" ;メッセージ       
 	DB BR
-	DB "Save&Exit" ;ちゅうだんする
+	DB "Quit" ;ちゅうだんする
 	DB END_STRING
+
 
 ;PAUSE - Tournament / Match Play / Speed Golf / Stroke Play
 _DIALOG565:
 	DB "Camera" ;カメラモード
 	DB BR
-	DB "Full Map" ;コースぜんたいず
+	DB "Course Map" ;コースぜんたいず
 	DB BR
 	DB "Scoreboard" ;スコアカード
 	DB BR
@@ -3074,13 +3075,13 @@ _DIALOG565:
 	DB BR
 	DB "Give Up" ;ギブアップ
 	DB BR
-	DB "Save&Exit" ;ちゅうだんする
+	DB "Quit" ;ちゅうだんする
 	DB END_STRING
 
 _DIALOG566: ;originally $63d4
 	DB "Camera" ;カメラモード
 	DB BR
-	DB "Full Map" ;コースぜんたいず
+	DB "Course Map" ;コースぜんたいず
 	DB BR
 	DB "Scoreboard" ;スコアカード
 	DB BR
@@ -3100,13 +3101,13 @@ _DIALOG567: ;originally $6406
 	DB BR
 	DB "Give Up" ;ギブアップ
 	DB BR
-	DB "Save&Exit" ;ちゅうだんする
+	DB "Quit" ;ちゅうだんする
 	DB END_STRING
 
 _DIALOG568: ;training
 	DB "Camera" ;カメラモード
 	DB BR
-	DB "Full Map" ;コースぜんたいず
+	DB "Course Map" ;コースぜんたいず
 	DB BR
 	DB "Hole Out" ;ホールアウト
 	DB BR
@@ -3152,7 +3153,7 @@ _DIALOG571: ;originally $64b6
 	DB END_STRING
 
 _DIALOG572: ;originally $64db
-	DB "Quit pract" ;れんしゅうをやめる
+	DB "Quit" ;れんしゅうをやめる
 	DB BR
 	DB "Settings" ;せってい
 	DB END_STRING
@@ -3204,7 +3205,7 @@ _DIALOG578:
 	DB BR
 	DB "Camera" ;カメラモード
 	DB BR
-	DB "Full Map" ;コースぜんたいず
+	DB "Course Map" ;コースぜんたいず
 	DB BR
 	DB "Settings" ;せってい
 	DB BR
@@ -3225,7 +3226,7 @@ _DIALOG580: ;minigolf
 	DB BR
 	DB "Give Up" ;ギブアップ
 	DB BR
-	DB "Save&Exit" ;ちゅうだんする
+	DB "Quit" ;ちゅうだんする
 	DB END_STRING
 
 _DIALOG581: ;originally $65dc
@@ -3245,7 +3246,7 @@ _DIALOG582: ;speed golf
 	DB BR
 	DB "Settings" ;せってい
 	DB BR
-	DB "Save&Exit" ;ちゅうだんする
+	DB "Quit" ;ちゅうだんする
 	DB END_STRING
 
 _DIALOG583: ;originally $6619
@@ -3261,7 +3262,7 @@ _DIALOG583: ;originally $6619
 _DIALOG584: ;originally $663b
 	DB "Camera" ;カメラモード
 	DB BR
-	DB "Full Map" ;コースぜんたいず
+	DB "Course Map" ;コースぜんたいず
 	DB BR
 	DB "Scorecard" ;スコアカード
 	DB BR
@@ -3269,19 +3270,19 @@ _DIALOG584: ;originally $663b
 	DB BR
 	DB "Give Up" ;ギブアップ
 	DB BR
-	DB "Quit Comp." ;コンペをやめる
+	DB "Quit" ;コンペをやめる
 	DB END_STRING
 
 _DIALOG585: ;originally $666d
 	DB "Camera" ;カメラモード
 	DB BR
-	DB "Full Map" ;コースぜんたいず
+	DB "Course Map" ;コースぜんたいず
 	DB BR
 	DB "Scorecard" ;スコアカード
 	DB BR
 	DB "Settings" ;せってい
 	DB BR
-	DB "Quit Comp." ;コンペをやめる
+	DB "Quit" ;コンペをやめる
 	DB END_STRING
 
 _DIALOG586: ;originally $6696
@@ -3291,7 +3292,7 @@ _DIALOG586: ;originally $6696
 	DB BR
 	DB "Give Up" ;ギブアップ
 	DB BR
-	DB "Quit Comp." ;コンペをやめる
+	DB "Quit" ;コンペをやめる
 	DB END_STRING
 
 _DIALOG587: ;originally $66b5
@@ -3301,7 +3302,7 @@ _DIALOG587: ;originally $66b5
 	DB BR
 	DB "Give Up" ;ギブアップ
 	DB BR
-	DB "Quit Comp." ;コンペをやめる
+	DB "Quit" ;コンペをやめる
 	DB END_STRING
 
 _DIALOG588: ;originally $66d4
@@ -3313,7 +3314,7 @@ _DIALOG588: ;originally $66d4
 	DB BR
 	DB "Give Up" ;ギブアップ
 	DB BR
-	DB "Quit Comp." ;コンペをやめる
+	DB "Quit" ;コンペをやめる
 	DB END_STRING
 
 _DIALOG589: ;originally $66fb
@@ -3323,7 +3324,7 @@ _DIALOG589: ;originally $66fb
 	DB BR
 	DB "Settings" ;せってい
 	DB BR
-	DB "Quit Comp." ;コンペをやめる
+	DB "Quit" ;コンペをやめる
 	DB END_STRING
 
 _DIALOG590: ;originally $6719
@@ -3796,13 +3797,13 @@ _DIALOG663: ;originally $6bf2
 
 ;continue saved game
 _DIALOG664:
-	DB "Tournment" ;トーナメント
+	DB "Tourney" ;トーナメント
 	DB END_STRING
 _DIALOG665:
-	DB "MatchGame" ;マッチプレイ
+	DB "Match" ;マッチプレイ
 	DB END_STRING
 _DIALOG666:
-	DB "StrokePly" ;ストローク
+	DB "Stroke" ;ストローク
 	DB END_STRING
 _DIALOG667:
 	DB "Training" ;トレーニング
