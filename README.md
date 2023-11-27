@@ -61,11 +61,11 @@ As a bonus, under Options > Glossary > Page 9, you will find this information, j
 
 ## What's missing
 Possible to-do list:
-* Borrow VWF subroutine from Mario Golf USA/Europe
+- Borrow VWF subroutine from Mario Golf USA/Europe  
   The game would benefit of a variable width font, but since there is no RPG mode and strings are mostly menus, it's not a priority.
-* A few big graphic titles (new character/course unlocked and local multiplayer)
-  they can be translated, but it would require some pixelart work and they wouln't provide any additional information at all.
-* Net Clubhouse dialogs
+- A few big graphic titles (new character/course unlocked and local multiplayer)  
+  they can be translated, but it would require some pixelart work and they woulnd't provide any additional information at all.
+- Net Clubhouse dialogs  
   There are a lot of untranslated strings yet that are related to the Net Clubhouse (online mode): competitions, connection error codes, etc. Since these are not accesible yet, they aren't needed for now. The script is extracted in `replace_strings` folder, so it should be pretty easy for anyone to translate them in a future.
 
 ## How to compile
