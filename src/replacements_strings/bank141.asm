@@ -1683,7 +1683,7 @@ _STRING8D_99: ;originally $5515
 	DB BR
 	DB "for beginners." ;カウンセリングで わかったわ
 	DB NEXT_DIALOG
-	DB "People here is" ;それに きょりのとぶプレイヤーには
+	DB "People here are" ;それに きょりのとぶプレイヤーには
 	DB BR
 	DB "very nice with" ;とぶひとのなやみがあることも
 	DB BR
@@ -1724,81 +1724,81 @@ _STRING8D_101: ;originally $55e6
 
 
 ; GATE SHOT
-_STRING8D_102: DB " 1 States", END_STRING ; 1 まっすぐ! まっすぐ!
-_STRING8D_103: DB " 2 States", END_STRING ; 2 とおせんぼゲート
-_STRING8D_104: DB " 3 States", END_STRING ; 3 みぎへ ひだりへ
-_STRING8D_105: DB " 4 States", END_STRING ; 4 きの ちょくぜん
-_STRING8D_106: DB " 5 States", END_STRING ; 5 どまんなかをキープせよ!
-_STRING8D_107: DB " 6 States", END_STRING ; 6 バックティーから はじめ!
-_STRING8D_108: DB " 7 States", END_STRING ; 7 ゲートに ちょくげき!
-_STRING8D_109: DB " 8 States", END_STRING ; 8 デコボコをぬけて
-_STRING8D_110: DB " 9 States", END_STRING ; 9 せいれつゲート
-_STRING8D_111: DB "10 States", END_STRING ;10 おかにのせて イケ!
-_STRING8D_112: DB "11 States", END_STRING ;11 ストーンヘンジ
-_STRING8D_113: DB "12 States", END_STRING ;12 ハートをねらいうち!
-_STRING8D_114: DB "13 States", END_STRING ;13 あっちこっちゲート
-_STRING8D_115: DB "14 States", END_STRING ;14 よこにも たてにも
-_STRING8D_116: DB "15 States", END_STRING ;15 はやしにむかって
-_STRING8D_117: DB "16 States", END_STRING ;16 ツリーに タッチ
-_STRING8D_118: DB "17 States", END_STRING ;17 いったり きたり
-_STRING8D_119: DB "18 States", END_STRING ;18 フェアウェイの はしっこ
+_STRING8D_102: DB " 1 Go Straight!", END_STRING ; 1 まっすぐ! まっすぐ!
+_STRING8D_103: DB " 2 Dead End Gate", END_STRING ; 2 とおせんぼゲート
+_STRING8D_104: DB " 3 Right to Left", END_STRING ; 3 みぎへ ひだりへ
+_STRING8D_105: DB " 4 Tree's Edge", END_STRING ; 4 きの ちょくぜん
+_STRING8D_106: DB " 5 Keep Middle!", END_STRING ; 5 どまんなかをキープせよ!
+_STRING8D_107: DB " 6 From the Back", END_STRING ; 6 バックティーから はじめ!
+_STRING8D_108: DB " 7 Hit the Gate!", END_STRING ; 7 ゲートに ちょくげき!
+_STRING8D_109: DB " 8 Bumpy Road", END_STRING ; 8 デコボコをぬけて
+_STRING8D_110: DB " 9 Line Up Gate", END_STRING ; 9 せいれつゲート
+_STRING8D_111: DB "10 Hill & Pond", END_STRING ;10 おかにのせて イケ!
+_STRING8D_112: DB "11 Stonehenge", END_STRING ;11 ストーンヘンジ
+_STRING8D_113: DB "12 To the Heart!", END_STRING ;12 ハートをねらいうち!
+_STRING8D_114: DB "13 Here & There", END_STRING ;13 あっちこっちゲート
+_STRING8D_115: DB "14 On the Axis", END_STRING ;14 よこにも たてにも
+_STRING8D_116: DB "15 To the Woods", END_STRING ;15 はやしにむかって
+_STRING8D_117: DB "16 Tree Hugging", END_STRING ;16 ツリーに タッチ
+_STRING8D_118: DB "17 Back & Forth", END_STRING ;17 いったり きたり
+_STRING8D_119: DB "18 Fairway Edge", END_STRING ;18 フェアウェイの はしっこ
 
-_STRING8D_120: DB " 1 Caribbean", END_STRING ; 1 もりごえ いけごえ
-_STRING8D_121: DB " 2 Caribbean", END_STRING ; 2 たちはだかるゲート
-_STRING8D_122: DB " 3 Caribbean", END_STRING ; 3 かくれんぼゲート
-_STRING8D_123: DB " 4 Caribbean", END_STRING ; 4 おかにのせて いこう!
-_STRING8D_124: DB " 5 Caribbean", END_STRING ; 5 まんまるいけのゲート
-_STRING8D_125: DB " 6 Caribbean", END_STRING ; 6 サンドイッチゲート
-_STRING8D_126: DB " 7 Caribbean", END_STRING ; 7 イケのなかの 3ゲート
-_STRING8D_127: DB " 8 Caribbean", END_STRING ; 8 ひらけ ゴマ!
-_STRING8D_128: DB " 9 Caribbean", END_STRING ; 9 まっすぐ イケ!
-_STRING8D_129: DB "10 Caribbean", END_STRING ;10 はやしのむこうがわ
-_STRING8D_130: DB "11 Caribbean", END_STRING ;11 みかづきいけのゲート
-_STRING8D_131: DB "12 Caribbean", END_STRING ;12 サンドイッチゲート その2
-_STRING8D_132: DB "13 Caribbean", END_STRING ;13 ウォーターゲート
-_STRING8D_133: DB "14 Caribbean", END_STRING ;14 ふたごゲート
-_STRING8D_134: DB "15 Caribbean", END_STRING ;15 いけなんか こわくない!
-_STRING8D_135: DB "16 Caribbean", END_STRING ;16 ストーンヘンジ ふたたび
-_STRING8D_136: DB "17 Caribbean", END_STRING ;17 うまのせフェアウェイゲート
-_STRING8D_137: DB "18 Caribbean", END_STRING ;18 うみにむかって ショット!
+_STRING8D_120: DB " 1 Forest Pond", END_STRING ; 1 もりごえ いけごえ
+_STRING8D_121: DB " 2 In the Way", END_STRING ; 2 たちはだかるゲート
+_STRING8D_122: DB " 3 Hide & Seek", END_STRING ; 3 かくれんぼゲート
+_STRING8D_123: DB " 4 To the Hills!", END_STRING ; 4 おかにのせて いこう!
+_STRING8D_124: DB " 5 Circle Pond", END_STRING ; 5 まんまるいけのゲート
+_STRING8D_125: DB " 6 Sandwhiched", END_STRING ; 6 サンドイッチゲート
+_STRING8D_126: DB " 7 Center Pond", END_STRING ; 7 イケのなかの 3ゲート
+_STRING8D_127: DB " 8 Open Sesame!", END_STRING ; 8 ひらけ ゴマ!
+_STRING8D_128: DB " 9 To the Pond", END_STRING ; 9 まっすぐ イケ!
+_STRING8D_129: DB "10 Past the Wood", END_STRING ;10 はやしのむこうがわ
+_STRING8D_130: DB "11 Crescent Pond", END_STRING ;11 みかづきいけのゲート
+_STRING8D_131: DB "12 Sandwhiched 2", END_STRING ;12 サンドイッチゲート その2
+_STRING8D_132: DB "13 Water Gates", END_STRING ;13 ウォーターゲート
+_STRING8D_133: DB "14 Twin Gates", END_STRING ;14 ふたごゲート
+_STRING8D_134: DB "15 Plucky Pond", END_STRING ;15 いけなんか こわくない!
+_STRING8D_135: DB "16 Stonehenge 2", END_STRING ;16 ストーンヘンジ ふたたび
+_STRING8D_136: DB "17 Fairway Ridge", END_STRING ;17 うまのせフェアウェイゲート
+_STRING8D_137: DB "18 To the Sea!", END_STRING ;18 うみにむかって ショット!
 
-_STRING8D_138: DB " 1 Pyramid", END_STRING ; 1 アプローチまえの よりみち
-_STRING8D_139: DB " 2 Pyramid", END_STRING ; 2 すなどけいトライアングル
-_STRING8D_140: DB " 3 Pyramid", END_STRING ; 3 ぴったり せいれつゲート
-_STRING8D_141: DB " 4 Pyramid", END_STRING ; 4 いやんバンカー
-_STRING8D_142: DB " 5 Pyramid", END_STRING ; 5 3ぼんヤシのき こえろ!
-_STRING8D_143: DB " 6 Pyramid", END_STRING ; 6 おかからころげて・・・
-_STRING8D_144: DB " 7 Pyramid", END_STRING ; 7 ゲートでガード
-_STRING8D_145: DB " 8 Pyramid", END_STRING ; 8 がけっぷち スレスレ
-_STRING8D_146: DB " 9 Pyramid", END_STRING ; 9 バックオーライ
-_STRING8D_147: DB "10 Pyramid", END_STRING ;10 どきょうだめし
-_STRING8D_148: DB "11 Pyramid", END_STRING ;11 おもいきって のせきって!
-_STRING8D_149: DB "12 Pyramid", END_STRING ;12 いそがば まわれ
-_STRING8D_150: DB "13 Pyramid", END_STRING ;13 フェアウェイのしまわたり
-_STRING8D_151: DB "14 Pyramid", END_STRING ;14 すなのかわのゲート
-_STRING8D_152: DB "15 Pyramid", END_STRING ;15 ヤシのきと いっしょ
-_STRING8D_153: DB "16 Pyramid", END_STRING ;16 いちばんおくのターゲット
-_STRING8D_154: DB "17 Pyramid", END_STRING ;17 グリーンへ いっちょくせん
-_STRING8D_155: DB "18 Pyramid", END_STRING ;18 ヤシのきばやしの いりぐち
+_STRING8D_138: DB " 1 Take a Detour", END_STRING ; 1 アプローチまえの よりみち
+_STRING8D_139: DB " 2 Tri Hourglass", END_STRING ; 2 すなどけいトライアングル
+_STRING8D_140: DB " 3 Perfect Line", END_STRING ; 3 ぴったり せいれつゲート
+_STRING8D_141: DB " 4 Awful Bunkers", END_STRING ; 4 いやんバンカー
+_STRING8D_142: DB " 5 Palm Crossing", END_STRING ; 5 3ぼんヤシのき こえろ!
+_STRING8D_143: DB " 6 Downhill Roll", END_STRING ; 6 おかからころげて・・・
+_STRING8D_144: DB " 7 Gate Guard", END_STRING ; 7 ゲートでガード
+_STRING8D_145: DB " 8 Clifftop Skim", END_STRING ; 8 がけっぷち スレスレ
+_STRING8D_146: DB " 9 Back to Right", END_STRING ; 9 バックオーライ
+_STRING8D_147: DB "10 Courage Trial", END_STRING ;10 どきょうだめし
+_STRING8D_148: DB "11 Daring Hole!", END_STRING ;11 おもいきって のせきって!
+_STRING8D_149: DB "12 Slow & Steady", END_STRING ;12 いそがば まわれ
+_STRING8D_150: DB "13 Isle Crossing", END_STRING ;13 フェアウェイのしまわたり
+_STRING8D_151: DB "14 Sandy River", END_STRING ;14 すなのかわのゲート
+_STRING8D_152: DB "15 Along Palms", END_STRING ;15 ヤシのきと いっしょ
+_STRING8D_153: DB "16 End Target", END_STRING ;16 いちばんおくのターゲット
+_STRING8D_154: DB "17 To the Green", END_STRING ;17 グリーンへ いっちょくせん
+_STRING8D_155: DB "18 Palm's Edge", END_STRING ;18 ヤシのきばやしの いりぐち
 
-_STRING8D_156: DB " 1 Britten", END_STRING ; 1 たにぞこの 3ゲート
-_STRING8D_157: DB " 2 Britten", END_STRING ; 2 ろっぽんすぎのゲート
-_STRING8D_158: DB " 3 Britten", END_STRING ; 3 シマからの アプローチ
-_STRING8D_159: DB " 4 Britten", END_STRING ; 4 でこぼこ フェアウェイ
-_STRING8D_160: DB " 5 Britten", END_STRING ; 5 がけっぷちへ トライ!
-_STRING8D_161: DB " 6 Britten", END_STRING ; 6 ちょっかくゲート
-_STRING8D_162: DB " 7 Britten", END_STRING ; 7 ヒースからの だっしゅつ
-_STRING8D_163: DB " 8 Britten", END_STRING ; 8 やじるしにむかって すすめ
-_STRING8D_164: DB " 9 Britten", END_STRING ; 9 れんぞく ハードルごえ
-_STRING8D_165: DB "10 Britten", END_STRING ;10 さいごのストーンヘンジ
-_STRING8D_166: DB "11 Britten", END_STRING ;11 ヒースで ヒーヒー
-_STRING8D_167: DB "12 Britten", END_STRING ;12 はしっこゲート
-_STRING8D_168: DB "13 Britten", END_STRING ;13 みつまたクリークのゲート
-_STRING8D_169: DB "14 Britten", END_STRING ;14 OBごえの 3ゲート
-_STRING8D_170: DB "15 Britten", END_STRING ;15 バンカーのてまえゲート
-_STRING8D_171: DB "16 Britten", END_STRING ;16 コロコロころがせ
-_STRING8D_172: DB "17 Britten", END_STRING ;17 くぼみのゲート
-_STRING8D_173: DB "18 Britten", END_STRING ;18 OBこえたら またOB
+_STRING8D_156: DB " 1 3 Gate Gorge", END_STRING ; 1 たにぞこの 3ゲート
+_STRING8D_157: DB " 2 6 Cedar Gate", END_STRING ; 2 ろっぽんすぎのゲート
+_STRING8D_158: DB " 3 Isle Approach", END_STRING ; 3 シマからの アプローチ
+_STRING8D_159: DB " 4 Bumpy Fairway", END_STRING ; 4 でこぼこ フェアウェイ
+_STRING8D_160: DB " 5 On the Edge!", END_STRING ; 5 がけっぷちへ トライ!
+_STRING8D_161: DB " 6 Corner Gate", END_STRING ; 6 ちょっかくゲート
+_STRING8D_162: DB " 7 Moor Escape", END_STRING ; 7 ヒースからの だっしゅつ
+_STRING8D_163: DB " 8 To the Arrow", END_STRING ; 8 やじるしにむかって すすめ
+_STRING8D_164: DB " 9 Hurdle Run", END_STRING ; 9 れんぞく ハードルごえ
+_STRING8D_165: DB "10 Stonehenge 3", END_STRING ;10 さいごのストーンヘンジ
+_STRING8D_166: DB "11 Misery Moor", END_STRING ;11 ヒースで ヒーヒー
+_STRING8D_167: DB "12 Edge Gates", END_STRING ;12 はしっこゲート
+_STRING8D_168: DB "13 Trident Creek", END_STRING ;13 みつまたクリークのゲート
+_STRING8D_169: DB "14 OB Gate Trio", END_STRING ;14 OBごえの 3ゲート
+_STRING8D_170: DB "15 Bunker Gates", END_STRING ;15 バンカーのてまえゲート
+_STRING8D_171: DB "16 RolyPoly Roll", END_STRING ;16 コロコロころがせ
+_STRING8D_172: DB "17 Ditch Gates", END_STRING ;17 くぼみのゲート
+_STRING8D_173: DB "18 From OB to OB", END_STRING ;18 OBこえたら またOB
 
 
 ;MINIGAMES

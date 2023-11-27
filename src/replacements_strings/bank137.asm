@@ -2222,9 +2222,9 @@ _STRING89_196: ;originally $6177
 
 
 ; GLOSSARY
-_STRING89_197: DB "1W", END_STRING ;アイアン
-_STRING89_198: DB "3W", END_STRING ;アイランドグリーン
-_STRING89_199: DB "4W", END_STRING ;アウト
+_STRING89_197: DB "1w", END_STRING ;アイアン
+_STRING89_198: DB "3w", END_STRING ;アイランドグリーン
+_STRING89_199: DB "4w", END_STRING ;アウト
 _STRING89_200: DB "address", END_STRING ;アウトサイドイン
 _STRING89_201: DB "against", END_STRING ;アゲンスト
 _STRING89_202: DB "age shoot", END_STRING ;アップヒル
@@ -2237,7 +2237,7 @@ _STRING89_208: DB "average", END_STRING ;アンジュレーション
 _STRING89_209: DB "average drive", END_STRING ;アンダーパー
 _STRING89_210: DB "average putts", END_STRING ;アンプレヤブル
 _STRING89_211: DB "average score", END_STRING ;イーグル
-_STRING89_212: DB "AW", END_STRING ;イーブンパー
+_STRING89_212: DB "aw", END_STRING ;イーブンパー
 _STRING89_213: DB "back", END_STRING ;イップス
 _STRING89_214: DB "back tee", END_STRING ;イン
 _STRING89_215: DB "backspin", END_STRING ;インサイドアウト
@@ -2360,7 +2360,7 @@ _STRING89_331: DB "nassau", END_STRING ;ネット
 _STRING89_332: DB "near-pin", END_STRING ;パー
 _STRING89_333: DB "neck", END_STRING ;パーオン
 _STRING89_334: DB "net", END_STRING ;パーオンりつ
-_STRING89_335: DB "OB", END_STRING ;パーセーブ
+_STRING89_335: DB "ob", END_STRING ;パーセーブ
 _STRING89_336: DB "on", END_STRING ;パーセーブりつ
 _STRING89_337: DB "on frw percent.", END_STRING ;バーディ (on fairway percentage)
 _STRING89_338: DB "outside-in", END_STRING ;ハーフターン
@@ -2370,7 +2370,7 @@ _STRING89_341: DB "par on", END_STRING ;パーブレイクりつ
 _STRING89_342: DB "par on percent.", END_STRING ;ハザード (par on percentage)
 _STRING89_343: DB "par play", END_STRING ;パター
 _STRING89_344: DB "par save", END_STRING ;バックスイング
-_STRING89_345: DB "par saves prcnt", END_STRING ;バックスピン (par saves percentage)
+_STRING89_345: DB "par saves %", END_STRING ;バックスピン (par saves percentage)
 _STRING89_346: DB "partner", END_STRING ;パッティングライン
 _STRING89_347: DB "penalty", END_STRING ;バッフィー
 _STRING89_348: DB "pin", END_STRING ;はなみち
@@ -2381,14 +2381,14 @@ _STRING89_352: DB "pot bunker", END_STRING ;ビジター
 _STRING89_353: DB "putter", END_STRING ;ピッチショット
 _STRING89_354: DB "putt out", END_STRING ;ピッチングウェッジ
 _STRING89_355: DB "putting line", END_STRING ;ピン
-_STRING89_356: DB "PW", END_STRING ;ピンデッド
+_STRING89_356: DB "pw", END_STRING ;ピンデッド
 _STRING89_357: DB "rake", END_STRING ;ファー
 _STRING89_358: DB "recovery", END_STRING ;フィニッシュ
 _STRING89_359: DB "rough", END_STRING ;フェアウェイ
 _STRING89_360: DB "round", END_STRING ;フェアウェイウッド
 _STRING89_361: DB "run", END_STRING ;フェアウェイキープりつ
 _STRING89_362: DB "running", END_STRING ;フェアウェイバンカー
-_STRING89_363: DB "snd saves prcnt", END_STRING ;フェース (sand saves percentage)
+_STRING89_363: DB "sand saves %", END_STRING ;フェース (sand saves percentage)
 _STRING89_364: DB "sand wedge", END_STRING ;フェード
 _STRING89_365: DB "score", END_STRING ;フォーク
 _STRING89_366: DB "scratch", END_STRING ;フォロー
