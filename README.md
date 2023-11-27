@@ -63,18 +63,14 @@ As a bonus, under Options > Glossary > Page 9, you will find this information, j
 Possible to-do list:
 * Borrow VWF subroutine from Mario Golf USA/Europe
   The game would benefit of a variable width font, but since there is no RPG mode and strings are mostly menus, it's not a priority.
-* A few big graphic titles (new character/course unlocked and local multiplayer): they can be translated, but it would require some pixelart work and they wouln't provide any additional information at all.
-* Strings
-    * Go-go Gates names
-      
-      There's little space for Go-go Gates course names, and english translation cannot fit. VWF would help in this case. It's not a big loss, as they weren't giving any real useful information. They have been temporarily translated with generic readable names.
-    * Net Clubhouse dialogs
-      
-      There are a lot of untranslated strings yet that are related to the Net Clubhouse (online mode): competitions, connection error codes, etc. Since these are not accesible yet, they aren't needed for now. The script is extracted in `replace_strings` folder, so it should be pretty easy for anyone to translate them in a future.
+* A few big graphic titles (new character/course unlocked and local multiplayer)
+  they can be translated, but it would require some pixelart work and they wouln't provide any additional information at all.
+* Net Clubhouse dialogs
+  There are a lot of untranslated strings yet that are related to the Net Clubhouse (online mode): competitions, connection error codes, etc. Since these are not accesible yet, they aren't needed for now. The script is extracted in `replace_strings` folder, so it should be pretty easy for anyone to translate them in a future.
 
 ## How to compile
 1. Download [RGBDS](https://github.com/rednex/rgbds/) and extract it in `rgb` folder
-2. Place Mobile Golf (Japan) ROM (crc32: `35FC5B32`) in roms folder and rename it to `mobile_golf_jp.gbc`
+2. Place Mobile Golf (Japan) ROM (crc32: `35fc5b32`) in roms folder and rename it to `mobile_golf_jp.gbc`
 3. (optional) Change the flag at `alternate_unlocking_method.asm` if needed in order to enable/disable the alternate unlocking methods
 4. Run `assemble.bat` (Windows) or `assemble.sh` (Unix), it will create `mobile_golf_en.gbc`
 
