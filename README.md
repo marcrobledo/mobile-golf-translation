@@ -69,7 +69,7 @@ Possible to-do list:
   There are a lot of untranslated strings yet that are related to the Net Clubhouse (online mode): competitions, connection error codes, etc. Since these are not accesible yet, they aren't needed for now. The script is extracted in `replace_strings` folder, so it should be pretty easy for anyone to translate them in a future.
 
 ## How to compile
-1. Download [RGBDS](https://github.com/rednex/rgbds/) and extract it in `rgb` folder
+1. Download [RGBDS](https://github.com/rednex/rgbds/) and extract it in `rgbds` folder
 2. Place Mobile Golf (Japan) ROM (crc32: `35fc5b32`) in roms folder and rename it to `mobile_golf_jp.gbc`
 3. (optional) Change the flag at `alternate_unlocking_method.asm` if needed in order to enable/disable the alternate unlocking methods
 4. Run `assemble.bat` (Windows) or `assemble.sh` (Unix), it will create `mobile_golf_en.gbc`
