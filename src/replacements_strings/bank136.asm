@@ -2756,10 +2756,10 @@ _DIALOG497: ;originally $60b9
 	DB END_STRING
 
 _DIALOG498: ;originally $60c6
-	DB "What is your" ;しゅっしんちなど すきなことばを
+	DB "Enter your hobby," ;しゅっしんちなど すきなことばを
 	DB END_STRING
 _DIALOG499: ;originally $60d9
-	DB "hobby?" ;にゅうりょくしてください
+	DB "please?" ;にゅうりょくしてください
 	DB END_STRING
 _DIALOG500: ;originally $60e7
 	DB "Enter birth year," ;あなたの うまれたとしを せいれきで
@@ -3047,19 +3047,19 @@ _DIALOG563: ;originally $6349
 	DB BR
 	DB "Message" ;メッセージ       
 	DB BR
-	DB "Quit" ;ちゅうだんする
+	DB "Save & Exit" ;ちゅうだんする
 	DB END_STRING
 
 _DIALOG564: ;originally $6371
 	DB $c5, $cb, $de, $b9, $de, $b0, $bc, $ae, $dd ;ナビゲーション
 	DB BR
-	DB "Character" ;キャラデータ
+	DB "Char. Data" ;キャラデータ
 	DB BR
 	DB $bd, $c0, $b0, $b9, $de, $af, $c4 ;スターゲット
 	DB BR
 	DB "Message" ;メッセージ       
 	DB BR
-	DB "Quit" ;ちゅうだんする
+	DB "Save & Exit" ;ちゅうだんする
 	DB END_STRING
 
 
@@ -3075,7 +3075,7 @@ _DIALOG565:
 	DB BR
 	DB "Give Up" ;ギブアップ
 	DB BR
-	DB "Quit" ;ちゅうだんする
+	DB "Save & Exit" ;ちゅうだんする
 	DB END_STRING
 
 _DIALOG566: ;originally $63d4
@@ -3101,7 +3101,7 @@ _DIALOG567: ;originally $6406
 	DB BR
 	DB "Give Up" ;ギブアップ
 	DB BR
-	DB "Quit" ;ちゅうだんする
+	DB "Save & Exit" ;ちゅうだんする
 	DB END_STRING
 
 _DIALOG568: ;training
@@ -3226,7 +3226,7 @@ _DIALOG580: ;minigolf
 	DB BR
 	DB "Give Up" ;ギブアップ
 	DB BR
-	DB "Quit" ;ちゅうだんする
+	DB "Save & Exit" ;ちゅうだんする
 	DB END_STRING
 
 _DIALOG581: ;originally $65dc
@@ -3246,7 +3246,7 @@ _DIALOG582: ;speed golf
 	DB BR
 	DB "Settings" ;せってい
 	DB BR
-	DB "Quit" ;ちゅうだんする
+	DB "Save & Exit" ;ちゅうだんする
 	DB END_STRING
 
 _DIALOG583: ;originally $6619

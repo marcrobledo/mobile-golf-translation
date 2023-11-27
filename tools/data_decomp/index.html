@@ -5,6 +5,21 @@
 	<meta http-equiv="content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 	<script type="text/javascript"><!--
+/*
+	this web tool allows you to decompress and recompress data from Mobile Golf ROM
+	you can import just by pasting raw data in the left text area, or you can even import a PNG with graphics
+	recompressed data will appear in right text area
+
+	it is not the most user friendly tool, but it works at least
+
+	note: it might not work in some browsers if trying to open the file in local
+	solutions:
+	 - use a webserver (a basic NodeJS server should work)
+	 - if using Firefox, set security.fileuri.strict_origin_policy to false in about:config, this should
+	   make it work
+*/
+
+
 const ROM_FILE='../../roms/mobile_golf_jp.gbc';
 
 const ROM_KNOWN_SECTIONS=[
@@ -83,6 +98,7 @@ const ROM_KNOWN_SECTIONS=[
 	{bank:0x43, offset:0x4527, name:'Multiplayer Menu - Tileset'},
 	{bank:0x43, offset:0x5931, name:'Multiplayer Menu - Title'},
 	{bank:0x43, offset:0x5f00, name:'Options BG'},
+	{bank:0x43, offset:0x69fd, name:'Options BG - Map'},
 	{bank:0x43, offset:0x6c68, name:'Options REPLAYS'},
 	{bank:0x43, offset:0x6d15, name:'Options DICTIONARY'},
 	{bank:0x43, offset:0x6df1, name:'Options ERASE DATA'},

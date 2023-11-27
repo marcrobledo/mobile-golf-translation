@@ -1,15 +1,15 @@
 SECTION "Bank 51 - Stats - Minigames - Title", ROMX[$5345],BANK[$33]
-;compressed data size: 150 bytes (saved 42 bytes, 21.879999999999995%)
-DB $fd, $00, $ff, $e0, $31, $00, $4a, $31, $4a, $31, $7f, $44, $3b, $40, $3f, $4a
-DB $35, $4e, $f6, $e0, $f2, $fe, $e3, $31, $e5, $e1, $ff, $e2, $b6, $00, $49, $b6
-DB $3f, $49, $b6, $48, $b7, $48, $b7, $f8, $e1, $fe, $e5, $fd, $b6, $e0, $e6, $6c
-DB $00, $93, $6c, $92, $6d, $3f, $92, $6d, $12, $ed, $12, $ed, $f8, $e1, $fe, $e1
-DB $f7, $93, $6c, $6c, $e0, $e6, $e6, $00, $19, $e6, $ff, $10, $ef, $f6, $09, $f6
-DB $09, $96, $69, $ff, $90, $6f, $d0, $2f, $d6, $29, $16, $e9, $f7, $36, $c9, $e9
-DB $e0, $e6, $45, $00, $aa, $45, $ff, $aa, $45, $92, $6d, $82, $7d, $aa, $55, $e9
-DB $ba, $f6, $e0, $fe, $e3, $45, $e0, $e6, $cc, $00, $32, $ff, $cc, $22, $dc, $ec
-DB $10, $a8, $10, $64, $ff, $98, $52, $8c, $8a, $04, $da, $04, $22, $0f, $dc, $24
-DB $d8, $d8, $e4, $e2, $00, $00
+;compressed data size: 143 bytes (saved 49 bytes, 25.53%)
+DB $fd, $00, $ff, $e0, $66, $00, $99, $66, $99, $66, $23, $81, $7e, $fe, $e1, $f6
+DB $e1, $fe, $e3, $66, $e5, $e1, $ff, $e2, $ff, $db, $00, $24, $db, $24, $db, $20
+DB $df, $d3, $20, $df, $f8, $e1, $fe, $e5, $db, $e0, $e6, $67, $00, $ff, $98, $67
+DB $90, $6f, $93, $6c, $93, $6c, $fb, $92, $6d, $fe, $e3, $90, $6f, $98, $67, $67
+DB $fe, $e0, $e6, $9c, $00, $63, $9c, $41, $be, $c9, $ff, $36, $c9, $36, $49, $b6
+DB $41, $be, $41, $ff, $be, $49, $b6, $49, $b6, $c9, $36, $36, $fe, $e0, $e6, $cd
+DB $00, $32, $cd, $32, $cd, $02, $d1, $fd, $fe, $e1, $f6, $e1, $fe, $e3, $cd, $e0
+DB $e6, $ce, $00, $ff, $31, $ce, $21, $de, $66, $98, $64, $98, $ff, $22, $dc, $31
+DB $ce, $69, $86, $79, $86, $1f, $21, $de, $22, $dc, $fc, $e4, $e2, $00, $00
+
 
 
 SECTION "Bank 51 - Net Clubhouse - Competition Room Counter Title", ROMX[$6efe],BANK[$33]
