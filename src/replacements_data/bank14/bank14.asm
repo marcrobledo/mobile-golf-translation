@@ -207,5 +207,6 @@ DB $5f, $0f, $7c, $28, $fb, $69, $db, $49, $fd, $49, $90, $e0, $4f, $05, $65, $2
 DB $64, $20, $3c, $b0, $e5, $40, $e1, $cd, $41, $f6, $06, $b0, $e5, $e0, $c7, $ec
 DB $b0, $e3, $00, $c3, $50, $00, $b0, $e5, $0a, $00, $1f, $3e, $e0, $e1, $6f, $5c
 DB $08, $7a, $28, $b0, $e1, $60, $cd, $00, $00
+DB $00, $00 ;force end of data to ensure valid decompression (fixes leaderboard crash in 2.0)
 
 
