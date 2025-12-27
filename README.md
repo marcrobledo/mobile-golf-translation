@@ -63,16 +63,14 @@ As a bonus, under Options > Glossary > Page 9, you will find this information, j
 Possible to-do list:
 - Borrow VWF subroutine from Mario Golf USA/Europe  
   The game would benefit of a variable width font, but since there is no RPG mode and strings are mostly menus, it's not a priority.
-- A few big graphic titles (new character/course unlocked and local multiplayer)  
-  they can be translated, but it would require some pixelart work and they woulnd't provide any additional information at all.
-- Net Clubhouse dialogs  
-  There are a lot of untranslated strings yet that are related to the Net Clubhouse (online mode): competitions, connection error codes, etc. Since these are not accesible yet, they aren't needed for now. The script is extracted in `replace_strings` folder, so it should be pretty easy for anyone to translate them in a future.
+- Net Clubhouse texts and graphics
+  There are still some untranslated things that are related to the Net Clubhouse (online mode): competitions, connection error codes, etc. These are not accesible anyway, since the online functionality is not available anymore. The script is extracted in `texts` folder, so it should be pretty easy for anyone to translate them, once REON's servers start running.
 
 ## How to compile
-1. Download [RGBDS](https://github.com/rednex/rgbds/) and extract it in `rgbds` folder
-2. Place Mobile Golf (Japan) ROM (crc32: `35fc5b32`) in roms folder and rename it to `mobile_golf_jp.gbc`
+1. Download and install [RGBDS](https://github.com/rednex/rgbds/)
+2. Place `Mobile Golf (Japan).gbc` ROM (crc32: `35fc5b32`) in `src/original_rom/` folder and rename it to `mobile_golf_jp.gbc`
 3. (optional) Change the flag at `alternate_unlocking_method.asm` if needed in order to enable/disable the alternate unlocking methods
-4. Run `assemble.bat` (Windows) or `assemble.sh` (Unix), it will create `mobile_golf_en.gbc`
+4. Run `make` (Unix) or `make_win.bat` (Windows), it will create `bin/mobile_golf_en.gbc`
 
 ## Credits
 ProstatePunch - text edits and corrections

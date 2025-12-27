@@ -1,52 +1,59 @@
-;set this to zero to create the vanilla_unlock patch
-ALTERNATE_UNLOCK_CONTENT_METHOD EQU 1
+SECTION "RAM - Current save - Unlocked courses", WRAM0[$c8ce]
+_ram_current_save_completed_tournaments: DB
+SECTION "RAM - Current save - Unlocked clubs", WRAM0[$c8d4]
+_ram_current_save_unlocked_clubs: DS 5
+SECTION "RAM - Current save - Mobile points", WRAM0[$ca3e]
+_ram_current_save_mobile_points: DB
+
+
+SECTION "SRAM", SRAM[$a010], BANK[0]
+_sram_checksum: DW ;$a010
+_sram_unknown: DS 14 ;$a012-a01f
+_sram_unlocked_characters_normal: DB ;$a020 - lower bits: Bean, Rozary, Powert and Bird
+_sram_unlocked_characters_mobile: DB ;$a021 - higher bits: Mario series, lower bits: Mario Golf avatars
+_sram_unlocked_courses_1: DB ;$a022
+_sram_unlocked_courses_2: DB ;$a023
 
 
 
 
-IF ALTERNATE_UNLOCK_CONTENT_METHOD == 1
 
-;UNLOCK MOBILE CONTENT
-_SRAM_UNLOCKED_COURSES_1		EQU $a022
-UNLOCKED_COURSES_1_COURSE_6		EQU %00000010 ;b1=Course 6
-UNLOCKED_COURSES_1_COURSE_7		EQU %00000001 ;b0=Course 7
-_SRAM_UNLOCKED_COURSES_2		EQU $a023
-UNLOCKED_COURSES_2_MINIGAMES1	EQU %00000001 ;b0=extra minigame 1
-UNLOCKED_COURSES_2_MINIGAMES2	EQU %00000010 ;b1=extra minigame 2
-UNLOCKED_COURSES_2_MINIGAMES3	EQU %00000100 ;b2=extra minigame 3
-UNLOCKED_COURSES_2_MINIGAMES4	EQU %00001000 ;b3=extra minigame 4
-UNLOCKED_COURSES_2_COURSE_S1	EQU %01000000 ;b6=course S1 (can be unlocked without online)
-UNLOCKED_COURSES_2_COURSE_S2	EQU %10000000 ;b7=course S2 (can be unlocked without online)
 
-_RAM_CURRENT_SLOT_COMPLETED_TOURNAMENTS		EQU $c8ce
-COMPLETED_TOURNAMENTS_STATES				EQU %10000000
-COMPLETED_TOURNAMENTS_CARIBBEAN				EQU %01000000
-COMPLETED_TOURNAMENTS_PYRAMID				EQU %00100000
-COMPLETED_TOURNAMENTS_BRITTEN				EQU %00010000
-COMPLETED_TOURNAMENTS_JIPANGU				EQU %00001000
-COMPLETED_TOURNAMENTS_ATLANTIC				EQU %00000100
-COMPLETED_TOURNAMENTS_PACIFIC				EQU %00000010
 
-_RAM_CURRENT_SLOT_UNLOCKED_CLUBS_1 EQU $c8d4
-UNLOCKED_CLUBS_1_ALL EQU %00011111 ;b0=CONTROL IRON, b1=CONTROL WOOD, b2=LONG DRIVE WEDGE, b3=LONG DRIVE IRON, b4=LONG DRIVE WOOD
-_RAM_CURRENT_SLOT_UNLOCKED_CLUBS_2 EQU $c8d5
-UNLOCKED_CLUBS_2_ALL EQU %01110011 ;b0=LOW-BALL WOOD, b1=BACKSPIN WEDGE, b4=HANDLING WEDGE, b5=HANDLING IRON, b6=HANDLING WOOD
-_RAM_CURRENT_SLOT_UNLOCKED_CLUBS_3 EQU $c8d6
-UNLOCKED_CLUBS_3_ALL EQU %11111111 ;b0=STRAIGHT WEDGE, b1=STRAIGHT IRON, b2=STRAIGHT WOOD, b3=MEAT WEDGE, b4=MEAT IRON, b5=MEAT WOOD, b6=LOW-BALL WEDGE, b7=LOW-BALL IRON
-_RAM_CURRENT_SLOT_UNLOCKED_CLUBS_4 EQU $c8d7
-UNLOCKED_CLUBS_4_ALL EQU %11001100 ;b2=LOW SPIN WEDGE, b3=LOW SPIN IRON, b6=BIG DRIVE IRON, b7=BIG DRIVE WOOD
-_RAM_CURRENT_SLOT_UNLOCKED_CLUBS_5 EQU $c8d8
-UNLOCKED_CLUBS_5_ALL EQU %11000000 ;b6=GAMBLING WOOD, b7=HYPERSPIN WEDGE
 
-_RAM_CURRENT_SLOT_MOBILE_POINTS EQU $ca3e
+DEF UNLOCKED_COURSES_1_COURSE_6		EQU %00000010 ;b1=Course 6
+DEF UNLOCKED_COURSES_1_COURSE_7		EQU %00000001 ;b0=Course 7
+
+
+DEF UNLOCKED_COURSES_2_MINIGAMES1	EQU %00000001 ;b0=extra minigame 1
+DEF UNLOCKED_COURSES_2_MINIGAMES2	EQU %00000010 ;b1=extra minigame 2
+DEF UNLOCKED_COURSES_2_MINIGAMES3	EQU %00000100 ;b2=extra minigame 3
+DEF UNLOCKED_COURSES_2_MINIGAMES4	EQU %00001000 ;b3=extra minigame 4
+DEF UNLOCKED_COURSES_2_COURSE_S1_S2	EQU %11_000000 ;b6=courses S1 and S2 (can be unlocked without online)
+
+DEF COMPLETED_TOURNAMENTS_STATES				EQU %10000000
+DEF COMPLETED_TOURNAMENTS_CARIBBEAN				EQU %01000000
+DEF COMPLETED_TOURNAMENTS_PYRAMID				EQU %00100000
+DEF COMPLETED_TOURNAMENTS_BRITTEN				EQU %00010000
+DEF COMPLETED_TOURNAMENTS_JIPANGU				EQU %00001000
+DEF COMPLETED_TOURNAMENTS_ATLANTIC				EQU %00000100
+DEF COMPLETED_TOURNAMENTS_PACIFIC				EQU %00000010
+
+DEF UNLOCKED_CLUBS_1_ALL EQU %00011111 ;b0=CONTROL IRON, b1=CONTROL WOOD, b2=LONG DRIVE WEDGE, b3=LONG DRIVE IRON, b4=LONG DRIVE WOOD
+DEF UNLOCKED_CLUBS_2_ALL EQU %01110011 ;b0=LOW-BALL WOOD, b1=BACKSPIN WEDGE, b4=HANDLING WEDGE, b5=HANDLING IRON, b6=HANDLING WOOD
+DEF UNLOCKED_CLUBS_3_ALL EQU %11111111 ;b0=STRAIGHT WEDGE, b1=STRAIGHT IRON, b2=STRAIGHT WOOD, b3=MEAT WEDGE, b4=MEAT IRON, b5=MEAT WOOD, b6=LOW-BALL WEDGE, b7=LOW-BALL IRON
+DEF UNLOCKED_CLUBS_4_ALL EQU %11001100 ;b2=LOW SPIN WEDGE, b3=LOW SPIN IRON, b6=BIG DRIVE IRON, b7=BIG DRIVE WOOD
+DEF UNLOCKED_CLUBS_5_ALL EQU %11000000 ;b6=GAMBLING WOOD, b7=HYPERSPIN WEDGE
+
 
 
 ;returns hl - checksum that will be stored in $a010
-SECTION "Bank 3 - Calculate checksum", ROMX[$49ab],BANK[$03]
+SECTION "Bank 3 - Calculate checksum", ROMX[$49ab], BANK[$03]
 calculate_checksum:
+	;...
 
 
-SECTION "Bank 3 - Save to SRAM", ROMX[$4c04],BANK[$03]
+SECTION "Bank 3 - Save to SRAM", ROMX[$4c04], BANK[$03]
 save_sram:
 	;call	$40f6
 	call	hook_unlock_mobile_content
@@ -70,11 +77,11 @@ hook_unlock_mobile_content:
 	;unlock clubs
 	ld		b, COMPLETED_TOURNAMENTS_STATES
 	ld		hl, _UNLOCKED_CLUBS_BYTES
-	ld		de, _RAM_CURRENT_SLOT_UNLOCKED_CLUBS_1
+	ld		de, _ram_current_save_unlocked_clubs
 
 	;check if TOURNAMENTS are completed
 .unlock_mobile_content_loop:
-	ld		a, [_RAM_CURRENT_SLOT_COMPLETED_TOURNAMENTS]
+	ld		a, [_ram_current_save_completed_tournaments]
 	and		b
 	jr		z, .finish
 
@@ -90,7 +97,7 @@ hook_unlock_mobile_content:
 	jr		z, .unlock_mobile_content_loop
 
 	;unlock courses & extra minigames (if Jipangu tournament is completed)
-	ld		de, _SRAM_UNLOCKED_COURSES_1
+	ld		de, _sram_unlocked_courses_1
 	
 	ld		a, [de]
 	or		[hl]
@@ -122,16 +129,13 @@ hook_unlock_mobile_content:
 
 
 
-;UNLOCK MOBILE CHARACTERS
-_SRAM_UNLOCKED_CHARACTERS_NORMAL EQU $a020 ;lower bits: Bean, Rozary, Powert and Bird
-_SRAM_UNLOCKED_CHARACTERS_MOBILE EQU $a021 ;higher bits: Mario series, lower bits: Mario Golf avatars
 
 
-SECTION "Bank 3 - Unlock character", ROMX[$4f39],BANK[$03]
+SECTION "Bank 3 - Unlock character", ROMX[$4f39], BANK[$03]
 ;call $49cc
 call unlock_mario_characters
 
-SECTION "Bank 3 - Free space", ROMX[$7ff5],BANK[$03]
+SECTION "Bank 3 - Free space", ROMX[$7ff5], BANK[$03]
 unlock_mario_characters:
 	bit		0, l
 	jr		nz, .no_a020 ;skip if unlocking a Mario Golf character (hl=$a021)
@@ -144,4 +148,3 @@ unlock_mario_characters:
 
 .no_a020:
 	jp $49cc
-ENDC

@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Assemble",
+			"type": "shell",
+			"command": "make",
+			"windows": {
+				"command": ".\\make_win.bat"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$rgbdserror",
+				"$rgbdslinkerror"
+			]
+		},
+		{
+			"label": "Clean",
+			"type": "shell",
+			"command": "make clean",
+			"windows": {
+				"command": "./make_win_clean.bat"
+			},
+		}
+	]
+}

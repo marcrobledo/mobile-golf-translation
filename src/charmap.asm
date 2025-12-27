@@ -1,14 +1,7 @@
-;オプション = OPTION
-
-;カメラモード = CAMERA MODE
-;コースぜんたいお = FULL COURSE
-;スコアカード = SCORECARD
-
-
-END_STRING		EQU	$00
-BR				EQU	$01
-NEXT_DIALOG		EQU	$02
-PAUSE			EQU	$03
+DEF END_STRING		EQU	$00
+DEF BR				EQU	$01
+DEF NEXT_DIALOG		EQU	$02
+DEF PAUSE			EQU	$03
 
 
 
@@ -80,6 +73,11 @@ CHARMAP "]", $5d
 CHARMAP "^", $5e
 CHARMAP "_", $5f
 ;CHARMAP "+-", $60
+
+
+
+;in order to add lowercase font, japanese characters from $61 to $7a were replaced
+;it's made so it follows the standard ASCII codes as well
 CHARMAP "a", $61
 CHARMAP "b", $62
 CHARMAP "c", $63

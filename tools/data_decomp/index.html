@@ -4,7 +4,7 @@
 	<title>Camelot's Data (de)compressor</title>
 	<meta http-equiv="content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-	<script type="text/javascript"><!--
+	<script type="text/javascript">
 /*
 	this web tool allows you to decompress and recompress data from Mobile Golf ROM
 	you can import just by pasting raw data in the left text area, or you can even import a PNG with graphics
@@ -19,201 +19,9 @@
 	   make it work
 */
 
-
-const ROM_FILE='../../roms/mobile_golf_jp.gbc';
-
-const ROM_KNOWN_SECTIONS=[
-	{bank:0x07, offset:0x6320, name:'Game - Got EXP points!'},
-
-	{bank:0x0b, offset:0x5e92, name:'Game - VS Results 2'},
-
-	{bank:0x0c, offset:0x5be0, name:'Game - Options - Glossary'},
-	{bank:0x0c, offset:0x655b, name:'Game - Options - Glossary 2'},
-	{bank:0x0c, offset:0x6e90, name:'Game - Status - Leaderboard - Font'},
-
-	{bank:0x0d, offset:0x59bb, name:'Multiplayer - Tileset'},
-	{bank:0x0d, offset:0x6d57, name:'Multiplayer - Map'},
-	{bank:0x0d, offset:0x6eae, name:'Multiplayer - Map attributes'},
-	{bank:0x0d, offset:0x7088, name:'Multiplayer - xxxxx'},
-	{bank:0x0d, offset:0x6461, name:'Game - Status - Half Round'},
-	{bank:0x0d, offset:0x4f2f, name:'Game - Unlocked character 1'},
-	{bank:0x0d, offset:0x43b0, name:'Game - Unlocked character 2'},
-	{bank:0x0d, offset:0x4db1, name:'Game - Unlocked character 3'},
-	{bank:0x0d, offset:0x4e5b, name:'Game - Unlocked character 4'},
-
-	{bank:0x0e, offset:0x4060, name:'Game - Status - Arrows'},
-	{bank:0x0e, offset:0x49c0, name:'Game - Status - Leaderboard'},
-	{bank:0x0e, offset:0x5a60, name:'Game - Status - Match Play - Scoreboard Font'},
-	{bank:0x0e, offset:0x7290, name:'Game - Status - Match Play - Scoreboard - Map'},
-
-	{bank:0x11, offset:0x51a8, name:'Game - Tournament results (Map)'},
-
-	{bank:0x2a, offset:0x516f, name:'Announcer - Complete'},
-	
-	{bank:0x33, offset:0x5345, name:'Status - Minigames - Title'},
-	{bank:0x33, offset:0x6efe, name:'Net Clubhouse - Competition Room Counter Title'},
-
-	{bank:0x34, offset:0x51c4, name:'Course Select - Tileset'},
-	{bank:0x34, offset:0x5c14, name:'Course Select - Title'},
-	{bank:0x34, offset:0x6f61, name:'Minigames - Title'},
-
-	{bank:0x35, offset:0x52fa, name:'Go-Go Gates - Title'},
-
-	{bank:0x36, offset:0x4126, name:'Game - Hole in One Tileset'},
-	{bank:0x36, offset:0x43ac, name:'Game - Hole in One Map'},
-	{bank:0x36, offset:0x57e2, name:'Game - Tournament Status Tileset'},
-	{bank:0x36, offset:0x5f83, name:'Game - Tournament Status Map Attr'},
-	{bank:0x36, offset:0x60b0, name:'Game - Tournament Status Map'},
-	{bank:0x36, offset:0x73b0, name:'Game - Status - Match Play - Scoreboard'},
-
-	{bank:0x3e, offset:0x4885, name:'Stats - BG'},
-	{bank:0x3e, offset:0x52cb, name:'Stats - Map'},	
-	{bank:0x3e, offset:0x549f, name:'Stats - Map Attributes'},
-	{bank:0x3e, offset:0x629b, name:'Stats - Option - Character Data'},
-	{bank:0x3e, offset:0x6376, name:'Stats - Option - Tournament'},
-	{bank:0x3e, offset:0x6448, name:'Stats - Option - Mach Play'},
-	{bank:0x3e, offset:0x6525, name:'Stats - Option - Speed Golf'},
-	{bank:0x3e, offset:0x6628, name:'Stats - Option - Go-Go Gates'},
-	{bank:0x3e, offset:0x66ff, name:'Stats - Option - Minigames'},
-	{bank:0x3e, offset:0x67bb, name:'Stats - Option - Title'},
-	{bank:0x3e, offset:0x70d4, name:'Stats - Speed Golf - Tileset'},
-	{bank:0x3e, offset:0x7dd3, name:'Stats - Speed Golf - Title'},
-	
-	
-	
-	
-	
-	
-	
-	
-	{bank:0x3f, offset:0x4e69, name:'Game - Status - Match Play - Arrow - Scoreboard'},
-	{bank:0x3f, offset:0x4ef8, name:'Game - Status - Header - Sudden Death'},
-	{bank:0x3f, offset:0x4fb5, name:'Game - Status - Header - Dormie'},
-
-	{bank:0x40, offset:0x5e4b, name:'Game - Club Slots - How many slots?'},
-	{bank:0x40, offset:0x6255, name:'Game - Club Slots - Title'},
-
-	{bank:0x42, offset:0x5f4b, name:'1 Player - Select Mode'},
-
-	{bank:0x43, offset:0x4527, name:'Multiplayer Menu - Tileset'},
-	{bank:0x43, offset:0x5931, name:'Multiplayer Menu - Title'},
-	{bank:0x43, offset:0x5f00, name:'Options BG'},
-	{bank:0x43, offset:0x69fd, name:'Options BG - Map'},
-	{bank:0x43, offset:0x6c68, name:'Options REPLAYS'},
-	{bank:0x43, offset:0x6d15, name:'Options DICTIONARY'},
-	{bank:0x43, offset:0x6df1, name:'Options ERASE DATA'},
-	{bank:0x43, offset:0x6ff7, name:'Options PASSWORD'},
-	{bank:0x43, offset:0x6f1d, name:'Options HEADER'},
-
-	{bank:0x44, offset:0x7453, name:'Delete Data - xxxxxxxxxxxxxxx'},
-	{bank:0x44, offset:0x7527, name:'Delete Data - xxxxxxxxxxxxxxx'},
-	{bank:0x44, offset:0x6c2c, name:'Delete Data - Tileset'},
-	{bank:0x44, offset:0x7279, name:'Delete Data - Map'},
-	{bank:0x44, offset:0x73a6, name:'Delete Data - Map attributes'},
-
-	{bank:0x45, offset:0x63e0, name:'Setup - BG'},
-	{bank:0x45, offset:0x72e6, name:'Setup - Title'},
-	{bank:0x45, offset:0x7160, name:'Setup - Stats Sprite'},
-	{bank:0x45, offset:0x7207, name:'Setup - Clubs Sprite'},
-
-	{bank:0x46, offset:0x64b1, name:'Character - Customize avatar!!!'},
-	{bank:0x46, offset:0x7082, name:'Character - Customize avatar'},
-	{bank:0x46, offset:0x5561, name:'Character status - Choose this avatar?'},
-	{bank:0x46, offset:0x52bf, name:'Character status - Level up'},
-
-	{bank:0x47, offset:0x4465, name:'Select player - Tileset'},
-	{bank:0x47, offset:0x4f41, name:'Select player - Title'},
-	{bank:0x47, offset:0x5780, name:'Select player - Options (Sprite  1)'},
-	{bank:0x47, offset:0x5882, name:'Select player - Options (Sprite  2)'},
-	{bank:0x47, offset:0x5fd0, name:'Select rival'},
-	{bank:0x47, offset:0x6b1a, name:'Lv. / Fade/Draw/Straight'},
-	{bank:0x47, offset:0x7159, name:'Delete data - Title'},
-	{bank:0x47, offset:0x7900, name:'Delete data - Delete All (Sprite 1)'},
-	{bank:0x47, offset:0x7a25, name:'Delete data - Delete All (Sprite 2)'},
-	{bank:0x47, offset:0x7b89, name:'Delete data - Delete Mobile (Sprite 1)'},
-	{bank:0x47, offset:0x7cbd, name:'Delete data - Delete Mobile (Sprite 2)'},
-
-	{bank:0x48, offset:0x4d90, name:'Select partner tileset'},
-	{bank:0x48, offset:0x59db, name:'Create character - Partner select - Title'},
-	{bank:0x48, offset:0x5ba8, name:'Create character - Select avatar'},
-	{bank:0x48, offset:0x618e, name:'Create character - Select avatar (Window)'},
-	{bank:0x48, offset:0x6350, name:'Create character - Select avatar (Window - With secret characters)'},
-	
-	{bank:0x53, offset:0x4b90, name:'Game - Status - Header - Match Play'},
-	{bank:0x53, offset:0x4c74, name:'Game - Results board - VS board'},
-	{bank:0x53, offset:0x5eb5, name:'Game - Results board - Time board'},
-	{bank:0x53, offset:0x64f8, name:'Game - Status - Header - Time board'},
-
-	{bank:0x54, offset:0x48dd, name:'Create character - Enter name 0'},
-	{bank:0x54, offset:0x4ad8, name:'Create character - Enter name 1'},
-	{bank:0x54, offset:0x4ba8, name:'Create character - Enter name 2'},
-	{bank:0x54, offset:0x4c6d, name:'Create character - Enter birth'},
-	{bank:0x54, offset:0x4d76, name:'Create character - Enter gender'},
-	{bank:0x54, offset:0x4f00, name:'Create character - Is it okay?'},
-
-	{bank:0x55, offset:0x51ef, name:'Limit clubs'},
-	{bank:0x55, offset:0x6b0b, name:'Club select'},
-	{bank:0x55, offset:0x721a, name:'Club select - Title'},
-
-	{bank:0x56, offset:0x5d71, name:'Stats - Match - Tileset'},
-	{bank:0x56, offset:0x689b, name:'Stats - Match - Title'},
-
-	{bank:0x57, offset:0x57d3, name:'Main Menu - BG'},
-	{bank:0x57, offset:0x6566, name:'Main Menu - Title'},
-	{bank:0x57, offset:0x66b7, name:'Main Menu - Menu Sprites 1'},
-	{bank:0x57, offset:0x6787, name:'Main Menu - Menu Sprites 2'},
-	{bank:0x57, offset:0x686f, name:'Main Menu - Menu Sprites 3'},
-	{bank:0x57, offset:0x6956, name:'Main Menu - Menu Sprites 4'},
-	
-	{bank:0x58, offset:0x4a7f, name:'Replays - Tileset'},
-	{bank:0x58, offset:0x63dc, name:'Mobile Pass - Tileset'},
-	{bank:0x58, offset:0x6d0b, name:'Mobile Pass - Map'},
-	{bank:0x58, offset:0x6e57, name:'Mobile Pass - Map Attributes'},
-	{bank:0x58, offset:0x6f20, name:'Mobile Pass - Map Dialogs'},
-	{bank:0x58, offset:0x7022, name:'Mobile Pass - Map Dialogs Attributes'},
-
-	
-	{bank:0x65, offset:0x4f51, name:'Net Clubhouse - Exchange Counter Title'},
-	{bank:0x65, offset:0x4a43, name:'Net Clubhouse - Communication Counter Title'},
-	{bank:0x65, offset:0x4bf5, name:'Net Clubhouse - Competition Counter Title'},
-	{bank:0x65, offset:0x4d47, name:'Net Clubhouse - Counseling Counter Title'},
-	
-	{bank:0x65, offset:0x5116, name:'Net Clubhouse - Connect to Mobile Adapter 1'},
-	{bank:0x65, offset:0x5675, name:'Net Clubhouse - Connect to Mobile Adapter 2'},
-	{bank:0x65, offset:0x5ac9, name:'Net Clubhouse - Competition Counter'},
-
-	{bank:0x74, offset:0x4030, name:'Intro 1 - Tileset'},
-	{bank:0x74, offset:0x4840, name:'Intro 1 - Map'},
-	{bank:0x74, offset:0x49f9, name:'Intro 2 - Tileset'},
-	{bank:0x74, offset:0x52fa, name:'Intro 2 - Map'},
-	{bank:0x74, offset:0x6eb2, name:'Intro 3'},
-
-	{bank:0x77, offset:0x623a, name:'Title screen - Logo'},
-	{bank:0x77, offset:0x6c32, name:'Title screen - Logo Map'},
-	{bank:0x77, offset:0x6bc8, name:'Title screen - Logo Map Attributes'},
-	{bank:0x77, offset:0x70b1, name:'Title screen - PRESS (init)'},
-	{bank:0x77, offset:0x7136, name:'Title screen - PRESS'},
-	{bank:0x77, offset:0x71bb, name:'Title screen - PRESS'},
-	{bank:0x77, offset:0x723e, name:'Title screen - PRESS'},
-	{bank:0x77, offset:0x72c0, name:'Title screen - PRESS'},
-	{bank:0x77, offset:0x7344, name:'Title screen - PRESS'},
-	{bank:0x77, offset:0x73c8, name:'Title screen - PRESS'},
-	{bank:0x77, offset:0x744d, name:'Title screen - PRESS'},
-	{bank:0x77, offset:0x74d2, name:'Title screen - START (init)'},
-	{bank:0x77, offset:0x7567, name:'Title screen - START'},
-	{bank:0x77, offset:0x75f9, name:'Title screen - START'},
-	{bank:0x77, offset:0x7688, name:'Title screen - START'},
-	{bank:0x77, offset:0x771d, name:'Title screen - START'},
-	{bank:0x77, offset:0x77b2, name:'Title screen - START'},
-	{bank:0x77, offset:0x7847, name:'Title screen - START'},
-	{bank:0x77, offset:0x78dc, name:'Title screen - START'},
-	
-	{bank:0x91, offset:0x61e4, name:'Game - Game Results'},
-	{bank:0x91, offset:0x6dda, name:'Game - VS Results - Win (Map)'},
-	{bank:0x91, offset:0x72a2, name:'Game - VS Results - Win (Map Attributes)'}
-];
-	--></script>
+	</script>
 	<link type="text/css" rel="stylesheet" href="style.css" media="all"/>
+	<script type="text/javascript" src="CamelotData.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
@@ -227,7 +35,236 @@ const ROM_KNOWN_SECTIONS=[
 		<label><input type="checkbox" id="ascii" onchange="logData(decompressedData)" /> ASCII mode</label>
 	</div>
 	<div id="right">
-		<label>ROM Section <select id="sections" onchange="extractSection(this.selectedIndex-1);"></select></label>
+		<label>
+			ROM Section
+			<select id="sections" onchange="extractSection(this.value);">
+				<option value="74:4030">Intro 1</option>
+				<option value="74:4840">Intro 1 (map)</option>
+				<option value="74:49f9">Intro 2</option>
+				<option value="74:52fa">Intro 2 (map)</option>
+				<option value="74:6eb2">Intro 3</option>
+
+				<option value="77:623a">Title screen - Logo</option>
+				<option value="77:6c32">Title screen - Logo (map)</option>
+				<option value="77:6bc8">Title screen - Logo (attributes)</option>
+				<option value="77:70b1">Title screen - PRESS (init)</option>
+				<option value="77:7136">Title screen - PRESS</option>
+				<option value="77:71bb">Title screen - PRESS</option>
+				<option value="77:723e">Title screen - PRESS</option>
+				<option value="77:72c0">Title screen - PRESS</option>
+				<option value="77:7344">Title screen - PRESS</option>
+				<option value="77:73c8">Title screen - PRESS</option>
+				<option value="77:744d">Title screen - PRESS</option>
+				<option value="77:74d2">Title screen - START (init)</option>
+				<option value="77:7567">Title screen - START</option>
+				<option value="77:75f9">Title screen - START</option>
+				<option value="77:7688">Title screen - START</option>
+				<option value="77:771d">Title screen - START</option>
+				<option value="77:77b2">Title screen - START</option>
+				<option value="77:7847">Title screen - START</option>
+				<option value="77:78dc">Title screen - START</option>
+
+				<option value="57:57d3">Main Menu - BG</option>
+				<option value="57:6566">Main Menu - Title</option>
+				<option value="57:66b7">Main Menu - Menu Sprites 1</option>
+				<option value="57:6787">Main Menu - Menu Sprites 2</option>
+				<option value="57:686f">Main Menu - Menu Sprites 3</option>
+				<option value="57:6956">Main Menu - Menu Sprites 4</option>
+
+
+
+
+
+
+
+
+
+				<option value="07:6320">Game - Got EXP points!</option>
+				<option value="0b:5e92">Game - VS Results 2</option>
+				<option value="0c:5be0">Game - Options - Glossary</option>
+				<option value="0c:655b">Game - Options - Glossary 2</option>
+				<option value="0c:6e90">Game - Status - Leaderboard - Font</option>
+
+				<option value="0d:59bb">Static screens - Multiplayer - Connecting</option>
+				<option value="0d:6d57">Static screens - Multiplayer - Connecting (map)</option>
+				<option value="0d:6eae">Static screens - Multiplayer - Connecting (attributes)</option>
+				<option value="0d:6461">Static screens - Half Round</option>
+				<option value="0d:43b0">Static screens - Unlocked content - BG</option>
+				<option value="0d:4b61">Static screens - Unlocked content - Header course 1</option>
+				<option value="0d:4bfa">Static screens - Unlocked content - Header course 2</option>
+				<option value="0d:4cdd">Static screens - Unlocked content - Header course 3</option>
+				<option value="0d:4db1">Static screens - Unlocked content - Header golfer 1</option>
+				<option value="0d:4e5b">Static screens - Unlocked content - Header golfer 2</option>
+				<option value="0d:4f2f">Static screens - Unlocked content - Header golfer 3</option>
+				<option value="0d:5010">Static screens - Unlocked content - Header club 1</option>
+				<option value="0d:50ba">Static screens - Unlocked content - Header club 2</option>
+				<option value="0d:5187">Static screens - Unlocked content - Header club 3</option>
+
+				<option value="44:5c11">Multiplayer - Bet - Title</option>
+				<option value="44:4fb0">Multiplayer - Bet - BG1</option>
+				<option value="44:67b0">Multiplayer - Bet - BG2</option>
+				<option value="44:5cc7">Multiplayer - Bet - Category 1</option>
+				<option value="44:5d65">Multiplayer - Bet - Category 1 (spinning)</option>
+				<option value="44:5eca">Multiplayer - Bet - Category 2</option>
+				<option value="44:5f68">Multiplayer - Bet - Category 2 (spinning)</option>
+				<option value="44:6076">Multiplayer - Bet - Category 3</option>
+				<option value="44:6111">Multiplayer - Bet - Category 3 (spinning)</option>
+				<option value="44:6226">Multiplayer - Bet - Category 4</option>
+				<option value="44:62bc">Multiplayer - Bet - Category 4 (spinning)</option>
+				<option value="44:63cc">Multiplayer - Bet - Category 5</option>
+				<option value="44:646d">Multiplayer - Bet - Category 5 (spinning)</option>
+				<option value="44:658e">Multiplayer - Bet - Category 6</option>
+				<option value="44:6631">Multiplayer - Bet - Category 6 (spinning)</option>
+				<option value="44:6744">Multiplayer - Bet - Category Empty</option>
+				<option value="53:7035">Multiplayer - Handicap BG</option>
+				<option value="53:7c49">Multiplayer - Handicap Title</option>
+				<option value="06:550d">Multiplayer - Disconnect</option>
+				<option value="06:5e18">Multiplayer - Disconnect (map)</option>
+				<option value="06:5f73">Multiplayer - Disconnect (attributes)</option>
+
+				<option value="0e:4060">Game - Status - Arrows</option>
+				<option value="0e:49c0">Game - Status - Leaderboard</option>
+				<option value="0e:5a60">Game - Status - Match Play - Scoreboard Font</option>
+				<option value="0e:7290">Game - Status - Match Play - Scoreboard - Map</option>
+
+				<option value="11:51a8">Game - Tournament results (Map)</option>
+
+				<option value="2a:516f">Announcer - Complete</option>
+				
+				<option value="33:5345">Status - Minigames - Title</option>
+				<option value="33:6efe">Net Clubhouse - Competition Room Counter Title</option>
+
+				<option value="34:51c4">Course Select - Tileset</option>
+				<option value="34:5c14">Course Select - Title</option>
+				<option value="34:6f61">Minigames - Title</option>
+
+				<option value="35:52fa">Go-Go Gates - Title</option>
+
+				<option value="36:4126">Game - Hole in One Tileset</option>
+				<option value="36:43ac">Game - Hole in One Map</option>
+				<option value="36:57e2">Game - Tournament Status Tileset</option>
+				<option value="36:5f83">Game - Tournament Status Map Attr</option>
+				<option value="36:60b0">Game - Tournament Status Map</option>
+				<option value="36:73b0">Game - Status - Match Play - Scoreboard</option>
+
+				<option value="3e:4885">Stats - BG</option>
+				<option value="3e:52cb">Stats - Map</option>	
+				<option value="3e:549f">Stats - Map Attributes</option>
+				<option value="3e:629b">Stats - Option - Character Data</option>
+				<option value="3e:6376">Stats - Option - Tournament</option>
+				<option value="3e:6448">Stats - Option - Mach Play</option>
+				<option value="3e:6525">Stats - Option - Speed Golf</option>
+				<option value="3e:6628">Stats - Option - Go-Go Gates</option>
+				<option value="3e:66ff">Stats - Option - Minigames</option>
+				<option value="3e:67bb">Stats - Option - Title</option>
+				<option value="3e:70d4">Stats - Speed Golf - Tileset</option>
+				<option value="3e:7dd3">Stats - Speed Golf - Title</option>
+				
+				
+				
+				
+				
+				
+				
+				
+				<option value="3f:4e69">Game - Status - Match Play - Arrow - Scoreboard</option>
+				<option value="3f:4ef8">Game - Status - Header - Sudden Death</option>
+				<option value="3f:4fb5">Game - Status - Header - Dormie</option>
+
+				<option value="40:5e4b">Game - Club Slots - How many slots?</option>
+				<option value="40:6255">Game - Club Slots - Title</option>
+
+				<option value="42:5f4b">1 Player - Select Mode</option>
+
+				<option value="43:4527">Multiplayer Menu - Tileset</option>
+				<option value="43:5931">Multiplayer Menu - Title</option>
+				<option value="43:5f00">Options BG</option>
+				<option value="43:69fd">Options BG - Map</option>
+				<option value="43:6c68">Options REPLAYS</option>
+				<option value="43:6d15">Options DICTIONARY</option>
+				<option value="43:6df1">Options ERASE DATA</option>
+				<option value="43:6ff7">Options PASSWORD</option>
+				<option value="43:6f1d">Options HEADER</option>
+
+				<option value="44:7453">Delete Data - xxxxxxxxxxxxxxx</option>
+				<option value="44:7527">Delete Data - xxxxxxxxxxxxxxx</option>
+				<option value="44:6c2c">Delete Data - Tileset</option>
+				<option value="44:7279">Delete Data - Map</option>
+				<option value="44:73a6">Delete Data - Map attributes</option>
+
+				<option value="45:63e0">Setup - BG</option>
+				<option value="45:72e6">Setup - Title</option>
+				<option value="45:7160">Setup - Stats Sprite</option>
+				<option value="45:7207">Setup - Clubs Sprite</option>
+
+				<option value="46:64b1">Character - Customize avatar!!!</option>
+				<option value="46:7082">Character - Customize avatar</option>
+				<option value="46:5561">Character status - Choose this avatar?</option>
+				<option value="46:52bf">Character status - Level up</option>
+
+				<option value="47:4465">Select player - Tileset</option>
+				<option value="47:4f41">Select player - Title</option>
+				<option value="47:5780">Select player - Options (Sprite  1)</option>
+				<option value="47:5882">Select player - Options (Sprite  2)</option>
+				<option value="47:5fd0">Select rival</option>
+				<option value="47:6b1a">Lv. / Fade/Draw/Straight</option>
+				<option value="47:7159">Delete data - Title</option>
+				<option value="47:7900">Delete data - Delete All (Sprite 1)</option>
+				<option value="47:7a25">Delete data - Delete All (Sprite 2)</option>
+				<option value="47:7b89">Delete data - Delete Mobile (Sprite 1)</option>
+				<option value="47:7cbd">Delete data - Delete Mobile (Sprite 2)</option>
+
+				<option value="48:4d90">Select partner tileset</option>
+				<option value="48:59db">Create character - Partner select - Title</option>
+				<option value="48:5ba8">Create character - Select avatar</option>
+				<option value="48:618e">Create character - Select avatar (Window)</option>
+				<option value="48:6350">Create character - Select avatar (Window - With secret characters)</option>
+				
+				<option value="53:4b90">Game - Status - Header - Match Play</option>
+				<option value="53:4c74">Game - Results board - VS board</option>
+				<option value="53:5eb5">Game - Results board - Time board</option>
+				<option value="53:64f8">Game - Status - Header - Time board</option>
+
+				<option value="54:48dd">Create character - Enter name 0</option>
+				<option value="54:4ad8">Create character - Enter name 1</option>
+				<option value="54:4ba8">Create character - Enter name 2</option>
+				<option value="54:4c6d">Create character - Enter birth</option>
+				<option value="54:4d76">Create character - Enter gender</option>
+				<option value="54:4f00">Create character - Is it okay?</option>
+
+				<option value="55:51ef">Limit clubs Title (multiplayer and more?)</option>
+				<option value="55:4728">Multiplayer - Limit clubs 1</option>
+				<option value="55:4ff1">Multiplayer - Limit clubs 2</option>
+				<option value="55:6b0b">Club select</option>
+				<option value="55:721a">Club select - Title</option>
+
+				<option value="56:5d71">Stats - Match - Tileset</option>
+				<option value="56:689b">Stats - Match - Title</option>
+				
+
+				<option value="58:4a7f">Replays - Tileset</option>
+				<option value="58:63dc">Mobile Pass - Tileset</option>
+				<option value="58:6d0b">Mobile Pass - Map</option>
+				<option value="58:6e57">Mobile Pass - Map Attributes</option>
+				<option value="58:6f20">Mobile Pass - Map Dialogs</option>
+				<option value="58:7022">Mobile Pass - Map Dialogs Attributes</option>
+
+				
+				<option value="65:4f51">Net Clubhouse - Exchange Counter Title</option>
+				<option value="65:4a43">Net Clubhouse - Communication Counter Title</option>
+				<option value="65:4bf5">Net Clubhouse - Competition Counter Title</option>
+				<option value="65:4d47">Net Clubhouse - Counseling Counter Title</option>	
+				<option value="65:5116">Net Clubhouse - Connect to Mobile Adapter 1</option>
+				<option value="65:5675">Net Clubhouse - Connect to Mobile Adapter 2</option>
+				<option value="65:5ac9">Net Clubhouse - Competition Counter</option>
+				
+
+
+				<option value="91:61e4">Game - Game Results</option>
+				<option value="91:6dda">Game - VS Results - Win (Map)</option>
+				<option value="91:72a2">Game - VS Results - Win (Map Attributes)</option>
+			</select>
+		</label>
 		<textarea id="compressed" onchange="parseData(compressedData)"></textarea>
 	</div>
 </div>

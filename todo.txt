@@ -1,0 +1,23 @@
+to-do:
+- bets
+	ドラコン	Drive
+	ニアピン	Approach
+	スコア		Score
+	ナッソー	Nassau?
+	スキンズ	Skins?
+
+
+- unlocked clubs dialog texts
+- fix multiplayer centered text
+
+- disconnect screen
+	つうしんが
+	きれました!
+	リセットします
+	Communication lost! Resetting
+
+- clubs descriptions in exchange counter
+- exchange counter text between description and item list
+
+
+- improve decompressor tool

@@ -1,0 +1,818 @@
+SECTION "Bank 142", ROMX[$4000], BANK[$8e]
+DW bank_142_copy_string_to_c600
+DW bank_142_copy_string_to_d880
+
+
+	
+SECTION "Bank 142 - Strings (Pointers)", ROMX[$4004], BANK[$8e]
+_STRING_POINTERS8E:
+DW _STRING8E_0 - _STRINGS8E
+DW _STRING8E_1 - _STRINGS8E
+DW _STRING8E_2 - _STRINGS8E
+DW _STRING8E_3 - _STRINGS8E
+DW _STRING8E_4 - _STRINGS8E
+DW _STRING8E_5 - _STRINGS8E
+DW _STRING8E_6 - _STRINGS8E
+DW _STRING8E_7 - _STRINGS8E
+DW _STRING8E_8 - _STRINGS8E
+DW _STRING8E_9 - _STRINGS8E
+DW _STRING8E_10 - _STRINGS8E
+DW _STRING8E_11 - _STRINGS8E
+DW _STRING8E_12 - _STRINGS8E
+DW _STRING8E_13 - _STRINGS8E
+DW _STRING8E_14 - _STRINGS8E
+DW _STRING8E_15 - _STRINGS8E
+DW _STRING8E_16 - _STRINGS8E
+DW _STRING8E_17 - _STRINGS8E
+DW _STRING8E_18 - _STRINGS8E
+DW _STRING8E_19 - _STRINGS8E
+DW _STRING8E_20 - _STRINGS8E
+DW _STRING8E_21 - _STRINGS8E
+DW _STRING8E_22 - _STRINGS8E
+DW _STRING8E_23 - _STRINGS8E
+DW _STRING8E_24 - _STRINGS8E
+DW _STRING8E_25 - _STRINGS8E
+DW _STRING8E_26 - _STRINGS8E
+DW _STRING8E_27 - _STRINGS8E
+DW _STRING8E_28 - _STRINGS8E
+DW _STRING8E_29 - _STRINGS8E
+DW _STRING8E_30 - _STRINGS8E
+DW _STRING8E_31 - _STRINGS8E
+DW _STRING8E_32 - _STRINGS8E
+DW _STRING8E_33 - _STRINGS8E
+DW _STRING8E_34 - _STRINGS8E
+DW _STRING8E_35 - _STRINGS8E
+DW _STRING8E_36 - _STRINGS8E
+DW _STRING8E_37 - _STRINGS8E
+DW _STRING8E_38 - _STRINGS8E
+DW _STRING8E_39 - _STRINGS8E
+DW _STRING8E_40 - _STRINGS8E
+DW _STRING8E_41 - _STRINGS8E
+DW _STRING8E_42 - _STRINGS8E
+DW _STRING8E_43 - _STRINGS8E
+DW _STRING8E_44 - _STRINGS8E
+DW _STRING8E_45 - _STRINGS8E
+DW _STRING8E_46 - _STRINGS8E
+DW _STRING8E_47 - _STRINGS8E
+DW _STRING8E_48 - _STRINGS8E
+DW _STRING8E_49 - _STRINGS8E
+DW _STRING8E_50 - _STRINGS8E
+DW _STRING8E_51 - _STRINGS8E
+DW _STRING8E_52 - _STRINGS8E
+DW _STRING8E_53 - _STRINGS8E
+DW _STRING8E_54 - _STRINGS8E
+DW _STRING8E_55 - _STRINGS8E
+DW _STRING8E_56 - _STRINGS8E
+DW _STRING8E_57 - _STRINGS8E
+DW _STRING8E_58 - _STRINGS8E
+DW _STRING8E_59 - _STRINGS8E
+DW _STRING8E_60 - _STRINGS8E
+DW _STRING8E_61 - _STRINGS8E
+DW _STRING8E_62 - _STRINGS8E
+DW _STRING8E_63 - _STRINGS8E
+DW _STRING8E_64 - _STRINGS8E
+DW _STRING8E_65 - _STRINGS8E
+DW _STRING8E_66 - _STRINGS8E
+DW _STRING8E_67 - _STRINGS8E
+DW _STRING8E_68 - _STRINGS8E
+DW _STRING8E_69 - _STRINGS8E
+DW _STRING8E_70 - _STRINGS8E
+DW _STRING8E_71 - _STRINGS8E
+DW _STRING8E_72 - _STRINGS8E
+DW _STRING8E_73 - _STRINGS8E
+DW _STRING8E_74 - _STRINGS8E
+DW _STRING8E_75 - _STRINGS8E
+DW _STRING8E_76 - _STRINGS8E
+DW _STRING8E_77 - _STRINGS8E
+DW _STRING8E_78 - _STRINGS8E
+DW _STRING8E_79 - _STRINGS8E
+DW _STRING8E_80 - _STRINGS8E
+DW _STRING8E_81 - _STRINGS8E
+DW _STRING8E_82 - _STRINGS8E
+DW _STRING8E_83 - _STRINGS8E
+DW _STRING8E_84 - _STRINGS8E
+DW _STRING8E_85 - _STRINGS8E
+DW _STRING8E_86 - _STRINGS8E
+DW _STRING8E_87 - _STRINGS8E
+DW _STRING8E_88 - _STRINGS8E
+DW _STRING8E_89 - _STRINGS8E
+DW _STRING8E_90 - _STRINGS8E
+DW _STRING8E_91 - _STRINGS8E
+DW _STRING8E_92 - _STRINGS8E
+DW _STRING8E_93 - _STRINGS8E
+DW _STRING8E_94 - _STRINGS8E
+DW _STRING8E_95 - _STRINGS8E
+DW _STRING8E_96 - _STRINGS8E
+DW _STRING8E_97 - _STRINGS8E
+DW _STRING8E_98 - _STRINGS8E
+DW _STRING8E_99 - _STRINGS8E
+DW _STRING8E_100 - _STRINGS8E
+DW _STRING8E_101 - _STRINGS8E
+DW _STRING8E_102 - _STRINGS8E
+DW _STRING8E_103 - _STRINGS8E
+DW _STRING8E_104 - _STRINGS8E
+DW _STRING8E_105 - _STRINGS8E
+DW _STRING8E_106 - _STRINGS8E
+DW _STRING8E_107 - _STRINGS8E
+DW _STRING8E_108 - _STRINGS8E
+DW _STRING8E_109 - _STRINGS8E
+DW _STRING8E_110 - _STRINGS8E
+DW _STRING8E_111 - _STRINGS8E
+DW _STRING8E_112 - _STRINGS8E
+DW _STRING8E_113 - _STRINGS8E
+DW _STRING8E_114 - _STRINGS8E
+DW _STRING8E_115 - _STRINGS8E
+DW _STRING8E_116 - _STRINGS8E
+DW _STRING8E_117 - _STRINGS8E
+DW _STRING8E_118 - _STRINGS8E
+DW _STRING8E_119 - _STRINGS8E
+DW _STRING8E_120 - _STRINGS8E
+DW _STRING8E_121 - _STRINGS8E
+DW _STRING8E_122 - _STRINGS8E
+DW _STRING8E_123 - _STRINGS8E
+DW _STRING8E_124 - _STRINGS8E
+DW _STRING8E_125 - _STRINGS8E
+DW _STRING8E_126 - _STRINGS8E
+DW _STRING8E_127 - _STRINGS8E
+DW _STRING8E_128 - _STRINGS8E
+DW _STRING8E_129 - _STRINGS8E
+DW _STRING8E_130 - _STRINGS8E
+DW _STRING8E_131 - _STRINGS8E
+DW _STRING8E_132 - _STRINGS8E
+DW _STRING8E_133 - _STRINGS8E
+DW _STRING8E_134 - _STRINGS8E
+DW _STRING8E_135 - _STRINGS8E
+DW _STRING8E_136 - _STRINGS8E
+DW _STRING8E_137 - _STRINGS8E
+DW _STRING8E_138 - _STRINGS8E
+DW _STRING8E_139 - _STRINGS8E
+DW _STRING8E_140 - _STRINGS8E
+DW _STRING8E_141 - _STRINGS8E
+DW _STRING8E_142 - _STRINGS8E
+DW _STRING8E_143 - _STRINGS8E
+DW _STRING8E_144 - _STRINGS8E
+DW _STRING8E_145 - _STRINGS8E
+DW _STRING8E_146 - _STRINGS8E
+DW _STRING8E_147 - _STRINGS8E
+DW _STRING8E_148 - _STRINGS8E
+DW _STRING8E_149 - _STRINGS8E
+DW _STRING8E_150 - _STRINGS8E
+
+SECTION "Bank 142 - Strings credits", ROMX[$4132], BANK[$8e]
+_STRINGS8E:
+_STRING8E_0: ;originally $4132
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_1: ;originally $4134
+	DB $4f, $52, $49, $47, $49, $4e, $41, $4c, $43, $48, $41, $52, $41, $43, $54, $45, $52, $53 ;ORIGINALCHARACTERS
+	DB END_STRING
+
+_STRING8E_2: ;originally $4147
+	DB $25, $34 ;%4
+	DB END_STRING
+
+_STRING8E_3: ;originally $414a
+	DB $20, $20, $53, $48, $49, $47, $45, $52, $55 ;  SHIGERU
+	DB END_STRING
+
+_STRING8E_4: ;originally $4154
+	DB $20, $20, $20, $20, $20, $20, $4d, $49, $59, $41, $4d, $4f, $54, $4f ;      MIYAMOTO
+	DB END_STRING
+
+_STRING8E_5: ;originally $4163
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_6: ;originally $4165
+	DB $20, $20, $48, $49, $52, $4f, $4a, $49 ;  HIROJI
+	DB END_STRING
+
+_STRING8E_7: ;originally $416e
+	DB $20, $20, $20, $20, $20, $20, $4b, $49, $59, $4f, $54, $41, $4b, $45 ;      KIYOTAKE
+	DB END_STRING
+
+_STRING8E_8: ;originally $417d
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_9: ;originally $417f
+	DB $20, $20, $53, $49, $4e ;  SIN
+	DB END_STRING
+
+_STRING8E_10: ;originally $4185
+	DB $20, $20, $20, $20, $59, $41, $4d, $41, $4e, $4f, $55, $43, $48, $49 ;    YAMANOUCHI
+	DB END_STRING
+
+_STRING8E_11: ;originally $4194
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_12: ;originally $4196
+	DB $20, $20, $4d, $49, $54, $53, $55, $52, $55 ;  MITSURU
+	DB END_STRING
+
+_STRING8E_13: ;originally $41a0
+	DB $20, $20, $20, $20, $20, $20, $46, $55, $4b, $55, $4d, $4f, $54, $4f ;      FUKUMOTO
+	DB END_STRING
+
+_STRING8E_14: ;originally $41af
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_15: ;originally $41b1
+	DB $47, $52, $41, $50, $48, $49, $43, $53 ;GRAPHICS
+	DB END_STRING
+
+_STRING8E_16: ;originally $41ba
+	DB $25, $33 ;%3
+	DB END_STRING
+
+_STRING8E_17: ;originally $41bd
+	DB $20, $20, $4d, $49, $54, $53, $55, $52, $55 ;  MITSURU
+	DB END_STRING
+
+_STRING8E_18: ;originally $41c7
+	DB $20, $20, $20, $20, $20, $20, $46, $55, $4b, $55, $4d, $4f, $54, $4f ;      FUKUMOTO
+	DB END_STRING
+
+_STRING8E_19: ;originally $41d6
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_20: ;originally $41d8
+	DB $20, $20, $4d, $41, $53, $41, $53, $48, $49 ;  MASASHI
+	DB END_STRING
+
+_STRING8E_21: ;originally $41e2
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $4d, $49, $4b, $41, $4d, $49 ;        MIKAMI
+	DB END_STRING
+
+_STRING8E_22: ;originally $41f1
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_23: ;originally $41f3
+	DB $20, $20, $41, $4b, $49, $48, $49, $54, $4f ;  AKIHITO
+	DB END_STRING
+
+_STRING8E_24: ;originally $41fd
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $4b, $49, $4d, $55, $52, $41 ;        KIMURA
+	DB END_STRING
+
+_STRING8E_25: ;originally $420c
+	DB $26 ;&
+	DB END_STRING
+
+_STRING8E_26: ;originally $420e
+	DB $25, $34 ;%4
+	DB END_STRING
+
+_STRING8E_27: ;originally $4211
+	DB $20, $20, $4d, $41, $53, $41, $59, $55, $4b, $49 ;  MASAYUKI
+	DB END_STRING
+
+_STRING8E_28: ;originally $421c
+	DB $20, $20, $20, $20, $20, $48, $41, $53, $48, $49, $4d, $4f, $54, $4f ;     HASHIMOTO
+	DB END_STRING
+
+_STRING8E_29: ;originally $422b
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_30: ;originally $422d
+	DB $20, $20, $48, $49, $52, $4f, $54, $4f ;  HIROTO
+	DB END_STRING
+
+_STRING8E_31: ;originally $4236
+	DB $20, $20, $20, $20, $20, $4e, $41, $4b, $41, $53, $48, $49, $4d, $41 ;     NAKASHIMA
+	DB END_STRING
+
+_STRING8E_32: ;originally $4245
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_33: ;originally $4247
+	DB $20, $20, $48, $49, $44, $45, $54, $4f, $53, $48, $49 ;  HIDETOSHI
+	DB END_STRING
+
+_STRING8E_34: ;originally $4253
+	DB $20, $20, $20, $20, $20, $20, $53, $41, $4b, $41, $4d, $4f, $54, $4f ;      SAKAMOTO
+	DB END_STRING
+
+_STRING8E_35: ;originally $4262
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_36: ;originally $4264
+	DB $20, $20, $4b, $41, $4f, $52, $49 ;  KAORI
+	DB END_STRING
+
+_STRING8E_37: ;originally $426c
+	DB $20, $20, $20, $20, $20, $4d, $41, $54, $53, $55, $4e, $41, $47, $41 ;     MATSUNAGA
+	DB END_STRING
+
+_STRING8E_38: ;originally $427b
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_39: ;originally $427d
+	DB $47, $52, $41, $50, $48, $49, $43, $53, $53, $55, $50, $50, $4f, $52, $54 ;GRAPHICSSUPPORT
+	DB END_STRING
+
+_STRING8E_40: ;originally $428d
+	DB $25, $31 ;%1
+	DB END_STRING
+
+_STRING8E_41: ;originally $4290
+	DB $20, $20, $46, $55, $4d, $49, $48, $49, $44, $45 ;  FUMIHIDE
+	DB END_STRING
+
+_STRING8E_42: ;originally $429b
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $20, $20, $41, $4f, $4b, $49 ;          AOKI
+	DB END_STRING
+
+_STRING8E_43: ;originally $42aa
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_44: ;originally $42ac
+	DB $4d, $55, $53, $49, $43, $43, $4f, $4d, $50, $4f, $53, $45, $26, $41, $52, $52, $41, $4e, $47, $45, $4d, $45, $4e, $54 ;MUSICCOMPOSE&ARRANGEMENT
+	DB END_STRING
+
+_STRING8E_45: ;originally $42c5
+	DB $25, $31 ;%1
+	DB END_STRING
+
+_STRING8E_46: ;originally $42c8
+	DB $20, $20, $4d, $4f, $54, $4f, $49 ;  MOTOI
+	DB END_STRING
+
+_STRING8E_47: ;originally $42d0
+	DB $20, $20, $20, $20, $20, $20, $53, $41, $4b, $55, $52, $41, $42, $41 ;      SAKURABA
+	DB END_STRING
+
+_STRING8E_48: ;originally $42df
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_49: ;originally $42e1
+	DB $53, $4f, $55, $4e, $44, $45, $46, $46, $45, $43, $54, $53, $26, $53, $4f, $55, $4e, $44, $4f, $50, $45, $52, $41, $54, $4f, $52 ;SOUNDEFFECTS&SOUNDOPERATOR
+	DB END_STRING
+
+_STRING8E_50: ;originally $42fc
+	DB $25, $31 ;%1
+	DB END_STRING
+
+_STRING8E_51: ;originally $42ff
+	DB $20, $20, $4d, $41, $53, $41, $52, $55 ;  MASARU
+	DB END_STRING
+
+_STRING8E_52: ;originally $4308
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $54, $41, $4a, $49, $4d, $41 ;        TAJIMA
+	DB END_STRING
+
+_STRING8E_53: ;originally $4317
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_54: ;originally $4319
+	DB $42, $47, $4d, $50, $52, $4f, $47, $52, $41, $4d, $4d, $49, $4e, $47 ;BGMPROGRAMMING
+	DB END_STRING
+
+_STRING8E_55: ;originally $4328
+	DB $25, $31 ;%1
+	DB END_STRING
+
+_STRING8E_56: ;originally $432b
+	DB $20, $20, $4d, $49, $4e, $41, $4b, $4f ;  MINAKO
+	DB END_STRING
+
+_STRING8E_57: ;originally $4334
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $48, $41, $4d, $41, $4e, $4f ;        HAMANO
+	DB END_STRING
+
+_STRING8E_58: ;originally $4343
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_59: ;originally $4345
+	DB $53, $55, $50, $45, $52, $56, $49, $53, $4f, $52 ;SUPERVISOR
+	DB END_STRING
+
+_STRING8E_60: ;originally $4350
+	DB $25, $33 ;%3
+	DB END_STRING
+
+_STRING8E_61: ;originally $4353
+	DB $20, $20, $4b, $45, $4e, $4a, $49 ;  KENJI
+	DB END_STRING
+
+_STRING8E_62: ;originally $435b
+	DB $20, $20, $20, $20, $20, $20, $20, $4d, $49, $4b, $49 ;       MIKI
+	DB END_STRING
+
+_STRING8E_63: ;originally $4367
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_64: ;originally $4369
+	DB $20, $20, $53, $48, $49, $47, $45, $52, $55 ;  SHIGERU
+	DB END_STRING
+
+_STRING8E_65: ;originally $4373
+	DB $20, $20, $20, $20, $20, $20, $4d, $49, $59, $41, $4d, $4f, $54, $4f ;      MIYAMOTO
+	DB END_STRING
+
+_STRING8E_66: ;originally $4382
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_67: ;originally $4384
+	DB $20, $20, $54, $41, $4b, $41, $53, $48, $49 ;  TAKASHI
+	DB END_STRING
+
+_STRING8E_68: ;originally $438e
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $54, $45, $5a, $55, $4b, $41 ;        TEZUKA
+	DB END_STRING
+
+_STRING8E_69: ;originally $439d
+	DB $26 ;&
+	DB END_STRING
+
+_STRING8E_70: ;originally $439f
+	DB $25, $32 ;%2
+	DB END_STRING
+
+_STRING8E_71: ;originally $43a2
+	DB $20, $20, $4b, $4f, $4a, $49 ;  KOJI
+	DB END_STRING
+
+_STRING8E_72: ;originally $43a9
+	DB $20, $20, $20, $20, $20, $20, $4b, $4f, $4e, $44, $4f ;      KONDO
+	DB END_STRING
+
+_STRING8E_73: ;originally $43b5
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_74: ;originally $43b7
+	DB $20, $20, $4b, $45, $4e, $4a, $49 ;  KENJI
+	DB END_STRING
+
+_STRING8E_75: ;originally $43bf
+	DB $20, $20, $20, $20, $20, $20, $59, $41, $4d, $41, $4d, $4f, $54, $4f ;      YAMAMOTO
+	DB END_STRING
+
+_STRING8E_76: ;originally $43ce
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_77: ;originally $43d0
+	DB $47, $52, $41, $50, $48, $49, $43, $53, $55, $50, $50, $4f, $52, $54 ;GRAPHICSUPPORT
+	DB END_STRING
+
+_STRING8E_78: ;originally $43df
+	DB $25, $32 ;%2
+	DB END_STRING
+
+_STRING8E_79: ;originally $43e2
+	DB $20, $20, $59, $4f, $49, $43, $48, $49 ;  YOICHI
+	DB END_STRING
+
+_STRING8E_80: ;originally $43eb
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $4b, $4f, $54, $41, $42, $45 ;        KOTABE
+	DB END_STRING
+
+_STRING8E_81: ;originally $43fa
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_82: ;originally $43fc
+	DB $20, $20, $4d, $41, $53, $41, $4e, $4f, $52, $49 ;  MASANORI
+	DB END_STRING
+
+_STRING8E_83: ;originally $4407
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $20, $20, $53, $41, $54, $4f ;          SATO
+	DB END_STRING
+
+_STRING8E_84: ;originally $4416
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_85: ;originally $4418
+	DB $41, $52, $54, $57, $4f, $52, $4b, $53, $54, $41, $46, $46, $50, $41, $43, $4b, $41, $47, $45, $44, $45, $53, $49, $47, $4e, $45, $52 ;ARTWORKSTAFFPACKAGEDESIGNER
+	DB END_STRING
+
+_STRING8E_86: ;originally $4434
+	DB $25, $31 ;%1
+	DB END_STRING
+
+_STRING8E_87: ;originally $4437
+	DB $20, $20, $4d, $4f, $54, $4f, $4b, $49 ;  MOTOKI
+	DB END_STRING
+
+_STRING8E_88: ;originally $4440
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $46, $55, $4a, $49, $54, $41 ;        FUJITA
+	DB END_STRING
+
+_STRING8E_89: ;originally $444f
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_90: ;originally $4451
+	DB $4d, $41, $4e, $55, $41, $4c, $45, $44, $49, $54, $4f, $52 ;MANUALEDITOR
+	DB END_STRING
+
+_STRING8E_91: ;originally $445e
+	DB $25, $32 ;%2
+	DB END_STRING
+
+_STRING8E_92: ;originally $4461
+	DB $20, $20, $52, $59, $55, $4a, $49 ;  RYUJI
+	DB END_STRING
+
+_STRING8E_93: ;originally $4469
+	DB $20, $20, $20, $20, $20, $20, $20, $48, $41, $47, $49, $4e, $4f ;       HAGINO
+	DB END_STRING
+
+_STRING8E_94: ;originally $4477
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_95: ;originally $4479
+	DB $20, $20, $4d, $4f, $54, $4f, $4b, $49 ;  MOTOKI
+	DB END_STRING
+
+_STRING8E_96: ;originally $4482
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $46, $55, $4a, $49, $54, $41 ;        FUJITA
+	DB END_STRING
+
+_STRING8E_97: ;originally $4491
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_98: ;originally $4493
+	DB $43, $4f, $4f, $52, $44, $49, $4e, $41, $54, $4f, $52 ;COORDINATOR
+	DB END_STRING
+
+_STRING8E_99: ;originally $449f
+	DB $25, $32 ;%2
+	DB END_STRING
+
+_STRING8E_100: ;originally $44a2
+	DB $20, $20, $4d, $41, $53, $41, $41, $4b, $49 ;  MASAAKI
+	DB END_STRING
+
+_STRING8E_101: ;originally $44ac
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $20, $55, $4e, $4f ;         UNO
+	DB END_STRING
+
+_STRING8E_102: ;originally $44b9
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_103: ;originally $44bb
+	DB $20, $20, $54, $4f, $53, $48, $49, $48, $41, $52, $55 ;  TOSHIHARU
+	DB END_STRING
+
+_STRING8E_104: ;originally $44c7
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $20, $49, $5a, $55, $4e, $4f ;         IZUNO
+	DB END_STRING
+
+_STRING8E_105: ;originally $44d6
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_106: ;originally $44d8
+	DB $53, $50, $45, $43, $49, $41, $4c, $54, $48, $41, $4e, $4b, $53, $54, $4f ;SPECIALTHANKSTO
+	DB END_STRING
+
+_STRING8E_107: ;originally $44e8
+	DB $25, $32 ;%2
+	DB END_STRING
+
+_STRING8E_108: ;originally $44eb
+	DB $20, $20, $54, $41, $4b, $41, $4f ;  TAKAO
+	DB END_STRING
+
+_STRING8E_109: ;originally $44f3
+	DB $20, $20, $20, $20, $20, $20, $20, $4f, $48, $41, $52, $41 ;       OHARA
+	DB END_STRING
+
+_STRING8E_110: ;originally $4500
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_111: ;originally $4502
+	DB $20, $20, $4e, $4f, $42, $55, $48, $49, $54, $4f ;  NOBUHITO
+	DB END_STRING
+
+_STRING8E_112: ;originally $450d
+	DB $20, $20, $20, $20, $4b, $4f, $47, $41, $4e, $45, $5a, $41, $57, $41 ;    KOGANEZAWA
+	DB END_STRING
+
+_STRING8E_113: ;originally $451c
+	DB $26 ;&
+	DB END_STRING
+
+_STRING8E_114: ;originally $451e
+	DB $25, $33 ;%3
+	DB END_STRING
+
+_STRING8E_115: ;originally $4521
+	DB $20, $20, $41, $4b, $49, $4f ;  AKIO
+	DB END_STRING
+
+_STRING8E_116: ;originally $4528
+	DB $20, $20, $20, $20, $20, $20, $54, $45, $52, $55, $49 ;      TERUI
+	DB END_STRING
+
+_STRING8E_117: ;originally $4534
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_118: ;originally $4536
+	DB $20, $20, $59, $55, $49, $43, $48, $49, $52, $4f ;  YUICHIRO
+	DB END_STRING
+
+_STRING8E_119: ;originally $4541
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $20, $20, $49, $54, $4f ;          ITO
+	DB END_STRING
+
+_STRING8E_120: ;originally $454f
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_121: ;originally $4551
+	DB $20, $20, $53, $55, $50, $45, $52, $20, $4d, $41, $52, $49, $4f ;  SUPER MARIO
+	DB END_STRING
+
+_STRING8E_122: ;originally $455f
+	DB $20, $20, $20, $20, $43, $4c, $55, $42, $20, $53, $54, $41, $46, $46 ;    CLUB STAFF
+	DB END_STRING
+
+_STRING8E_123: ;originally $456e
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_124: ;originally $4570
+	DB $50, $52, $4f, $44, $55, $43, $45, $44, $42, $59 ;PRODUCEDBY
+	DB END_STRING
+
+_STRING8E_125: ;originally $457b
+	DB $25, $34 ;%4
+	DB END_STRING
+
+_STRING8E_126: ;originally $457e
+	DB $20, $20, $53, $48, $49, $4e, $4a, $49 ;  SHINJI
+	DB END_STRING
+
+_STRING8E_127: ;originally $4587
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $48, $41, $54, $41, $4e, $4f ;        HATANO
+	DB END_STRING
+
+_STRING8E_128: ;originally $4596
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_129: ;originally $4598
+	DB $20, $20, $53, $41, $54, $4f, $53, $48, $49 ;  SATOSHI
+	DB END_STRING
+
+_STRING8E_130: ;originally $45a2
+	DB $20, $20, $20, $20, $20, $20, $20, $20, $59, $41, $4d, $41, $54, $4f ;        YAMATO
+	DB END_STRING
+
+_STRING8E_131: ;originally $45b1
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_132: ;originally $45b3
+	DB $20, $20, $48, $49, $52, $4f, $59, $55, $4b, $49 ;  HIROYUKI
+	DB END_STRING
+
+_STRING8E_133: ;originally $45be
+	DB $20, $20, $20, $20, $20, $54, $41, $4b, $41, $48, $41, $53, $48, $49 ;     TAKAHASHI
+	DB END_STRING
+
+_STRING8E_134: ;originally $45cd
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_135: ;originally $45cf
+	DB $20, $20, $53, $48, $55, $47, $4f ;  SHUGO
+	DB END_STRING
+
+_STRING8E_136: ;originally $45d7
+	DB $20, $20, $20, $20, $20, $54, $41, $4b, $41, $48, $41, $53, $48, $49 ;     TAKAHASHI
+	DB END_STRING
+
+_STRING8E_137: ;originally $45e6
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_138: ;originally $45e8
+	DB $45, $58, $45, $43, $55, $54, $49, $56, $45, $50, $52, $4f, $44, $55, $43, $45, $52 ;EXECUTIVEPRODUCER
+	DB END_STRING
+
+_STRING8E_139: ;originally $45fa
+	DB $25, $31 ;%1
+	DB END_STRING
+
+_STRING8E_140: ;originally $45fd
+	DB $20, $20, $48, $49, $52, $4f, $53, $48, $49 ;  HIROSHI
+	DB END_STRING
+
+_STRING8E_141: ;originally $4607
+	DB $20, $20, $20, $20, $20, $20, $59, $41, $4d, $41, $55, $43, $48, $49 ;      YAMAUCHI
+	DB END_STRING
+
+_STRING8E_142: ;originally $4616
+	DB $23 ;
+	DB END_STRING
+
+_STRING8E_143: ;originally $4618
+	DB $43, $52, $45, $41, $54, $45, $44, $42, $59 ;CREATEDBY
+	DB END_STRING
+
+_STRING8E_144: ;originally $4622
+	DB $25, $34 ;%4
+	DB END_STRING
+
+_STRING8E_145: ;originally $4625
+	DB $20 ; 
+	DB END_STRING
+
+_STRING8E_146: ;originally $4627
+	DB $20, $43, $41, $4d, $45, $4c, $4f, $54, $20, $43, $4f, $2e, $2c, $4c, $54, $44, $2e ; CAMELOT CO.,LTD.
+	DB END_STRING
+
+_STRING8E_147: ;originally $4639
+	DB $2b ;+
+	DB END_STRING
+
+_STRING8E_148: ;originally $463b
+	DB $20 ; 
+	DB END_STRING
+
+_STRING8E_149: ;originally $463d
+	DB $20, $4e, $49, $4e, $54, $45, $4e, $44, $4f, $20, $43, $4f, $2e, $2c, $4c, $54, $44, $2e ; NINTENDO CO.,LTD.
+	DB END_STRING
+
+_STRING8E_150: ;originally $4650
+	DB $23 ;
+	DB END_STRING
+
+
+
+
+
+
+
+bank_142_copy_string_to_c600:
+	push	af
+	ld		a, $00
+	call	bank_142_get_string
+	pop		af
+	ret
+
+bank_142_copy_string_to_d880:
+	push	af
+	ld		a, $01
+	call	bank_142_get_string
+	pop		af
+	ret
+
+bank_142_get_string:
+	push	bc
+	push	de
+	push	hl
+	ld		hl, _STRING_POINTERS8E
+	sla		e
+	rl		d
+	add		hl, de
+	;here hl=pointer offset
+	ld		e, [hl]
+	inc		hl
+	ld		d, [hl]
+	;here de=string offset - 
+	ld		hl, _STRINGS8E
+	add		hl, de
+	or		a
+	jr		nz, .set_de_d880
+	ld		de, $c600
+	jr		.keep_copying
+.set_de_d880:
+	ld		de, $d880
+.keep_copying:
+	ld		a, [hli]
+	ld		[de], a
+	inc		de
+	or		a
+	jr		nz, .keep_copying
+	
+	pop		hl
+	pop		de
+	pop		bc
+	ret

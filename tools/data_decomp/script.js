@@ -1,6 +1,6 @@
-const RECORD_COPY=0;
-const RECORD_STORE=1;
-const MAX_DUPLICATE_LENGTH=31+3; //31=0x1f=00011111b
+const ROM_FILE='../../src/original_rom/mobile_golf_jp.gbc';
+
+
 const GRAYSCALE=[255, 170, 85, 0];
 
 
@@ -19,7 +19,12 @@ function logData(data){
 	}else{
 		textarea=document.getElementById('compressed');
 
-		textarea.value=';compressed data size: '+data.length+' bytes (saved '+(decompressedData.length-compressedData.length)+' bytes, '+(100-(Math.floor((compressedData.length/decompressedData.length)*10000)/100))+'%)\n';
+		const currentSection=document.getElementById('sections').value;
+		const bank=parseInt(currentSection.split(':')[0], 16);
+		const offset=parseInt(currentSection.split(':')[1], 16);
+		const currentSectionTitle=document.getElementById('sections').children[document.getElementById('sections').selectedIndex].innerText;
+		textarea.value='SECTION "Bank '+bank+' - '+currentSectionTitle+'", ROMX[$'+offset.toString(16)+'], BANK[$'+bank.toString(16)+']\n';
+		textarea.value+=';compressed data size: '+data.length+' bytes (saved '+(decompressedData.length-compressedData.length)+' bytes, '+(100-(Math.floor((compressedData.length/decompressedData.length)*10000)/100))+'%)\n';
 	}
 	
 	
@@ -258,139 +263,16 @@ function refreshCanvas(){
 	}
 }
 
+
+
+
+
 function decompressData(){
-
-	decompressedData=[];
-
-	var offset=0;
-
-	var keepReading=true;
-	while(keepReading){
-		var opcode=compressedData[offset++];
-
-		for(var i=0; i<8; i++){
-			var mode=opcode & 0x01;
-			
-			opcode=(opcode >> 1);
-			if(i===0)
-				opcode+=0x80;
-			
-			if(mode===RECORD_STORE){
-				decompressedData.push(compressedData[offset++]);
-			}else{
-				var copyOffset1=compressedData[offset++];
-				var copyOffset2=compressedData[offset++];
-				
-				if(!copyOffset1 && !copyOffset2){
-					keepReading=false;
-					break;
-				}
-				
-				var copyOffset=(((copyOffset2 >> 5) | 0xf8) << 8) + copyOffset1;
-				
-				if(copyOffset & 0x8000){ // negative
-					copyOffset=-((0xffff - copyOffset) + 1);
-				}else{ //positive
-					console.log('positive');
-				}
-				
-				
-				var nBytes=3;
-				
-				if(copyOffset2 & 0x01)
-					nBytes+=1;
-				copyOffset2=copyOffset2 >> 1;
-				if(copyOffset2 & 0x01)
-					nBytes+=2;
-				copyOffset2=copyOffset2 >> 1;
-				if(copyOffset2 & 0x01)
-					nBytes+=4;
-				copyOffset2=copyOffset2 >> 1;
-				if(copyOffset2 & 0x01)
-					nBytes+=8;
-				copyOffset2=copyOffset2 >> 1;
-				if(copyOffset2 & 0x01)
-					nBytes+=16;
-				copyOffset2=copyOffset2 >> 1;
-				
-				for(var j=0; j<nBytes; j++){
-					var copyByte=decompressedData[decompressedData.length+copyOffset];
-					//copyOffset++;
-					decompressedData.push(copyByte);
-				}
-			}
-		}
-	}
-
+	decompressedData=CamelotData.decompress(compressedData);
 	logData(decompressedData);
 }
-
-
 function compressData(){
-	var records=[];
-	
-	for(var i=0; i<decompressedData.length; i++){
-		var bestDuplicate={offset:null, size:0};
-
-		if(i>0){
-			for(var duplicateOffset=-1; duplicateOffset>-2048 && i+duplicateOffset>=0; duplicateOffset--){
-				var currentDuplicate={offset:duplicateOffset, size:0};
-				
-				var duplicateOffset1=i+duplicateOffset;
-				var duplicateOffset2=i;
-				
-				for(var j=0; j<MAX_DUPLICATE_LENGTH && duplicateOffset2<decompressedData.length; j++){
-					if(decompressedData[duplicateOffset1]===decompressedData[duplicateOffset2]){
-						currentDuplicate.size++;
-						
-						duplicateOffset1++;
-						duplicateOffset2++;
-					}else{
-						break;
-					}
-				}
-				
-				if(currentDuplicate.size>bestDuplicate.size)
-					bestDuplicate=currentDuplicate;
-
-				if(bestDuplicate.size===MAX_DUPLICATE_LENGTH)
-					break;
-			}
-		}
-		
-		
-		if(bestDuplicate.size>=3){
-			records.push({mode:RECORD_COPY, offset:bestDuplicate.offset, size:bestDuplicate.size});
-			i+=bestDuplicate.size-1;
-		}else{
-			records.push({mode:RECORD_STORE, byte:decompressedData[i]});
-		}
-	}
-
-
-	compressedData=[];
-	var currentRecordByte;
-	for(var i=0; i<records.length; i++){
-		if(i%8===0){
-			compressedData.push(0x00);
-			currentRecordByte=compressedData.length-1;
-		}
-		
-		compressedData[currentRecordByte]=(compressedData[currentRecordByte] >> 1) + (records[i].mode << 7);
-		
-		if(records[i].mode===RECORD_STORE){
-			compressedData.push(records[i].byte);
-		}else{
-			var offset=(records[i].offset >>> 0) & 0x07ff;
-			compressedData.push(offset & 0xff);
-			compressedData.push(((offset >>> 3) & 0xe0) | (records[i].size-3));
-		}
-	}
-	if(records.length%8 > 0) //fix final opcode
-		compressedData[currentRecordByte]=compressedData[currentRecordByte] >> (8-records.length%8);
-	compressedData.push(0x00);
-	compressedData.push(0x00);
-	
+	compressedData=CamelotData.compress(decompressedData);
 	logData(compressedData);
 }
 
@@ -422,17 +304,15 @@ function readRomByte(bank, offset){
 	
 	return compressedData[compressedData.length-1];
 };
-function extractSection(sectionIndex){
+function extractSection(bankOffsetStr){
+	const bank=parseInt(bankOffsetStr.split(':')[0], 16);
+	let readOffset=parseInt(bankOffsetStr.split(':')[1], 16);
+
+
 	compressedData=[];
 	decompressedData=[];
-	if(sectionIndex===-1){
-		logData(compressedData);
-		logData(decompressedData);
-		return;
-	}
 
-	var bank=ROM_KNOWN_SECTIONS[sectionIndex].bank;
-	var readOffset=ROM_KNOWN_SECTIONS[sectionIndex].offset;
+
 
 	var keepReading=true;
 	while(keepReading){
@@ -508,13 +388,9 @@ window.addEventListener('load', function(evt){
 
 				var option=document.createElement('option');
 				document.getElementById('sections').appendChild(option);
-				for(var i=0; i<ROM_KNOWN_SECTIONS.length; i++){
-					var option=document.createElement('option');
-					option.innerHTML='Bank '+ROM_KNOWN_SECTIONS[i].bank+': '+ROM_KNOWN_SECTIONS[i].name;
-					document.getElementById('sections').appendChild(option);
-				}
+
 				
-				extractSection(document.getElementById('sections').selectedIndex-1);
+				extractSection(document.getElementById('sections').value);
 			}).catch(err => {
 				console.error('error loading ROM_FILE: '+ err);
 			});

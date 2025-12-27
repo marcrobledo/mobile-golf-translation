@@ -1,5 +1,5 @@
-/rgbds/*.exe
-/rgbds/*.dll
-/roms/*.gbc
-/roms/*.sna
-/roms/*.sav
+/bin/*.gbc
+/bin/*.sav
+/bin/*.sym
+/src/original_rom/*.gbc
+/src/original_rom/*.sav
