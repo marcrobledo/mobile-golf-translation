@@ -63,7 +63,7 @@ As a bonus, under Options > Glossary > Page 9, you will find this information, j
 Possible to-do list:
 - Borrow VWF subroutine from Mario Golf USA/Europe  
   The game would benefit of a variable width font, but since there is no RPG mode and strings are mostly menus, it's not a priority.
-- Net Clubhouse texts and graphics
+- Net Clubhouse texts and graphics  
   There are still some untranslated things that are related to the Net Clubhouse (online mode): competitions, connection error codes, etc. These are not accesible anyway, since the online functionality is not available anymore. The script is extracted in `texts` folder, so it should be pretty easy for anyone to translate them, once REON's servers start running.
 
 ## How to compile
