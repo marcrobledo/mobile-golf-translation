@@ -282,7 +282,7 @@ DB $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff, $f9, $00, $0
 
 
 
-SECTION "Bank 13 - Multiplayer start map", ROMX[$6d57], BANK[$0d]
+SECTION "Bank 13 - Multiplayer - First connection (map)", ROMX[$6d57], BANK[$0d]
 ;compressed data size: 325 bytes (saved 251 bytes, 43.58%)
 DB $cf, $00, $01, $02, $03, $fc, $ee, $ff, $e8, $04, $05, $bf, $06, $07, $08, $09
 DB $06, $07, $f8, $e0, $0a, $f0, $f4, $e1, $fc, $e1, $e0, $e9, $ce, $e1, $0b, $0c
@@ -310,7 +310,7 @@ DB $c7, $e0, $e9, $00, $00, $00
 
 
 
-SECTION "Bank 13 - Multiplayer start ERROR map", ROMX[$7088], BANK[$0d]
+SECTION "Bank 13 - First connection ERROR (map)", ROMX[$7088], BANK[$0d]
 ;compressed data size: 67 bytes (saved 93 bytes, 58.13%)
 DB $db, $c0, $c1, $ff, $ee, $c2, $00, $ff, $e8, $c3, $45, $ff, $72, $72, $6f, $72
 DB $20, $77, $68, $69, $ff, $6c, $65, $20, $74, $72, $79, $69, $6e, $cb, $67, $c4
@@ -321,12 +321,48 @@ DB $e9, $00, $00
 
 
 
-SECTION "Bank 13 - Multiplayer start map attributes (LOAD)", ROMX[$6d4a], BANK[$0d]
-;ld		hl, $6eae
-ld		hl, _MULTIPLAYER_START_MAP_ATTRIBUTES
+
+
+SECTION "Bank 13 - Static screens - Multiplayer - Connecting (map)", ROMX[$5827], BANK[$d]
+;compressed data size: 314 bytes (saved 262 bytes, 45.49%)
+DB $cf, $00, $01, $02, $03, $fc, $ee, $ff, $e8, $04, $05, $bf, $06, $07, $08, $09
+DB $06, $07, $f8, $e0, $0a, $f0, $f4, $e1, $fc, $e1, $e0, $e9, $ce, $e1, $0b, $0c
+DB $0d, $01, $ff, $0e, $03, $0f, $10, $11, $12, $13, $14, $f8, $f0, $e1, $e0, $e9
+DB $ce, $e0, $15, $16, $17, $17, $18, $ff, $17, $19, $1a, $1a, $1b, $1a, $1a, $1c
+DB $ef, $1d, $1e, $04, $05, $e0, $e9, $00, $1f, $20, $ff, $21, $2d, $22, $23, $24
+DB $25, $26, $27, $7f, $28, $29, $2a, $2b, $1a, $1a, $2e, $80, $ec, $ff, $2f, $30
+DB $1a, $31, $32, $33, $34, $35, $ff, $36, $37, $38, $39, $3a, $3b, $1a, $1a, $fd
+DB $3e, $80, $ed, $3f, $1a, $41, $42, $43, $44, $ff, $45, $46, $47, $48, $49, $4a
+DB $4b, $4c, $fb, $1a, $4d, $80, $eb, $4e, $4f, $50, $51, $52, $ff, $53, $54, $55
+DB $56, $57, $58, $59, $5a, $df, $5b, $5c, $1a, $5d, $5e, $80, $eb, $5f, $60, $ff
+DB $61, $62, $63, $64, $65, $66, $67, $68, $ff, $69, $6a, $6b, $6c, $6d, $6e, $1a
+DB $6f, $fd, $70, $00, $ec, $71, $72, $73, $1a, $74, $75, $ff, $76, $77, $78, $79
+DB $7a, $1a, $7b, $7c, $fb, $7d, $7e, $80, $ec, $7f, $80, $81, $82, $83, $ff, $84
+DB $85, $86, $87, $88, $89, $8a, $8b, $f7, $8c, $8d, $8e, $00, $ed, $8f, $90, $91
+DB $92, $ff, $93, $94, $95, $96, $97, $98, $99, $9a, $df, $9b, $9c, $51, $9d, $9e
+DB $00, $ec, $01, $02, $ff, $9f, $a0, $a1, $a2, $a3, $1a, $1a, $1a, $7f, $a4, $a5
+DB $a6, $a7, $a8, $a9, $aa, $80, $cd, $ff, $ab, $ac, $ad, $ae, $af, $9d, $b0, $b1
+DB $bf, $b2, $b3, $b4, $b5, $b6, $b7, $80, $cf, $b8, $ff, $b9, $02, $03, $ba, $bb
+DB $02, $bc, $00, $1f, $bd, $be, $03, $00, $bf, $80, $d0, $4a, $c4, $fc, $e7, $00
+DB $80, $ec, $00, $de, $fc, $ed, $e0, $e9, $00, $00
+
+
+
+
+
+
+
+SECTION "Bank 13 - Static screens - Multiplayer - First connection (load map)", ROMX[$6d4a], BANK[$0d]
+;ld		hl, _multiplayer_first_connection_attributes_old
+ld		hl, _multiplayer_first_connection_attributes_new
+
+SECTION "Bank 13 - Static screens - Multiplayer - First connection (attributes)", ROMX[$6eae], BANK[$0d]
+_multiplayer_first_connection_attributes_old:
+;compressed data size: 89 bytes (saved 487 bytes, 84.55%)
+;...
 
 SECTION "Bank 13 - Free space", ROMX[$70e0], BANK[$0d]
-_MULTIPLAYER_START_MAP_ATTRIBUTES:
+_multiplayer_first_connection_attributes_new:
 ;compressed data size: 92 bytes (saved 484 bytes, 84.03%)
 DB $2f, $0f, $0f, $0e, $0e, $fc, $ed, $08, $ff, $e8, $e2, $ef, $e3, $0f, $0f, $e0
 DB $ff, $ff, $e7, $ee, $e2, $0c, $0c, $0e, $8f, $0c, $0f, $0b, $0b, $fd, $e0, $a0

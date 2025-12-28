@@ -1040,40 +1040,40 @@ _DIALOG70:
 _DIALOG71: ;originally $48f9
 	DB "Longest drive" ;ロングホールの ティーショットで
 	DB BR
-	DB "in a long hole" ;いちばんとばしたほうが かちです
+	DB "on a long hole" ;いちばんとばしたほうが かちです
 	DB END_STRING
 
 _DIALOG72: ;originally $4921
-	DB "Best score" ;トータルスコアのさに ベットをかけて
+	DB "Total score" ;トータルスコアのさに ベットをかけて
+	DB BR
+	DB "difference" ;かったひとが ポイントをもらえます
 	DB END_STRING
-	;DB "wins" ;かったひとが ポイントをもらえます
-	;DB END_STRING
 
 _DIALOG73: ;originally $4949
-	DB "At the tee, the" ;ショートホールの ティーショットで
+	DB "Closest to pin" ;ショートホールの ティーショットで
 	DB BR
-	DB "closest to the pin" ;いちばんピンにちかいほうが かちです
+	DB "on a short hole" ;いちばんピンにちかいほうが かちです
 	DB END_STRING
 
 _DIALOG74: ;originally $4973
-	DB $b1, $b3, $c4, $84, $b2, $dd, $20, $7f, $9a, $86, $31, $38, $ce, $b0, $d9, $89 ;アウトとイン それに18ホールの
+	DB "Out, In and" ;アウトとイン それに18ホールの
 	DB BR
-	DB $80, $de, $7c, $80, $bd, $ba, $b1, $83, $de, $20, $7c, $6e, $73, $8a, $72, $66, $77, $92, $8f, $7d ;だしたスコアで しょうはいをきめます
+	DB "18 hole score" ;だしたスコアで しょうはいをきめます
 	DB END_STRING
 
 _DIALOG75: ;originally $4999
-	DB $31, $ce, $b0, $d9, $7a, $de, $84, $86, $20, $7c, $6e, $73, $8a, $72, $66, $77, $92, $8f, $7d ;1ホールごとに しょうはいをきめます
+_DIALOG76: ;originally $49c0 (same as 75)
+	DB "Hole by hole" ;1ホールごとに しょうはいをきめます
 	DB BR
-	DB $8b, $77, $9c, $79, $89, $8a, $de, $71, $72, $8a, $20, $93, $81, $7a, $7c, $83, $de, $7d ;ひきわけのばあいは もちこしです
-	DB END_STRING
-
-_DIALOG76: ;originally $49c0
-	DB $31, $ce, $b0, $d9, $7a, $de, $84, $86, $20, $7c, $6e, $73, $8a, $72, $66, $77, $92, $8f, $7d ;1ホールごとに しょうはいをきめます
-	DB BR
-	DB $8b, $77, $9c, $79, $89, $8a, $de, $71, $72, $8a, $20, $93, $81, $7a, $7c, $83, $de, $7d ;ひきわけのばあいは もちこしです
+	DB "(ties carry over)" ;ひきわけのばあいは もちこしです
 	DB END_STRING
 
 
+;_DIALOG76: ;originally $49c0
+	;DB $31, $ce, $b0, $d9, $7a, $de, $84, $86, $20, $7c, $6e, $73, $8a, $72, $66, $77, $92, $8f, $7d ;1ホールごとに しょうはいをきめます
+	;DB BR
+	;DB $8b, $77, $9c, $79, $89, $8a, $de, $71, $72, $8a, $20, $93, $81, $7a, $7c, $83, $de, $7d ;ひきわけのばあいは もちこしです
+	;DB END_STRING
 
 
 
