@@ -1,11 +1,5 @@
 to-do:
-- bets
-	ドラコン	Drive
-	ニアピン	Approach
-	スコア		Score
-	ナッソー	Nassau?
-	スキンズ	Skins?
-
+- multiplayer current bets status screens
 
 - unlocked clubs dialog texts
 - fix multiplayer centered text
