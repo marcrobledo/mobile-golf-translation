@@ -2325,257 +2325,192 @@ _STRING8B_378: DB "500 EXP Pts", END_STRING ;500けいけんち
 
 
 
-
-_STRING8B_379: ;originally $6322
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $76, $de, $bd, $de, $da, $83, $93 ;ミートエリアがズレても
+;EXCHANGE ITEMS - DESCRIPTIONS - CLUBS
+_STRING8B_379: ;originally $6322 (Control Wood)
+_STRING8B_380: ;originally $6353 (Control Iron)
+	DB "Control-focused" ;ミートエリアがズレても
 	DB BR
-	DB $ce, $de, $b0, $d9, $89, $cc, $de, $da, $76, $de, $7d, $78, $85, $78, $85, $99 ;ボールのブレがすくなくなる
+	DB "Off-center hits" ;ボールのブレがすくなくなる
 	DB BR
-	DB $ba, $dd, $c4, $db, $b0, $d9, $7c, $de, $6d, $73, $7c, $89, $b8, $d7, $cc, $de, $61 ;コントロールじゅうしのクラブ。
+	DB "Reduce ball drift" ;コントロールじゅうしのクラブ。
 	DB END_STRING
 
-_STRING8B_380: ;originally $6353
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $76, $de, $bd, $de, $da, $83, $93 ;ミートエリアがズレても
+_STRING8B_381: ;originally $6384 (Low-ball Wood)
+_STRING8B_382: ;originally $63be (Low-ball Iron)
+_STRING8B_383: ;originally $63f8 (Low-ball Wedge)
+	DB "Hits fly lower" ;ボールのたかさがひくくなるので
 	DB BR
-	DB $ce, $de, $b0, $d9, $89, $cc, $de, $da, $76, $de, $7d, $78, $85, $78, $85, $99 ;ボールのブレがすくなくなる
+	DB "Effective against" ;かぜのえいきょうをうけづらく
 	DB BR
-	DB $ba, $dd, $c4, $db, $b0, $d9, $7c, $de, $6d, $73, $7c, $89, $b8, $d7, $cc, $de, $61 ;コントロールじゅうしのクラブ。
+	DB "wind" ;かぜにつよいボールがうてるクラブ。
 	DB END_STRING
 
-_STRING8B_381: ;originally $6384
-	DB $ce, $de, $b0, $d9, $89, $80, $76, $7b, $76, $de, $8b, $78, $78, $85, $99, $89, $83, $de ;ボールのたかさがひくくなるので
+
+_STRING8B_384: ;originally $6432 (Handling Wood)
+_STRING8B_385: ;originally $6466 (Handling Iron)
+_STRING8B_386: ;originally $649a (Handling Wedge)
+	DB "Ball curves less" ;ボールのまがりが きになる
 	DB BR
-	DB $76, $7e, $de, $89, $74, $72, $77, $6e, $73, $66, $73, $79, $82, $de, $97, $78 ;かぜのえいきょうをうけづらく
+	DB "Keeps shots" ;プレイヤーむけに もちだまが
 	DB BR
-	DB $76, $7e, $de, $86, $82, $96, $72, $ce, $de, $b0, $d9, $76, $de, $73, $83, $99, $b8, $d7, $cc, $de, $61 ;かぜにつよいボールがうてるクラブ。
+	DB "straighter" ;ストレートにちかづくクラブ。
 	DB END_STRING
 
-_STRING8B_382: ;originally $63be
-	DB $ce, $de, $b0, $d9, $89, $80, $76, $7b, $76, $de, $8b, $78, $78, $85, $99, $89, $83, $de ;ボールのたかさがひくくなるので
+
+
+_STRING8B_387: ;originally $64ce (Long Drive Wood)
+_STRING8B_388: ;originally $64ff (Long Drive Iron)
+_STRING8B_389: ;originally $6530 (Long Drive Wedge)
+	DB "Power players only" ;とばしたいプレイヤーむけに
 	DB BR
-	DB $76, $7e, $de, $89, $74, $72, $77, $6e, $73, $66, $73, $79, $82, $de, $97, $78 ;かぜのえいきょうをうけづらく
+	DB "Maximum distance" ;もちだまのクセはつよくなるが
 	DB BR
-	DB $76, $7e, $de, $86, $82, $96, $72, $ce, $de, $b0, $d9, $76, $de, $73, $83, $99, $b8, $d7, $cc, $de, $61 ;かぜにつよいボールがうてるクラブ。
+	DB "Shots curve more" ;ひきょりがのびるクラブ。
 	DB END_STRING
 
-_STRING8B_383: ;originally $63f8
-	DB $ce, $de, $b0, $d9, $89, $80, $76, $7b, $76, $de, $8b, $78, $78, $85, $99, $89, $83, $de ;ボールのたかさがひくくなるので
+
+
+_STRING8B_390: ;originally $6561 (Backspin wedge)
+	DB "Spin stops" ;スピンがきいてボールがとまる
 	DB BR
-	DB $76, $7e, $de, $89, $74, $72, $77, $6e, $73, $66, $73, $79, $82, $de, $97, $78 ;かぜのえいきょうをうけづらく
+	DB "the ball. Perfect" ;ベタピンねらいに ゆうりなクラブ。
 	DB BR
-	DB $76, $7e, $de, $86, $82, $96, $72, $ce, $de, $b0, $d9, $76, $de, $73, $83, $99, $b8, $d7, $cc, $de, $61 ;かぜにつよいボールがうてるクラブ。
+	DB "for pin shots"
 	DB END_STRING
 
-_STRING8B_384: ;originally $6432
-	DB $ce, $de, $b0, $d9, $89, $8f, $76, $de, $98, $76, $de, $20, $77, $86, $85, $99 ;ボールのまがりが きになる
+_STRING8B_391: ;originally $6589 (Straight Wood)
+_STRING8B_392: ;originally $65b9 (Straight Iron)
+_STRING8B_393: ;originally $65e9 (Straight Wedge)
+	DB "Always straight" ;じぶんのもちだまが
 	DB BR
-	DB $cc, $df, $da, $b2, $d4, $b0, $91, $79, $86, $20, $93, $81, $80, $de, $8f, $76, $de ;プレイヤーむけに もちだまが
+	DB "shots. For players" ;つねにストレートになる
 	DB BR
-	DB $bd, $c4, $da, $b0, $c4, $86, $81, $76, $82, $de, $78, $b8, $d7, $cc, $de, $61 ;ストレートにちかづくクラブ。
+	DB "who hate curves.";まがりをきらうプレイヤーむけクラブ。
 	DB END_STRING
 
-_STRING8B_385: ;originally $6466
-	DB $ce, $de, $b0, $d9, $89, $8f, $76, $de, $98, $76, $de, $20, $77, $86, $85, $99 ;ボールのまがりが きになる
+
+
+_STRING8B_394: ;originally $6619 (Meet Wood)
+_STRING8B_395: ;originally $663d (Meet Iron)
+_STRING8B_396: ;originally $6661 (Meet Wedge)
+	DB "Bigger sweet spot" ;ミートエリアがひろくなるので
 	DB BR
-	DB $cc, $df, $da, $b2, $d4, $b0, $91, $79, $86, $20, $93, $81, $80, $de, $8f, $76, $de ;プレイヤーむけに もちだまが
-	DB BR
-	DB $bd, $c4, $da, $b0, $c4, $86, $81, $76, $82, $de, $78, $b8, $d7, $cc, $de, $61 ;ストレートにちかづくクラブ。
+	DB "Harder to mishit" ;ダフリにくく ミスのへるクラブ。
 	DB END_STRING
 
-_STRING8B_386: ;originally $649a
-	DB $ce, $de, $b0, $d9, $89, $8f, $76, $de, $98, $76, $de, $20, $77, $86, $85, $99 ;ボールのまがりが きになる
+
+_STRING8B_397: ;originally $6685 (Big Drive Wood)
+_STRING8B_398: ;originally $66b5 (Big Drive Iron)
+	DB "Extreme distance." ;ほかのとくせいはダウンするが
 	DB BR
-	DB $cc, $df, $da, $b2, $d4, $b0, $91, $79, $86, $20, $93, $81, $80, $de, $8f, $76, $de ;プレイヤーむけに もちだまが
+	DB "Sacrifices some" ;バツグンのとびをほこる
 	DB BR
-	DB $bd, $c4, $da, $b0, $c4, $86, $81, $76, $82, $de, $78, $b8, $d7, $cc, $de, $61 ;ストレートにちかづくクラブ。
+	DB "stats." ;ひきょりじゅうしのクラブ。
 	DB END_STRING
 
-_STRING8B_387: ;originally $64ce
-	DB $84, $8a, $de, $7c, $80, $72, $cc, $df, $da, $b2, $d4, $b0, $91, $79, $86 ;とばしたいプレイヤーむけに
+
+_STRING8B_399: ;originally $66e5 (Low-spin Iron)
+_STRING8B_400: ;originally $671a (Low-spin Wedge)
+	DB "Less spin on ball" ;スピンがきいてボールがとまり
 	DB BR
-	DB $93, $81, $80, $de, $8f, $89, $b8, $be, $8a, $82, $96, $78, $85, $99, $76, $de ;もちだまのクセはつよくなるが
+	DB "Shots fly lower" ;だんどうも ひくくなる
 	DB BR
-	DB $8b, $77, $6e, $98, $76, $de, $89, $8b, $de, $99, $b8, $d7, $cc, $de, $61 ;ひきょりがのびるクラブ。
+	DB "Perfect for greens" ;グリーンねらいに ゆうりなクラブ。
 	DB END_STRING
 
-_STRING8B_388: ;originally $64ff
-	DB $84, $8a, $de, $7c, $80, $72, $cc, $df, $da, $b2, $d4, $b0, $91, $79, $86 ;とばしたいプレイヤーむけに
+
+_STRING8B_401: ;originally $674f (Hyperspin Wedge)
+	DB "Improved backspin" ;これがあれば グリーンで
 	DB BR
-	DB $93, $81, $80, $de, $8f, $89, $b8, $be, $8a, $82, $96, $78, $85, $99, $76, $de ;もちだまのクセはつよくなるが
+	DB "Ball can return" ;もどるボールも ゆめじゃない
 	DB BR
-	DB $8b, $77, $6e, $98, $76, $de, $89, $8b, $de, $99, $b8, $d7, $cc, $de, $61 ;ひきょりがのびるクラブ。
+	DB "on green" ;バックスピンがバツグンのクラブ。
 	DB END_STRING
 
-_STRING8B_389: ;originally $6530
-	DB $84, $8a, $de, $7c, $80, $72, $cc, $df, $da, $b2, $d4, $b0, $91, $79, $86 ;とばしたいプレイヤーむけに
+_STRING8B_402: ;originally $6789 (Gambling Wood)
+	DB "Tiny sweet spot" ;ミートエリアは1ポイントだが
 	DB BR
-	DB $93, $81, $80, $de, $8f, $89, $b8, $be, $8a, $82, $96, $78, $85, $99, $76, $de ;もちだまのクセはつよくなるが
+	DB "Shots fly straight" ;ひくくて とびがバツグンの
 	DB BR
-	DB $8b, $77, $6e, $98, $76, $de, $89, $8b, $de, $99, $b8, $d7, $cc, $de, $61 ;ひきょりがのびるクラブ。
-	DB END_STRING
-
-_STRING8B_390: ;originally $6561
-	DB $bd, $cb, $df, $dd, $76, $de, $77, $72, $83, $ce, $de, $b0, $d9, $76, $de, $84, $8f, $99 ;スピンがきいてボールがとまる
-	DB BR
-	DB $cd, $de, $c0, $cb, $df, $dd, $88, $97, $72, $86, $20, $95, $73, $98, $85, $b8, $d7, $cc, $de, $61 ;ベタピンねらいに ゆうりなクラブ。
-	DB END_STRING
-
-_STRING8B_391: ;originally $6589
-	DB $7c, $de, $8c, $de, $9d, $89, $93, $81, $80, $de, $8f, $76, $de ;じぶんのもちだまが
-	DB BR
-	DB $82, $88, $86, $bd, $c4, $da, $b0, $c4, $86, $85, $99 ;つねにストレートになる
-	DB BR
-	DB $8f, $76, $de, $98, $66, $77, $97, $73, $cc, $df, $da, $b2, $d4, $b0, $91, $79, $b8, $d7, $cc, $de, $61 ;まがりをきらうプレイヤーむけクラブ。
-	DB END_STRING
-
-_STRING8B_392: ;originally $65b9
-	DB $7c, $de, $8c, $de, $9d, $89, $93, $81, $80, $de, $8f, $76, $de ;じぶんのもちだまが
-	DB BR
-	DB $82, $88, $86, $bd, $c4, $da, $b0, $c4, $86, $85, $99 ;つねにストレートになる
-	DB BR
-	DB $8f, $76, $de, $98, $66, $77, $97, $73, $cc, $df, $da, $b2, $d4, $b0, $91, $79, $b8, $d7, $cc, $de, $61 ;まがりをきらうプレイヤーむけクラブ。
-	DB END_STRING
-
-_STRING8B_393: ;originally $65e9
-	DB $7c, $de, $8c, $de, $9d, $89, $93, $81, $80, $de, $8f, $76, $de ;じぶんのもちだまが
-	DB BR
-	DB $82, $88, $86, $bd, $c4, $da, $b0, $c4, $86, $85, $99 ;つねにストレートになる
-	DB BR
-	DB $8f, $76, $de, $98, $66, $77, $97, $73, $cc, $df, $da, $b2, $d4, $b0, $91, $79, $b8, $d7, $cc, $de, $61 ;まがりをきらうプレイヤーむけクラブ。
-	DB END_STRING
-
-_STRING8B_394: ;originally $6619
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $76, $de, $8b, $9b, $78, $85, $99, $89, $83, $de ;ミートエリアがひろくなるので
-	DB BR
-	DB $c0, $de, $cc, $d8, $86, $78, $78, $20, $d0, $bd, $89, $8d, $99, $b8, $d7, $cc, $de, $61 ;ダフリにくく ミスのへるクラブ。
-	DB END_STRING
-
-_STRING8B_395: ;originally $663d
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $76, $de, $8b, $9b, $78, $85, $99, $89, $83, $de ;ミートエリアがひろくなるので
-	DB BR
-	DB $c0, $de, $cc, $d8, $86, $78, $78, $20, $d0, $bd, $89, $8d, $99, $b8, $d7, $cc, $de, $61 ;ダフリにくく ミスのへるクラブ。
-	DB END_STRING
-
-_STRING8B_396: ;originally $6661
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $76, $de, $8b, $9b, $78, $85, $99, $89, $83, $de ;ミートエリアがひろくなるので
-	DB BR
-	DB $c0, $de, $cc, $d8, $86, $78, $78, $20, $d0, $bd, $89, $8d, $99, $b8, $d7, $cc, $de, $61 ;ダフリにくく ミスのへるクラブ。
-	DB END_STRING
-
-_STRING8B_397: ;originally $6685
-	DB $8e, $76, $89, $84, $78, $7e, $72, $8a, $c0, $de, $b3, $dd, $7d, $99, $76, $de ;ほかのとくせいはダウンするが
-	DB BR
-	DB $ca, $de, $c2, $b8, $de, $dd, $89, $84, $8b, $de, $66, $8e, $7a, $99 ;バツグンのとびをほこる
-	DB BR
-	DB $8b, $77, $6e, $98, $7c, $de, $6d, $73, $7c, $89, $b8, $d7, $cc, $de, $61 ;ひきょりじゅうしのクラブ。
-	DB END_STRING
-
-_STRING8B_398: ;originally $66b5
-	DB $8e, $76, $89, $84, $78, $7e, $72, $8a, $c0, $de, $b3, $dd, $7d, $99, $76, $de ;ほかのとくせいはダウンするが
-	DB BR
-	DB $ca, $de, $c2, $b8, $de, $dd, $89, $84, $8b, $de, $66, $8e, $7a, $99 ;バツグンのとびをほこる
-	DB BR
-	DB $8b, $77, $6e, $98, $7c, $de, $6d, $73, $7c, $89, $b8, $d7, $cc, $de, $61 ;ひきょりじゅうしのクラブ。
-	DB END_STRING
-
-_STRING8B_399: ;originally $66e5
-	DB $bd, $cb, $df, $dd, $76, $de, $77, $72, $83, $ce, $de, $b0, $d9, $76, $de, $84, $8f, $98 ;スピンがきいてボールがとまり
-	DB BR
-	DB $80, $de, $9d, $84, $de, $73, $93, $20, $8b, $78, $78, $85, $99 ;だんどうも ひくくなる
-	DB BR
-	DB $b8, $de, $d8, $b0, $dd, $88, $97, $72, $86, $20, $95, $73, $98, $85, $b8, $d7, $cc, $de, $61 ;グリーンねらいに ゆうりなクラブ。
-	DB END_STRING
-
-_STRING8B_400: ;originally $671a
-	DB $bd, $cb, $df, $dd, $76, $de, $77, $72, $83, $ce, $de, $b0, $d9, $76, $de, $84, $8f, $98 ;スピンがきいてボールがとまり
-	DB BR
-	DB $80, $de, $9d, $84, $de, $73, $93, $20, $8b, $78, $78, $85, $99 ;だんどうも ひくくなる
-	DB BR
-	DB $b8, $de, $d8, $b0, $dd, $88, $97, $72, $86, $20, $95, $73, $98, $85, $b8, $d7, $cc, $de, $61 ;グリーンねらいに ゆうりなクラブ。
-	DB END_STRING
-
-_STRING8B_401: ;originally $674f
-	DB $7a, $9a, $76, $de, $71, $9a, $8a, $de, $20, $b8, $de, $d8, $b0, $dd, $83, $de ;これがあれば グリーンで
-	DB BR
-	DB $93, $84, $de, $99, $ce, $de, $b0, $d9, $93, $20, $95, $92, $7c, $de, $6c, $85, $72 ;もどるボールも ゆめじゃない
-	DB BR
-	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $76, $de, $ca, $de, $c2, $b8, $de, $dd, $89, $b8, $d7, $cc, $de, $61 ;バックスピンがバツグンのクラブ。
-	DB END_STRING
-
-_STRING8B_402: ;originally $6789
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $8a, $31, $ce, $df, $b2, $dd, $c4, $80, $de, $76, $de ;ミートエリアは1ポイントだが
-	DB BR
-	DB $8b, $78, $78, $83, $20, $84, $8b, $de, $76, $de, $ca, $de, $c2, $b8, $de, $dd, $89 ;ひくくて とびがバツグンの
-	DB BR
-	DB $bd, $c4, $da, $b0, $c4, $ce, $de, $b0, $d9, $76, $de, $73, $83, $99, $b8, $d7, $cc, $de, $61 ;ストレートボールがうてるクラブ。
+	DB "far and low." ;ストレートボールがうてるクラブ。
 	DB END_STRING
 	
 ;EXCHANGE ITEMS - DESCRIPTIONS - COURSES
 _STRING8B_403:
-	DB $d7, $b3, $dd, $c4, $de, $7d, $9a, $8a, $de, $20, $7e, $76, $72, $98, $6e, $7a, $73 ;ラウンドすれば せかいりょこう
+	DB "Travel the world!" ;ラウンドすれば せかいりょこう
 	DB BR
-	DB $80, $72, $7e, $72, $96, $73, $89, $20, $7f, $73, $80, $de, $72, $85, $ba, $b0, $bd, $61 ;たいせいようの そうだいなコース。
+	DB "Vast Atlantic" ;たいせいようの そうだいなコース。
+	DB BR
+	DB "views."
 	DB END_STRING
 _STRING8B_404:
-	DB $c4, $d7, $cd, $de, $d9, $77, $8c, $de, $9d, $83, $de, $20, $c4, $d7, $cc, $de, $d9, $7f, $de, $78, $7c, $6d, $82 ;トラベルきぶんで トラブルぞくしゅつ
+	DB "Travel the world!" ;トラベルきぶんで トラブルぞくしゅつ
 	DB BR
-	DB $77, $79, $9d, $76, $de, $8b, $7f, $91, $20, $80, $72, $8d, $72, $96, $73, $ba, $b0, $bd, $61 ;きけんがひそむ たいへいようコース。
+	DB "Ocean breeze..." ;きけんがひそむ たいへいようコース。
+	DB BR
+	DB "Challenge awaits."
 	DB END_STRING
 
-;EXCHANGE ITEMS - DESCRIPTIONS - EXPERIENCE
+
+
+
+
+;EXCHANGE ITEMS - DESCRIPTIONS - MINI-GAMES
 _STRING8B_405:
-	DB $7e, $72, $79, $de, $9d, $7c, $de, $76, $9d, $85, $72, $86 ;せいげんじかんないに
+	DB "Land 10 balls on" ;せいげんじかんないに
 	DB BR
-	DB $bc, $ae, $af, $c4, $83, $de, $20, $ce, $de, $b0, $d9, $66, $31, $30, $7a ;ショットで ボールを10こ
+	DB "green." ;ショットで ボールを10こ
 	DB BR
-	DB $b8, $de, $d8, $b0, $dd, $86, $89, $7e, $99, $20, $d0, $c6, $b9, $de, $b0, $d1, $61 ;グリーンにのせる ミニゲーム。
+	DB "Test your shots!" ;グリーンにのせる ミニゲーム。
 	DB END_STRING
 _STRING8B_406:
-	DB $7e, $72, $79, $de, $9d, $7c, $de, $76, $9d, $85, $72, $86 ;せいげんじかんないに
+	DB "Land 10 balls in" ;せいげんじかんないに
 	DB BR
-	DB $b1, $cc, $df, $db, $b0, $c1, $83, $de, $20, $ce, $de, $b0, $d9, $66, $31, $30, $7a ;アプローチで ボールを10こ
+	DB "circles." ;アプローチで ボールを10こ
 	DB BR
-	DB $bb, $b0, $b8, $d9, $86, $72, $9a, $99, $20, $d0, $c6, $b9, $de, $b0, $d1, $61 ;サークルにいれる ミニゲーム。
+	DB "Aim with skill!" ;サークルにいれる ミニゲーム。
 	DB END_STRING
 _STRING8B_407:
-	DB $c3, $a8, $b0, $bc, $ae, $af, $c4, $83, $de, $20, $bb, $b0, $b8, $d9, $86 ;ティーショットで サークルに
+	DB "Tee off carefully." ;ティーショットで サークルに
 	DB BR
-	DB $ce, $de, $b0, $d9, $66, $72, $9a, $99, $20, $d0, $c6, $b9, $de, $b0, $d1, $61 ;ボールをいれる ミニゲーム。
+	DB "Precision is key!" ;ボールをいれる ミニゲーム。
 	DB END_STRING
 _STRING8B_408:
-	DB $b8, $de, $d8, $b0, $dd, $7f, $8a, $de, $76, $97, $20, $b1, $cc, $df, $db, $b0, $c1, $7c, $83 ;グリーンそばから アプローチして
+	DB "Chip from near" ;グリーンそばから アプローチして
 	DB BR
-	DB $b6, $af, $cc, $df, $b2, $dd, $7b, $7e, $99, $20, $d0, $c6, $b9, $de, $b0, $d1, $61 ;カップインさせる ミニゲーム。
+	DB "green." ;カップインさせる ミニゲーム。
+	DB BR
+	DB "Aim with care!" ;カップインさせる ミニゲーム。
 	DB END_STRING
 
 ;EXCHANGE ITEMS - DESCRIPTIONS - MARIO CHARACTERS
 _STRING8B_409:
-	DB $ca, $de, $d7, $dd, $bd, $89, $84, $9a, $80, $20, $cc, $df, $da, $b2, $76, $de, $7c, $de, $8f, $9d ;バランスのとれた プレイがじまん
+	DB "Proud of her" ;バランスのとれた プレイがじまん
 	DB BR
-	DB $90, $9d, $85, $89, $20, $b1, $b2, $c4, $de, $d9 ;みんなの アイドル
+	DB "style, Princess of" ;みんなの アイドル
 	DB BR
-	DB $b7, $c9, $ba, $89, $78, $86, $89, $20, $cc, $df, $d8, $dd, $be, $bd, $61 ;キノコのくにの プリンセス。
+	DB "Mushroom Kingdom." ;キノコのくにの プリンセス。
 	DB END_STRING
-_STRING8B_410: 
-	DB $d6, $af, $bc, $b0, $b1, $b2, $d7, $dd, $c4, $de, $76, $97, $20, $94, $6f, $83, $77, $80 ;ヨッシーアイランドから やってきた
+_STRING8B_410:
+	DB "The beloved dino-" ;ヨッシーアイランドから やってきた
 	DB BR
-	DB $90, $9d, $85, $89, $20, $86, $9d, $77, $93, $89 ;みんなの にんきもの
+	DB "saur. Loves melons" ;みんなの にんきもの
 	DB BR
-	DB $d2, $db, $dd, $76, $de, $80, $de, $72, $7d, $77, $20, $ba, $de, $d9, $cc, $93, $80, $de, $72, $7d, $77, $61 ;メロンがだいすき ゴルフもだいすき。
+	DB "and golf too!" ;メロンがだいすき ゴルフもだいすき。
 	DB END_STRING
 _STRING8B_411:
-	DB $7a, $73, $7c, $de, $79, $de, $9d, $8a, $de, $83, $de, $20, $77, $80, $74, $97, $9a, $80 ;こうじげんばで きたえられた
+	DB "His powerful" ;こうじげんばで きたえられた
 	DB BR
-	DB $7f, $89, $ca, $df, $dc, $b0, $83, $de, $20, $78, $98, $80, $de, $7d, $bc, $ae, $af, $c4, $8a ;そのパワーで くりだすショットは
+	DB "shots can destroy" ;そのパワーで くりだすショットは
 	DB BR
-	DB $7d, $8d, $de, $83, $66, $20, $8a, $76, $72, $7c, $83, $7c, $8f, $73, $3f ;すべてを はかいしてしまう?
+	DB "everything!" ;すべてを はかいしてしまう?
 	DB END_STRING
 _STRING8B_412:
-	DB $7d, $8d, $de, $83, $86, $75, $72, $83, $20, $81, $6e, $73, $31, $98, $6d, $73 ;すべてにおいて ちょう1りゅう
+	DB "Everyone's hero." ;すべてにおいて ちょう1りゅう
 	DB BR
-	DB $bd, $ce, $df, $b0, $c2, $80, $de, $6f, $83, $20, $c4, $af, $cc, $df, $da, $cd, $de, $d9 ;スポーツだって トップレベル
+	DB "You know him well:" ;スポーツだって トップレベル
 	DB BR
-	DB $90, $9d, $85, $89, $cb, $b0, $db, $b0, $7a, $de, $7f, $de, $9d, $7c, $de, $20, $cf, $d8, $b5, $61 ;みんなのヒーローごぞんじ マリオ。
+	DB "Mario!" ;みんなのヒーローごぞんじ マリオ。
 	DB END_STRING
 
 ;EXCHANGE ITEMS - DESCRIPTIONS - EXPERIENCE
@@ -2620,60 +2555,35 @@ _STRING8B_417:
 
 ;EXCHANGE ITEMS - CLUB DESCRIPTIONS
 _STRING8B_418: ;originally $6a4b
-	DB $ba, $dd, $c4, $db, $b0, $d9, $20, $2b, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25 ;コントロール +2 ひきょり -5%
-	DB END_STRING
-
 _STRING8B_419: ;originally $6a5e
 	DB $ba, $dd, $c4, $db, $b0, $d9, $20, $2b, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25 ;コントロール +2 ひきょり -5%
 	DB END_STRING
 
+
 _STRING8B_420: ;originally $6a71
-	DB $80, $76, $7b, $20, $2d, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25 ;たかさ -2 ひきょり -5%
-	DB END_STRING
-
 _STRING8B_421: ;originally $6a81
-	DB $80, $76, $7b, $20, $2d, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25 ;たかさ -2 ひきょり -5%
-	DB END_STRING
-
 _STRING8B_422: ;originally $6a91
 	DB $80, $76, $7b, $20, $2d, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25 ;たかさ -2 ひきょり -5%
 	DB END_STRING
 
+
 _STRING8B_423: ;originally $6aa1
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $be, $dd, $c0, $b0 ;もちだま +2センター
-	DB BR
-	DB $8b, $77, $6e, $98, $20, $2d, $35, $25 ;ひきょり -5%
-	DB END_STRING
-
 _STRING8B_424: ;originally $6ab7
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $be, $dd, $c0, $b0 ;もちだま +2センター
-	DB BR
-	DB $8b, $77, $6e, $98, $20, $2d, $35, $25 ;ひきょり -5%
-	DB END_STRING
-
 _STRING8B_425: ;originally $6acd
 	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $be, $dd, $c0, $b0 ;もちだま +2センター
 	DB BR
 	DB $8b, $77, $6e, $98, $20, $2d, $35, $25 ;ひきょり -5%
 	DB END_STRING
 
+
 _STRING8B_426: ;originally $6ae3
-	DB $8b, $77, $6e, $98, $20, $2b, $31, $30, $25 ;ひきょり +10%
-	DB BR
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
-	DB END_STRING
-
 _STRING8B_427: ;originally $6af9
-	DB $8b, $77, $6e, $98, $20, $2b, $31, $30, $25 ;ひきょり +10%
-	DB BR
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
-	DB END_STRING
-
 _STRING8B_428: ;originally $6b0f
 	DB $8b, $77, $6e, $98, $20, $2b, $31, $30, $25 ;ひきょり +10%
 	DB BR
 	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
 	DB END_STRING
+
 
 _STRING8B_429: ;originally $6b25
 	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $20, $82, $96, $72 ;バックスピン つよい
@@ -2682,49 +2592,24 @@ _STRING8B_429: ;originally $6b25
 	DB END_STRING
 
 _STRING8B_430: ;originally $6b3e
-	DB $93, $81, $80, $de, $8f, $20, $82, $88, $86, $bd, $c4, $da, $b0, $c4 ;もちだま つねにストレート
-	DB BR
-	DB $8b, $77, $6e, $98, $20, $2d, $35, $25, $20, $ba, $dd, $c4, $db, $b0, $d9, $20, $2d, $32 ;ひきょり -5% コントロール -2
-	DB END_STRING
-
 _STRING8B_431: ;originally $6b60
-	DB $93, $81, $80, $de, $8f, $20, $82, $88, $86, $bd, $c4, $da, $b0, $c4 ;もちだま つねにストレート
-	DB BR
-	DB $8b, $77, $6e, $98, $20, $2d, $35, $25, $20, $ba, $dd, $c4, $db, $b0, $d9, $20, $2d, $32 ;ひきょり -5% コントロール -2
-	DB END_STRING
-
 _STRING8B_432: ;originally $6b82
 	DB $93, $81, $80, $de, $8f, $20, $82, $88, $86, $bd, $c4, $da, $b0, $c4 ;もちだま つねにストレート
 	DB BR
 	DB $8b, $77, $6e, $98, $20, $2d, $35, $25, $20, $ba, $dd, $c4, $db, $b0, $d9, $20, $2d, $32 ;ひきょり -5% コントロール -2
 	DB END_STRING
 
+
 _STRING8B_433: ;originally $6ba4
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $20, $2b, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25, $20 ;ミートエリア +2 ひきょり -5% 
-	DB BR
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
-	DB END_STRING
-
 _STRING8B_434: ;originally $6bc4
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $20, $2b, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25, $20 ;ミートエリア +2 ひきょり -5% 
-	DB BR
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
-	DB END_STRING
-
 _STRING8B_435: ;originally $6be4
 	DB $d0, $b0, $c4, $b4, $d8, $b1, $20, $2b, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25, $20 ;ミートエリア +2 ひきょり -5% 
 	DB BR
 	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
 	DB END_STRING
 
-_STRING8B_436: ;originally $6c04
-	DB $8b, $77, $6e, $98, $20, $2b, $32, $30, $25, $20, $80, $76, $7b, $20, $2b, $32 ;ひきょり +20% たかさ +2
-	DB BR
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
-	DB BR
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $20, $2d, $32 ;ミートエリア -2
-	DB END_STRING
 
+_STRING8B_436: ;originally $6c04
 _STRING8B_437: ;originally $6c2b
 	DB $8b, $77, $6e, $98, $20, $2b, $32, $30, $25, $20, $80, $76, $7b, $20, $2b, $32 ;ひきょり +20% たかさ +2
 	DB BR
@@ -2733,14 +2618,8 @@ _STRING8B_437: ;originally $6c2b
 	DB $d0, $b0, $c4, $b4, $d8, $b1, $20, $2d, $32 ;ミートエリア -2
 	DB END_STRING
 
-_STRING8B_438: ;originally $6c52
-	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $20, $82, $96, $72 ;バックスピン つよい
-	DB BR
-	DB $80, $76, $7b, $20, $2d, $32, $20, $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;たかさ -2 もちだま +2アウト
-	DB BR
-	DB $ba, $dd, $c4, $db, $b0, $d9, $20, $2d, $32 ;コントロール -2
-	DB END_STRING
 
+_STRING8B_438: ;originally $6c52
 _STRING8B_439: ;originally $6c7c
 	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $20, $82, $96, $72 ;バックスピン つよい
 	DB BR
@@ -2748,6 +2627,7 @@ _STRING8B_439: ;originally $6c7c
 	DB BR
 	DB $ba, $dd, $c4, $db, $b0, $d9, $20, $2d, $32 ;コントロール -2
 	DB END_STRING
+
 
 _STRING8B_440: ;originally $6ca6
 	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $20, $76, $85, $98, $82, $96, $72 ;バックスピン かなりつよい

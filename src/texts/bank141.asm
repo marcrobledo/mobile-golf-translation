@@ -2739,106 +2739,83 @@ _STRING8D_397: ;unused?
 
 ;CLUB UNLOCKS
 _STRING8D_398: ;(unlocked by default, unused?)
-	DB "You can now use the" ;ノーマルウッドセットが
+	DB "BASIC WOOD" ;ノーマルウッドセットが
 	DB BR
-	DB "BASIC WOOD SET!" ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
-;BASIC IRON SET!
-_STRING8D_399: ;originally $7375
-	DB $c9, $b0, $cf, $d9, $b1, $b2, $b1, $dd, $be, $af, $c4, $76, $de ;ノーマルアイアンセットが
+_STRING8D_399: ;originally $7375 (unlocked by default, unused?)
+	DB "BASIC IRON" ;ノーマルアイアンセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
-
-;BASIC WEDGE SET!
-_STRING8D_400: ;originally $7391
-	DB $c9, $b0, $cf, $d9, $b3, $aa, $af, $bc, $de, $be, $af, $c4, $76, $de ;ノーマルウェッジセットが
+_STRING8D_400: ;originally $7391 (unlocked by default, unused?)
+	DB "BASIC WEDGE" ;ノーマルウェッジセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
 
-;LONG DRIVE WOOD SET!
 _STRING8D_401: ;originally $73ae
-	DB $db, $dd, $b8, $de, $c4, $de, $d7, $b2, $cc, $de, $b3, $af, $c4, $de, $be, $af, $c4, $76, $de ;ロングドライブウッドセットが
+	DB "LONG DRIVE WOOD" ;ロングドライブウッドセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
-
-;LONG DRIVE IRON SET!
 _STRING8D_402: ;originally $73d0
-	DB $db, $dd, $b8, $de, $c4, $de, $d7, $b2, $cc, $de, $b1, $b2, $b1, $dd, $be, $af, $c4, $76, $de ;ロングドライブアイアンセットが
+	DB "LONG DRIVE IRON" ;ロングドライブアイアンセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
-
-;LONG DRIVE WEDGE SET!
 _STRING8D_403: ;originally $73f2
-	DB $db, $dd, $b8, $de, $c4, $de, $d7, $b2, $cc, $de, $b3, $aa, $af, $bc, $de, $be, $af, $c4, $76, $de ;ロングドライブウェッジセットが
+	DB "LONG DRIVE WEDGE" ;ロングドライブウェッジセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
 
-;CONTROL WOOD SET!
 _STRING8D_404: ;originally $7415
-	DB $ba, $dd, $c4, $db, $b0, $d9, $b3, $af, $c4, $de, $be, $af, $c4, $76, $de ;コントロールウッドセットが
+	DB "CONTROL WOOD" ;コントロールウッドセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
-
-;CONTROL IRON SET!
 _STRING8D_405: ;originally $7433
-	DB $ba, $dd, $c4, $db, $b0, $d9, $b1, $b2, $b1, $dd, $be, $af, $c4, $76, $de ;コントロールアイアンセットが
+	DB "CONTROL IRON" ;コントロールアイアンセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
-
-;CONTROL WEDGE SET!
 _STRING8D_406: ;originally $7451
-	DB $ba, $dd, $c4, $db, $b0, $d9, $b3, $aa, $af, $bc, $de, $be, $af, $c4, $76, $de ;コントロールウェッジセットが
+	DB "CONTROL WEDGE" ;コントロールウェッジセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
 
-;HANDLING WOOD SET!
 _STRING8D_407: ;originally $7470
-	DB $ca, $dd, $c4, $de, $d8, $dd, $b8, $de, $b3, $af, $c4, $de, $be, $af, $c4, $76, $de ;ハンドリングウッドセットが
+	DB "HANDLING WOOD" ;ハンドリングウッドセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
-
-;HANDLING IRON SET!
 _STRING8D_408: ;originally $7490
-	DB $ca, $dd, $c4, $de, $d8, $dd, $b8, $de, $b1, $b2, $b1, $dd, $be, $af, $c4, $76, $de ;ハンドリングアイアンセットが
+	DB "HANDLING IRON" ;ハンドリングアイアンセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
-
-;HANDLING WEDGE SET!
 _STRING8D_409: ;originally $74b0
-	DB $ca, $dd, $c4, $de, $d8, $dd, $b8, $de, $b3, $aa, $af, $bc, $de, $be, $af, $c4, $76, $de ;ハンドリングウェッジセットが
+	DB "HANDLING WEDGE" ;ハンドリングウェッジセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
 
-;BACKSPIN WOOD SET!
 _STRING8D_410: ;originally $74d1
-	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $b3, $af, $c4, $de, $be, $af, $c4, $76, $de ;バックスピンウッドセットが
+	DB "BACKSPIN WOOD" ;バックスピンウッドセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
-
-;BACKSPIN IRON SET!
 _STRING8D_411: ;originally $74f1
-	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $b1, $b2, $b1, $dd, $be, $af, $c4, $76, $de ;バックスピンアイアンセットが
+	DB "BACKSPIN IRON" ;バックスピンアイアンセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
-
-;BACKSPIN WEDGE SET!
 _STRING8D_412: ;originally $7511
-	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $b3, $aa, $af, $bc, $de, $be, $af, $c4, $76, $de ;バックスピンウェッジセットが
+	DB "BACKSPIN WEDGE" ;バックスピンウェッジセットが
 	DB BR
-	DB $82, $76, $74, $99, $96, $73, $86, $85, $98, $8f, $7c, $80, $21 ;つかえるようになりました!
+	DB "is now available!" ;つかえるようになりました!
 	DB END_STRING
 
 

@@ -1,7 +1,8 @@
 to-do:
+- club extended descriptions in exchange counter
+
 - multiplayer current bets status screens
 
-- unlocked clubs dialog texts
 - fix multiplayer centered text
 
 - disconnect screen
@@ -10,8 +11,6 @@ to-do:
 	リセットします
 	Communication lost! Resetting
 
-- clubs descriptions in exchange counter
-- exchange counter text between description and item list
 
 
 - improve decompressor tool
