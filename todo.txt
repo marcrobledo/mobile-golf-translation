@@ -1,6 +1,0 @@
-to-do:
-- disconnect screen
-	つうしんが
-	きれました!
-	リセットします
-	Communication lost! Resetting

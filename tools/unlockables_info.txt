@@ -1,0 +1,36 @@
+08:5fc5=called when unlocking golfer
+
+$c780=unlocked content id and type
+------------ GOLFERS -----------
+$00 00=Ken (unlocked by default, unused)
+$01 00=Tread (unlocked by default, unused)
+$02 00=Napple (unlocked by default, unused)
+$03 00=Lisa (unlocked by default, unused)
+$04 00=Bean
+$05 00=Rosa
+$06 00=Power
+$07 00=Bird
+$08 00=Kid
+$09 00=Grace
+$0a 00=Tiny
+$0b 00=Gene
+$0c 00=Peach (DLC)
+$0d 00=Yoshi (DLC)
+$0e 00=Spike (DLC)
+$0f 00=Mario (DLC)
+------------ COURSES -----------
+$00 01=Course 1: States (unlocked by default, unused)
+$01 01=Course 2: Caribbean
+$02 01=Course 3: Pyramid
+$03 01=Course 4: Britten
+$04 01=Course 5: Jipangu
+$05 01=Course 6: Atlantic (DLC)
+$06 01=Course 7: Pacific (DLC)
+$07 01=Course S1: Snowland Short
+$08 01=Course S2: Halloween Night Short
+$09 01=Vehicle P1
+$0a 01=Wild P1
+------------- CLUBS ------------
+$00 02=Basic wood set
+...
+$0f 02=latest club
