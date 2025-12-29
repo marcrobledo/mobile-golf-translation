@@ -17,6 +17,7 @@ textarea{
 	height:calc(100% - 80px);
 }
 textarea.error{background-color:red}
+.text-center{text-align:center;}
 
 canvas{border:1px dotted #888}
 #container{
@@ -43,4 +44,18 @@ canvas{border:1px dotted #888}
 	flex-grow: 2;
 	width:45%;
 	padding:16px;
+}
+
+#dialog-open-rom::backdrop{
+	background-color:rgba(0,0,0,.75);
+	backdrop-filter:blur(4px);
+
+}
+#dialog-open-rom h2{
+	color:red;
+}
+#input-file{
+	padding:8px;
+	border-radius:3px;
+	background-color:#ddd;
 }

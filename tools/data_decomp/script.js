@@ -376,25 +376,69 @@ function extractSection(bankOffsetStr){
 	refreshCanvas();
 };
 
+
+
+/* CRC32 - from Alex - https://stackoverflow.com/a/18639999 */
+const CRC32_TABLE = (function () {
+	var c, crcTable = [];
+	for (var n = 0; n < 256; n++) {
+		c = n;
+		for (var k = 0; k < 8; k++)
+			c = ((c & 1) ? (0xedb88320 ^ (c >>> 1)) : (c >>> 1));
+		crcTable[n] = c;
+	}
+	return crcTable;
+}());
+function crc32(arrayBuffer) {
+	const u8array = new Uint8Array(arrayBuffer);
+
+	var crc = 0 ^ (-1);
+
+	for (var i = 0; i < u8array.byteLength; i++)
+		crc = (crc >>> 8) ^ CRC32_TABLE[(crc ^ u8array[i]) & 0xff];
+
+	return ((crc ^ (-1)) >>> 0);
+}
+
+function loadROM(arrayBuffer){
+	if(crc32(arrayBuffer)!==0x35fc5b32){
+		document.getElementById('dialog-open-rom').showModal();
+		return false;
+	}
+	document.getElementById('sections').disabled=false;
+
+	romBanks=new Array(parseInt(arrayBuffer.byteLength/0x4000));
+	for(var i=0; i<romBanks.length; i++){
+		romBanks[i]=new Uint8Array(arrayBuffer, i*0x4000, 0x4000);
+	}
+
+	var option=document.createElement('option');
+	document.getElementById('sections').appendChild(option);
+
+	
+	extractSection(document.getElementById('sections').value);
+	document.getElementById('dialog-open-rom').close();
+}
 window.addEventListener('load', function(evt){
+	document.getElementById('sections').disabled=true;
+	document.getElementById('input-file').addEventListener('change', function(evt){
+		const fileReader=new FileReader();
+		fileReader.onload=function(evt){
+			loadROM(evt.target.result);
+		};
+		fileReader.readAsArrayBuffer(evt.target.files[0]);
+	});
+
 	if(typeof ROM_FILE === 'string'){
 		fetch(ROM_FILE)
 			.then(response => response.arrayBuffer())
-			.then(ab => {
-				romBanks=new Array(parseInt(ab.byteLength/0x4000));
-				for(var i=0; i<romBanks.length; i++){
-					romBanks[i]=new Uint8Array(ab, i*0x4000, 0x4000);
-				}
-
-				var option=document.createElement('option');
-				document.getElementById('sections').appendChild(option);
-
-				
-				extractSection(document.getElementById('sections').value);
+			.then(arrayBuffer => {
+				loadROM(arrayBuffer);
 			}).catch(err => {
-				console.error('error loading ROM_FILE: '+ err);
+				document.getElementById('dialog-open-rom').showModal();
+				console.error('error auto loading ROM_FILE: '+ err);
 			});
 	}else{
-		document.getElementById('sections').className='hide';
+		document.getElementById('dialog-open-rom').showModal();
 	}
 }, false);

@@ -4,7 +4,3 @@ to-do:
 	きれました!
 	リセットします
 	Communication lost! Resetting
-
-
-
-- improve decompressor tool

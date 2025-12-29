@@ -37,7 +37,7 @@
 	<div id="right">
 		<label>
 			ROM Section
-			<select id="sections" onchange="extractSection(this.value);">
+			<select id="sections" onchange="extractSection(this.value);" disabled>
 				<option value="74:4030">Intro 1</option>
 				<option value="74:4840">Intro 1 (map)</option>
 				<option value="74:49f9">Intro 2</option>
@@ -277,4 +277,13 @@
 		<textarea id="compressed" onchange="parseData(compressedData)"></textarea>
 	</div>
 </div>
+
+<dialog id="dialog-open-rom">
+	<h2>Autoload ROM failed</h2>
+	<p>In order to use Mobile Golf (de)compression tool, you must provide the original game ROM file.</p>
+	<p>Please load Mobile Golf (Japan) ROM here (crc32: 35fc5b32):</p>
+	<div class="text-center">
+		<input type="file" id="input-file" onchange="loadROMFile()" accept=".gbc" />
+	</div>
+</dialog>
 </body></html>
