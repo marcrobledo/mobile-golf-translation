@@ -1,6 +1,4 @@
 to-do:
-- club extended descriptions in exchange counter
-
 - multiplayer current bets status screens
 
 - fix multiplayer centered text

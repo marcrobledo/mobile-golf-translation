@@ -1764,10 +1764,10 @@ _DIALOG306: ;originally $5200
 
 
 ;CLUB DESCRIPTIONS
-_DIALOG307:
+_DIALOG307: ;BASIC (Wood/Iron/Wedge) Line 1
 	DB "Basic set" ;ひょうじゅんのクラブ
 	DB END_STRING
-_DIALOG308:
+_DIALOG308: ;BASIC (Wood/Iron/Wedge) Line 2
 	DB "Nothing special" ;とくに えいきょうはありません
 	DB END_STRING
 
@@ -1775,245 +1775,201 @@ _DIALOG309:
 	DB $8b, $77, $6e, $98, $b1, $af, $cc, $df, $83, $de, $20, $93, $81, $80, $de, $8f, $82, $96, $72 ;ひきょりアップで もちだまつよい
 	DB END_STRING
 
-_DIALOG310:
+_DIALOG310: ;(???)
 	DB "Control+ Distance-" ;コントロールアップ ひきょりダウン
 	DB END_STRING
 
-_DIALOG311: ;originally $5252
+_DIALOG311: ;originally $5252 (???)
 	DB $93, $81, $80, $de, $8f, $96, $9c, $78, $20, $8b, $77, $6e, $98, $c0, $de, $b3, $dd ;もちだまよわく ひきょりダウン
 	DB END_STRING
 
-_DIALOG312: ;originally $5264
+_DIALOG312: ;originally $5264 (???)
 	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $b1, $af, $cc, $df, $20, $93, $81, $80, $de, $8f, $82, $96, $72 ;バックスピンアップ もちだまつよい
 	DB END_STRING
 
-_DIALOG313: ;originally $527a
+_DIALOG313: ;originally $527a (???)
 	DB $80, $76, $7b, $89, $8b, $78, $72, $ce, $de, $b0, $d9, $76, $de, $73, $83, $99 ;たかさのひくいボールがうてる
 	DB END_STRING
 
-_DIALOG314: ;originally $528b
+_DIALOG314: ;originally $528b (???)
 	DB $d0, $b0, $c4, $7c, $94, $7d, $78, $20, $93, $81, $80, $de, $8f, $82, $96, $72 ;ミートしやすく もちだまつよい
 	DB END_STRING
 
-_DIALOG315: ;originally $529c
+_DIALOG315: ;originally $529c (???)
 	DB $93, $81, $80, $de, $8f, $76, $de, $bd, $c4, $da, $b0, $c4, $86, $85, $99 ;もちだまがストレートになる
 	DB END_STRING
 
-_DIALOG316: ;originally $52ac
+_DIALOG316: ;originally $52ac (???)
 	DB $d0, $b0, $c4, $7c, $86, $78, $72, $79, $84, $de, $20, $77, $6e, $98, $76, $de, $83, $de, $99 ;ミートしにくいけど きょりがでる
 	DB END_STRING
 
-_DIALOG317: ;originally $52c0
+_DIALOG317: ;originally $52c0 (???)
 	DB "Weak backspin" ;ひくいバックスピンがうてる
 	DB END_STRING
 
-_DIALOG318: ;originally $52d1
+_DIALOG318: ;originally $52d1 (???)
 	DB "High backspin" ;つよくてたかいバックスピンがうてる
 	DB END_STRING
 
-_DIALOG319: ;originally $52e6
+_DIALOG319: ;originally $52e6 (???)
 	DB "Hard to hit with" ;ミートしにくいけど あたるとすごい
 	DB END_STRING
 
-_DIALOG320: ;originally $52fa
-	DB "Control +2" ;コントロール +2
-	DB END_STRING
 
-_DIALOG321: ;originally $5304
-	DB "Distance -5%" ;ひきょり -5%
-	DB END_STRING
 
-_DIALOG322: ;originally $530d
-	DB "Control +2" ;コントロール +2
-	DB END_STRING
 
-_DIALOG323: ;originally $5317
-	DB "Distance -5%" ;ひきょり -5%
-	DB END_STRING
 
-_DIALOG324: ;originally $5320
-	DB "Control +2" ;コントロール +2
-	DB END_STRING
 
-_DIALOG325: ;originally $532a
-	DB "Distance -5%" ;ひきょり -5%
-	DB END_STRING
 
-_DIALOG326: ;originally $5333
-	DB "Height -2" ;たかさ -2
-	DB END_STRING
 
-_DIALOG327: ;originally $533a
-	DB "Distance -5%" ;ひきょり -5%
-	DB END_STRING
 
-_DIALOG328: ;originally $5343
-	DB "Height -2" ;たかさ -2
-	DB END_STRING
-
-_DIALOG329: ;originally $534a
-	DB "Distance -5%" ;ひきょり -5%
-	DB END_STRING
-
-_DIALOG330: ;originally $5353
-	DB "Height -2" ;たかさ -2
-	DB END_STRING
-
-_DIALOG331: ;originally $535a
-	DB "Distance -5%" ;ひきょり -5%
-	DB END_STRING
-
-_DIALOG332: ;originally $5363
-	DB "Curve +2CENTER" ;もちだま +2センター
-	DB END_STRING
-
-_DIALOG333: ;originally $5370
-	DB "Distance -5%" ;ひきょり -5%
-	DB END_STRING
-
-_DIALOG334: ;originally $5379
-	DB "Curve +2CENTER" ;もちだま +2センター
-	DB END_STRING
-
-_DIALOG335: ;originally $5386
-	DB "Distance -5%" ;ひきょり -5%
-	DB END_STRING
-
-_DIALOG336: ;originally $538f
-	DB "Curve +2CENTER" ;もちだま +2センター
-	DB END_STRING
-
-_DIALOG337: ;originally $539c
-	DB "Distance -5%" ;ひきょり -5%
-	DB END_STRING
-
-_DIALOG338: ;originally $53a5
+_DIALOG338: ;originally $53a5 (Long Drive Wood Line 1)
+_DIALOG340: ;originally $53bb (Long Drive Iron Line 1)
+_DIALOG342: ;originally $53d1 (Long Drive Wedge Line 1)
 	DB "Distance +10%" ;ひきょり +10%
 	DB END_STRING
-
-_DIALOG339: ;originally $53af
-	DB "Curve +2OUT" ;もちだま +2アウト
+_DIALOG339: ;originally $53af (Long Drive Wood Line 2)
+_DIALOG341: ;originally $53c5 (Long Drive Iron Line 2)
+_DIALOG343: ;originally $53db (Long Drive Wedge Line 2)
+	DB "Curve +2" ;もちだま +2アウト
 	DB END_STRING
 
-_DIALOG340: ;originally $53bb
-	DB "Distance +10%" ;ひきょり +10%
+
+
+_DIALOG326: ;originally $5333 (Low-Ball Wood Line 1)
+_DIALOG328: ;originally $5343 (Low-Ball Iron Line 1)
+_DIALOG330: ;originally $5353 (Low-Ball Wedge Line 1)
+	DB "Height -2" ;たかさ -2
+	DB END_STRING
+_DIALOG327: ;originally $533a (Low-Ball Wood Line 2)
+_DIALOG329: ;originally $534a (Low-Ball Iron Line 2)
+_DIALOG331: ;originally $535a (Low-Ball Wedge Line 2)
+	DB "Distance -5%" ;ひきょり -5%
 	DB END_STRING
 
-_DIALOG341: ;originally $53c5
-	DB "Curve +2OUT" ;もちだま +2アウト
+
+
+_DIALOG352: ;originally $5466 (Meet Wood Line 1)
+_DIALOG354: ;originally $5485 (Meet Iron Line 1)
+_DIALOG356: ;originally $54a4 (Meet Wedge Line 1)
+	DB "MeetArea+2 Dist 5%" ;ミートエリア +2 ひきょり -5%
+	DB END_STRING
+_DIALOG353: ;originally $5479 (Meet Wood Line 2)
+_DIALOG355: ;originally $5498 (Meet Iron Line 2)
+_DIALOG357: ;originally $54b7 (Meet Wedge Line 2)
+	DB "Curve +2" ;もちだま +2アウト
 	DB END_STRING
 
-_DIALOG342: ;originally $53d1
-	DB "Distance +10%" ;ひきょり +10%
+
+
+_DIALOG346: ;originally $5400 (Straight Wood Line 1)
+_DIALOG348: ;originally $5422 (Straight Iron Line 1)
+_DIALOG350: ;originally $5444 (Straight Wedge Line 1)
+	DB "Always straight" ;もちだま つねにストレート
+	DB END_STRING
+_DIALOG347: ;originally $540f (Straight Wood Line 2)
+_DIALOG349: ;originally $5431 (Straight Iron Line 2)
+_DIALOG351: ;originally $5453 (Straight Wedge Line 2)
+	DB "Dist -5% Control-2" ;ひきょり -5% コントロール -2
 	DB END_STRING
 
-_DIALOG343: ;originally $53db
-	DB "Curve +2OUT" ;もちだま +2アウト
+
+
+_DIALOG332: ;originally $5363 (Handling Wood Line 1)
+_DIALOG334: ;originally $5379 (Handling Iron Line 1)
+_DIALOG336: ;originally $538f (Handling Wedge Line 1)
+	DB "Curve +2 center" ;もちだま +2センター
+	DB END_STRING
+_DIALOG333: ;originally $5370 (Handling Wood Line 2)
+_DIALOG335: ;originally $5386 (Handling Iron Line 2)
+_DIALOG337: ;originally $539c (Handling Wedge Line 2)
+	DB "Distance -5%" ;ひきょり -5%
 	DB END_STRING
 
-_DIALOG344: ;originally $53e7
+
+
+_DIALOG320: ;originally $52fa (Control Wood Line 1)
+_DIALOG322: ;originally $530d (Control Iron Line 1)
+_DIALOG324: ;originally $5320 (Control Wedge Line 1?, unused?)
+	DB "Control +2" ;コントロール +2
+	DB END_STRING
+_DIALOG321: ;originally $5304 (Control Wood Line 2)
+_DIALOG323: ;originally $5317 (Control Iron Line 2)
+_DIALOG325: ;originally $532a (Control Wedge Line 2?, unused?)
+	DB "Distance -5%" ;ひきょり -5%
+	DB END_STRING
+
+
+
+_DIALOG366: ;originally $5560 (Hyperspin Wedge Line 1)
+	DB "Backspin^^Height+2" ;バックスピンかなりつよい たかさ+2
+	DB END_STRING
+_DIALOG367: ;originally $5575 (Hyperspin Wedge Line 2)
+	DB "Curve+2  Control-2" ;もちだま+2アウト コントロール-2
+	DB END_STRING
+
+
+
+_DIALOG358: ;originally $54c3 (Big Drive Wood Line 1)
+_DIALOG360: ;originally $54e9 (Big Drive Iron Line 1)
+	DB "Dist+20%MeetArea-2" ;ひきょり+20% ミートエリア -2
+	DB END_STRING
+_DIALOG359: ;originally $54d6 (Big Drive Wood Line 2)
+_DIALOG361: ;originally $54fc (Big Drive Iron Line 2)
+	DB "Curv+2 Height+2" ;もちだま +2アウト たかさ +2
+	DB END_STRING
+
+
+
+_DIALOG344: ;originally $53e7 (Backspin Wedge Line 1)
 	DB "Backspin^" ;バックスピン つよい
 	DB END_STRING
-
-_DIALOG345: ;originally $53f4
-	DB "Curve +2OUT" ;もちだま +2アウト
+_DIALOG345: ;originally $53f4 (Backspin Wedge Line 2)
+	DB "Curve +2" ;もちだま +2アウト
 	DB END_STRING
 
-_DIALOG346: ;originally $5400
-	DB "Always straight" ;もちだま つねにストレート
-	DB END_STRING
 
-_DIALOG347: ;originally $540f
-	DB "Dist -5% Control-2" ;ひきょり -5% コントロール -2
-	DB END_STRING
 
-_DIALOG348: ;originally $5422
-	DB "Always straight" ;もちだま つねにストレート
-	DB END_STRING
-
-_DIALOG349: ;originally $5431
-	DB "Dist -5% Control-2" ;ひきょり -5% コントロール -2
-	DB END_STRING
-
-_DIALOG350: ;originally $5444
-	DB "Always straight" ;もちだま つねにストレート
-	DB END_STRING
-
-_DIALOG351: ;originally $5453
-	DB "Dist -5% Control-2" ;ひきょり -5% コントロール -2
-	DB END_STRING
-
-_DIALOG352: ;originally $5466
-	DB "MeetArea+2 Dist 5%" ;ミートエリア +2 ひきょり -5%
-	DB END_STRING
-
-_DIALOG353: ;originally $5479
-	DB "Curve +2OUT" ;もちだま +2アウト
-	DB END_STRING
-
-_DIALOG354: ;originally $5485
-	DB "MeetArea+2 Dist 5%" ;ミートエリア +2 ひきょり -5%
-	DB END_STRING
-
-_DIALOG355: ;originally $5498
-	DB "Curve +2OUT" ;もちだま +2アウト
-	DB END_STRING
-
-_DIALOG356: ;originally $54a4
-	DB "MeetArea+2 Dist 5%" ;ミートエリア +2 ひきょり -5%
-	DB END_STRING
-
-_DIALOG357: ;originally $54b7
-	DB "Curve +2OUT" ;もちだま +2アウト
-	DB END_STRING
-
-_DIALOG358: ;originally $54c3
-	DB "Dist+20%MeetArea-2" ;ひきょり+20% ミートエリア -2
-	DB END_STRING
-
-_DIALOG359: ;originally $54d6
-	DB "Curv+2OUT Height+2" ;もちだま +2アウト たかさ +2
-	DB END_STRING
-
-_DIALOG360: ;originally $54e9
-	DB "Dist+20%MeetArea-2" ;ひきょり+20% ミートエリア -2
-	DB END_STRING
-
-_DIALOG361: ;originally $54fc
-	DB "Curv+2OUT Height+2" ;もちだま +2アウト たかさ +2
-	DB END_STRING
-
-_DIALOG362: ;originally $550f
-	DB "Backspin^ Height-2" ;バックスピン つよい  たかさ -2
-	DB END_STRING
-
-_DIALOG363: ;originally $5524
-	DB "Curve+2OUT Contr-2" ;もちだま+2アウト コントロール-2
-	DB END_STRING
-
-_DIALOG364: ;originally $5538
-	DB "Backspin^ Height-2" ;バックスピン つよい たかさ -2
-	DB END_STRING
-
-_DIALOG365: ;originally $554c
-	DB "Curve+2OUT Contr-2" ;もちだま+2アウト コントロール-2
-	DB END_STRING
-
-_DIALOG366: ;originally $5560
-	DB "Backspin^ Height+2" ;バックスピンかなりつよい たかさ+2
-	DB END_STRING
-
-_DIALOG367: ;originally $5575
-	DB "Curve+2OUT Contr-2" ;もちだま+2アウト コントロール-2
-	DB END_STRING
-
-_DIALOG368: ;originally $5589
+_DIALOG368: ;originally $5589 (Gambling Wood Line 1)
 	DB "Dist+20% Control-3" ;ひきょり+20% コントロール -3
 	DB END_STRING
-
-_DIALOG369: ;originally $559c
-	DB "CurveCNTR Height-2" ;もちだまストレート たかさ -2
+_DIALOG369: ;originally $559c (Gambling Wood Line 2)
+	DB "Straight  Height-2" ;もちだまストレート たかさ -2
 	DB END_STRING
+
+
+
+_DIALOG362: ;originally $550f (Low spin Iron Line 1)
+_DIALOG364: ;originally $5538 (Low spin Wedge Line 1)
+	DB "Backspin^ Height-2" ;バックスピン つよい たかさ -2
+	DB END_STRING
+_DIALOG363: ;originally $5524 (Low spin Iron Line 2)
+_DIALOG365: ;originally $554c (Low spin Wedge Line 2)
+	DB "Curve+2  Control-2" ;もちだま+2アウト コントロール-2
+	DB END_STRING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 _DIALOG370: ;originally $55ae
 	DB "No replays" ;スタートでロック

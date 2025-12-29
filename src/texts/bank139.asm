@@ -2554,95 +2554,103 @@ _STRING8B_417:
 
 
 ;EXCHANGE ITEMS - CLUB DESCRIPTIONS
-_STRING8B_418: ;originally $6a4b
-_STRING8B_419: ;originally $6a5e
-	DB $ba, $dd, $c4, $db, $b0, $d9, $20, $2b, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25 ;コントロール +2 ひきょり -5%
+_STRING8B_418: ;originally $6a4b (Control Wood)
+_STRING8B_419: ;originally $6a5e (Control Iron)
+	DB "Control +2" ;コントロール +2 ひきょり -5%
+	DB BR
+	DB "Distance -5%"
 	DB END_STRING
 
 
-_STRING8B_420: ;originally $6a71
-_STRING8B_421: ;originally $6a81
-_STRING8B_422: ;originally $6a91
-	DB $80, $76, $7b, $20, $2d, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25 ;たかさ -2 ひきょり -5%
+_STRING8B_420: ;originally $6a71 (Low-ball Wood)
+_STRING8B_421: ;originally $6a81 (Low-ball Iron)
+_STRING8B_422: ;originally $6a91 (Low-ball Wedge)
+	DB "Height -2" ;たかさ -2 ひきょり -5%
+	DB BR
+	DB "Distance -5%"
 	DB END_STRING
 
 
-_STRING8B_423: ;originally $6aa1
-_STRING8B_424: ;originally $6ab7
-_STRING8B_425: ;originally $6acd
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $be, $dd, $c0, $b0 ;もちだま +2センター
+_STRING8B_423: ;originally $6aa1 (Handling Wood)
+_STRING8B_424: ;originally $6ab7 (Handling Iron)
+_STRING8B_425: ;originally $6acd (Handling Wedge)
+	DB "Curve +2 center" ;もちだま +2センター
 	DB BR
-	DB $8b, $77, $6e, $98, $20, $2d, $35, $25 ;ひきょり -5%
+	DB "Distance -5%" ;ひきょり -5%
 	DB END_STRING
 
 
-_STRING8B_426: ;originally $6ae3
-_STRING8B_427: ;originally $6af9
-_STRING8B_428: ;originally $6b0f
-	DB $8b, $77, $6e, $98, $20, $2b, $31, $30, $25 ;ひきょり +10%
+_STRING8B_426: ;originally $6ae3 (Long Drive Wood)
+_STRING8B_427: ;originally $6af9 (Long Drive Iron)
+_STRING8B_428: ;originally $6b0f (Long Drive Wedge)
+	DB "Distance +10%" ;ひきょり +10%
 	DB BR
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
+	DB "Curve +2" ;もちだま +2アウト
 	DB END_STRING
 
 
-_STRING8B_429: ;originally $6b25
-	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $20, $82, $96, $72 ;バックスピン つよい
+_STRING8B_429: ;originally $6b25 (Backspin wedge)
+	DB "Backspin ^" ;バックスピン つよい
 	DB BR
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
+	DB "Curve +2" ;もちだま +2アウト
 	DB END_STRING
 
-_STRING8B_430: ;originally $6b3e
-_STRING8B_431: ;originally $6b60
-_STRING8B_432: ;originally $6b82
-	DB $93, $81, $80, $de, $8f, $20, $82, $88, $86, $bd, $c4, $da, $b0, $c4 ;もちだま つねにストレート
+_STRING8B_430: ;originally $6b3e (Straight Wood)
+_STRING8B_431: ;originally $6b60 (Straight Iron)
+_STRING8B_432: ;originally $6b82 (Straight Wedge)
+	DB "Always straight" ;もちだま つねにストレート
 	DB BR
-	DB $8b, $77, $6e, $98, $20, $2d, $35, $25, $20, $ba, $dd, $c4, $db, $b0, $d9, $20, $2d, $32 ;ひきょり -5% コントロール -2
-	DB END_STRING
-
-
-_STRING8B_433: ;originally $6ba4
-_STRING8B_434: ;originally $6bc4
-_STRING8B_435: ;originally $6be4
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $20, $2b, $32, $20, $8b, $77, $6e, $98, $20, $2d, $35, $25, $20 ;ミートエリア +2 ひきょり -5% 
+	DB "Distance -5%" ;ひきょり -5% コントロール -2
 	DB BR
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
+	DB "Control -2"
 	DB END_STRING
 
 
-_STRING8B_436: ;originally $6c04
-_STRING8B_437: ;originally $6c2b
-	DB $8b, $77, $6e, $98, $20, $2b, $32, $30, $25, $20, $80, $76, $7b, $20, $2b, $32 ;ひきょり +20% たかさ +2
+_STRING8B_433: ;originally $6ba4 (Meet Wood)
+_STRING8B_434: ;originally $6bc4 (Meet Iron)
+_STRING8B_435: ;originally $6be4 (Meet Wedge)
+	DB "Meet Area +2" ;ミートエリア +2 ひきょり -5% 
 	DB BR
-	DB $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;もちだま +2アウト
+	DB "Distance 5%" ;もちだま +2アウト
 	DB BR
-	DB $d0, $b0, $c4, $b4, $d8, $b1, $20, $2d, $32 ;ミートエリア -2
+	DB "Curve +2"
 	DB END_STRING
 
 
-_STRING8B_438: ;originally $6c52
-_STRING8B_439: ;originally $6c7c
-	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $20, $82, $96, $72 ;バックスピン つよい
+_STRING8B_436: ;originally $6c04 (Big Drive Wood)
+_STRING8B_437: ;originally $6c2b (Big Drive Iron)
+	DB "Distance +20%" ;ひきょり +20% たかさ +2
 	DB BR
-	DB $80, $76, $7b, $20, $2d, $32, $20, $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;たかさ -2 もちだま +2アウト
+	DB "Curve +2 Height+2" ;もちだま +2アウト
 	DB BR
-	DB $ba, $dd, $c4, $db, $b0, $d9, $20, $2d, $32 ;コントロール -2
+	DB "Meet Area -2" ;ミートエリア -2
 	DB END_STRING
 
 
-_STRING8B_440: ;originally $6ca6
-	DB $ca, $de, $af, $b8, $bd, $cb, $df, $dd, $20, $76, $85, $98, $82, $96, $72 ;バックスピン かなりつよい
+_STRING8B_438: ;originally $6c52 (Low-spin Iron)
+_STRING8B_439: ;originally $6c7c (Low-spin Wedge)
+	DB "Backspin ^" ;バックスピン つよい
 	DB BR
-	DB $80, $76, $7b, $20, $2b, $32, $20, $93, $81, $80, $de, $8f, $20, $2b, $32, $b1, $b3, $c4 ;たかさ +2 もちだま +2アウト
+	DB "Height -2 Curve +2" ;たかさ -2 もちだま +2アウト
 	DB BR
-	DB $ba, $dd, $c4, $db, $b0, $d9, $20, $2d, $32 ;コントロール -2
+	DB "Control -2" ;コントロール -2
 	DB END_STRING
 
-_STRING8B_441: ;originally $6cd3
-	DB $8b, $77, $6e, $98, $20, $2b, $32, $30, $25, $20, $80, $76, $7b, $20, $2d, $32 ;ひきょり +20% たかさ -2
+
+_STRING8B_440: ;originally $6ca6 (Hyperspin Wedge)
+	DB "Backspin ^^" ;バックスピン かなりつよい
 	DB BR
-	DB $93, $81, $80, $de, $8f, $20, $82, $88, $86, $bd, $c4, $da, $b0, $c4 ;もちだま つねにストレート
+	DB "Height +2 Curve +2" ;たかさ +2 もちだま +2アウト
 	DB BR
-	DB $ba, $dd, $c4, $db, $b0, $d9, $20, $2d, $33, $20, $d0, $b0, $c4, $b4, $d8, $b1, $20, $31 ;コントロール -3 ミートエリア 1
+	DB "Control -2" ;コントロール -2
+	DB END_STRING
+
+_STRING8B_441: ;originally $6cd3 (Gambling Wood)
+	DB "Dist+20%  Height-2" ;ひきょり +20% たかさ -2
+	DB BR
+	DB "Always straight" ;もちだま つねにストレート
+	DB BR
+	DB "Cntrl-3  MeetArea1" ;コントロール -3 ミートエリア 1
 	DB END_STRING
 
 _STRING8B_442: ;originally $6d06
