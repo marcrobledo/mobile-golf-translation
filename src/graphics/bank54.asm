@@ -20,7 +20,7 @@ DW $6575
 DW $7261
 DW $72a8
 DW $72e4
-DW $7327
+DW _MULTIPLAYER_ARROW_BETS
 DW _SCORECARD_LEADERBOARD
 
 SECTION "Bank 54 - Hole in one pointers", ROMX[$4120], BANK[$36]
@@ -301,6 +301,19 @@ DB $ff, $ff, $ff, $ff, $00, $ff, $ee, $00, $00
 
 SECTION "Bank 54 - Data 2", ROMX[$6330], BANK[$36]
 DB $00
+
+SECTION "Bank 54 - Multiplayer - Arrow - Bets", ROMX[$7327], BANK[$36]
+_MULTIPLAYER_ARROW_BETS:
+;compressed data size: 126 bytes (saved 34 bytes, 21.25%)
+DB $bd, $00, $ff, $e2, $7f, $7f, $80, $ff, $fe, $eb, $00, $f3, $7f, $3f, $e5, $e3
+DB $ff, $e2, $ff, $ff, $1d, $e2, $af, $3f, $dd, $3f, $d5, $fc, $e0, $d9, $fa, $e1
+DB $1d, $f9, $e2, $ed, $e0, $e0, $ea, $b9, $46, $ff, $b9, $ff, $ff, $92, $ff, $13
+DB $fb, $95, $ff, $13, $ff, $d7, $93, $93, $6c, $e0, $e7, $01, $ff, $e0, $fe, $ff
+DB $bf, $80, $7f, $c0, $bf, $c0, $3f, $fe, $e0, $bf, $ff, $c0, $bf, $80, $7f, $00
+DB $ff, $00, $ff, $ef, $fe, $01, $00, $01, $e0, $e1, $80, $80, $00, $ff, $c0, $00
+DB $e0, $00, $f0, $00, $f8, $00, $ff, $fc, $00, $fe, $01, $fe, $03, $fc, $06, $ff
+DB $f8, $0c, $f0, $18, $e0, $30, $c0, $60, $07, $80, $c0, $00, $00, $00, $00
+
 
 SECTION "Bank 54 - Scorecard / Leaderboard", ROMX[$73b0], BANK[$36]
 _SCORECARD_LEADERBOARD:

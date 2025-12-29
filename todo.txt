@@ -1,8 +1,4 @@
 to-do:
-- multiplayer current bets status screens
-
-- fix multiplayer centered text
-
 - disconnect screen
 	つうしんが
 	きれました!
