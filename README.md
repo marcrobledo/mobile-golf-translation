@@ -49,8 +49,9 @@ Possible to-do list:
 ## How to compile
 1. Download and install [RGBDS](https://github.com/rednex/rgbds/)
 2. Place `Mobile Golf (Japan).gbc` ROM (crc32: `35fc5b32`) in `src/original_rom/` folder and rename it to `mobile_golf_jp.gbc`
-3. (optional) Change `ALTERNATE_UNLOCK_CONTENT_METHOD` flag value at `main.asm` if needed in order to enable/disable the alternate unlocking methods
-4. Run `make` (Unix) or `make_win.bat` (Windows), it will create `bin/mobile_golf_en.gbc`
+3. Run `make` (Unix) or `make_win.bat` (Windows), it will create:
+   - `bin/mobile_golf_en.gbc` (unlocks DLC)
+   - `bin/mobile_golf_en_vanilla_unlock.gbc` (does not unlock DLC)
 
 ## Credits
 ProstatePunch - text edits and corrections

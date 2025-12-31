@@ -20,27 +20,38 @@ IF NOT %RGBDS_PATH%=="" SET PATH=%PATH%;%RGBDS_PATH%
 IF NOT EXIST %TARGET_PATH% md %TARGET_PATH%
 
 
-REM delete current assembled rom
+REM delete current assembled roms
 IF EXIST %TARGET_PATH%%TARGET_NAME%.gbc del %TARGET_PATH%%TARGET_NAME%.gbc
+IF EXIST %TARGET_PATH%%TARGET_NAME%_vanilla_unlock.gbc del %TARGET_PATH%%TARGET_NAME%_vanilla_unlock.gbc
 
 IF "%1"=="clean" GOTO clean
-echo %1
-
 
 
 :assemble
 	echo assembling...
-	rgbasm --output %TARGET_PATH%%TARGET_NAME%.obj --include %SOURCE_PATH% %SOURCE_PATH%main.asm
+	rgbasm --output %TARGET_PATH%%TARGET_NAME%_vanilla_unlock.obj --include %SOURCE_PATH% %SOURCE_PATH%main.asm
 	IF errorlevel 1 GOTO error
-
 
 	echo linking...
-	rgblink --output %TARGET_PATH%%TARGET_NAME%.gbc --overlay %SOURCE_NAME% --sym %TARGET_PATH%%TARGET_NAME%.sym %TARGET_PATH%%TARGET_NAME%.obj 
+	rgblink --output %TARGET_PATH%%TARGET_NAME%_vanilla_unlock.gbc --overlay %SOURCE_NAME% --sym %TARGET_PATH%%TARGET_NAME%.sym %TARGET_PATH%%TARGET_NAME%_vanilla_unlock.obj 
 	IF errorlevel 1 GOTO error
 
-
 	echo fixing...
-	rgbfix --pad-value 0 --validate %TARGET_PATH%%TARGET_NAME%.gbc
+	rgbfix --validate -Wno-overwrite %TARGET_PATH%%TARGET_NAME%_vanilla_unlock.gbc
+	del %TARGET_PATH%%TARGET_NAME%_vanilla_unlock.obj
+
+
+
+	echo assembling DLC unlocker...
+	rgbasm --output %TARGET_PATH%%TARGET_NAME%.obj --include %SOURCE_PATH% %SOURCE_PATH%/dlc_alternate_unlock/dlc_alternate_unlock.asm
+	IF errorlevel 1 GOTO error
+
+	echo linking DLC unlocker...
+	rgblink --output %TARGET_PATH%%TARGET_NAME%.gbc --overlay %TARGET_PATH%%TARGET_NAME%_vanilla_unlock.gbc %TARGET_PATH%%TARGET_NAME%.obj 
+	IF errorlevel 1 GOTO error
+
+	echo fixing DLC unlocker...
+	rgbfix --validate -Wno-overwrite %TARGET_PATH%%TARGET_NAME%.gbc
 	del %TARGET_PATH%%TARGET_NAME%.obj
 	GOTO done
 
@@ -57,3 +68,4 @@ echo %1
 
 :done
 	IF EXIST %TARGET_PATH%%TARGET_NAME%.obj del %TARGET_PATH%%TARGET_NAME%.obj
+	IF EXIST %TARGET_PATH%%TARGET_NAME%_vanilla_unlock.obj del %TARGET_PATH%%TARGET_NAME%_vanilla_unlock.obj

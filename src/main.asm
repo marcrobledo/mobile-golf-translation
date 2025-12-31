@@ -7,28 +7,33 @@ INCLUDE "hardware.inc" ;https://github.com/gbdev/hardware.inc/blob/master/hardwa
 
 
 
-; SETTINGS
-;set this to zero to create the vanilla_unlock patch
-DEF ALTERNATE_UNLOCK_CONTENT_METHOD EQU 1
-
-
-
 ;DECOMPRESSION SUBROUTINE
 INCLUDE "decompress_data.asm"
 
 
-;hl - source
-;de - destination + 0x2000
-;c - number of tiles?
+
+
+;KNOWN SUBROUTINES
 SECTION "Copy uncompressed graphics to VRAM", ROM0[$04c2]
+; Safely copies to VRAM
+; - `hl` - source
+; - `de` - destination + $2000
+; - `c` - number of tiles?
 copy_to_vram:
 
+SECTION "Bank 3 - Calculate checksum", ROMX[$49ab], BANK[$03]
+; Calculates checksum for SRAM
+;
+; returns `hl` - checksum that will be stored in $a010
+calculate_checksum:
+	;...
+
+SECTION "Bank 3 - Save to SRAM", ROMX[$4bf5], BANK[$03]
+save_sram:
 
 
-;ALTERNATE UNLOCKING METHOD
-IF ALTERNATE_UNLOCK_CONTENT_METHOD == 1
-	INCLUDE "alternate_unlocking_method.asm"
-ENDC
+
+
 
 ;GAME REGION ID CHANGE
 INCLUDE "change_game_region.asm"

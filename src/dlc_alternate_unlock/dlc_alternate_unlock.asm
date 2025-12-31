@@ -1,11 +1,14 @@
+; Patches the way DLC content is unlocked in Mobile Golf so it can be
+; unlocked without the use of Mobile Adapter.
+
+
+; RAM and SRAM sections definitions
 SECTION "RAM - Current save - Unlocked courses", WRAM0[$c8ce]
 _ram_current_save_completed_tournaments: DB
 SECTION "RAM - Current save - Unlocked clubs", WRAM0[$c8d4]
 _ram_current_save_unlocked_clubs: DS 5
 SECTION "RAM - Current save - Mobile points", WRAM0[$ca3e]
 _ram_current_save_mobile_points: DB
-
-
 SECTION "SRAM", SRAM[$a010], BANK[0]
 _sram_checksum: DW ;$a010
 _sram_unknown: DS 14 ;$a012-a01f
@@ -18,12 +21,9 @@ _sram_unlocked_courses_2: DB ;$a023
 
 
 
-
-
-
+; Unlockable flags
 DEF UNLOCKED_COURSES_1_COURSE_6		EQU %00000010 ;b1=Course 6
 DEF UNLOCKED_COURSES_1_COURSE_7		EQU %00000001 ;b0=Course 7
-
 
 DEF UNLOCKED_COURSES_2_MINIGAMES1	EQU %00000001 ;b0=extra minigame 1
 DEF UNLOCKED_COURSES_2_MINIGAMES2	EQU %00000010 ;b1=extra minigame 2
@@ -47,16 +47,14 @@ DEF UNLOCKED_CLUBS_5_ALL EQU %11000000 ;b6=GAMBLING WOOD, b7=HYPERSPIN WEDGE
 
 
 
-;returns hl - checksum that will be stored in $a010
-SECTION "Bank 3 - Calculate checksum", ROMX[$49ab], BANK[$03]
-calculate_checksum:
+
+
+SECTION "Bank 3 - Save to SRAM hook", ROMX[$4c04], BANK[$03]
+;save_sram:
 	;...
-
-
-SECTION "Bank 3 - Save to SRAM", ROMX[$4c04], BANK[$03]
-save_sram:
 	;call	$40f6
 	call	hook_unlock_mobile_content
+	;...
 
 SECTION "Bank 0 - Free space", ROM0[$3fc4]
 _UNLOCKED_CLUBS_BYTES:
@@ -115,6 +113,7 @@ hook_unlock_mobile_content:
 	pop		de
 	pop		hl
 
+	;return execution to original code
 	jp		$40f6
 
 

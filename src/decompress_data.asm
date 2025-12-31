@@ -1,8 +1,9 @@
-;disassembley of Camelot's decompression data subroutine
+;disassemble of Camelot's decompression data subroutine
 
-;hl - source
-;de - destination (usually $d000)
 SECTION "Decompress data", ROM0[$1f8b]
+; Decompresses data using Camelot's decompression subroutine
+; - `hl` - source
+; - `de` - destination (usually $d000)
 decompress_data:
 	push	af
 	push	bc
