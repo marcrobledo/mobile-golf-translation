@@ -1,7 +1,7 @@
-;Bank 8c: strings for Net Clubhouse
-;         - NPC dialogues
-;         - status
-;         - error messages (max dimensions are 18 chars and 8 lines)
+;Bank 8c: strings for Net Clubhouse (2)
+;         - dialogues
+;         - status messages
+;         - communication error messages (max dimensions are 18 chars and 8 lines)
 
 SECTION "Bank 140", ROMX[$4000], BANK[$8c]
 DW bank8c_copy_string_to_c600
@@ -9,277 +9,277 @@ DW bank8c_copy_string_to_d880
 
 
 	
-SECTION "Bank 140 - Online dialogs - pointers", ROMX[$4004], BANK[$8c]
-_pointers_strings_netclubhouse:
-DW _string_netclubhouse0 - _strings8c_start
-DW _string_netclubhouse1 - _strings8c_start
-DW _string_netclubhouse2 - _strings8c_start
-DW _string_netclubhouse3 - _strings8c_start
-DW _string_netclubhouse4 - _strings8c_start
-DW _string_netclubhouse5 - _strings8c_start
-DW _string_netclubhouse6 - _strings8c_start
-DW _string_netclubhouse7 - _strings8c_start
-DW _string_netclubhouse8 - _strings8c_start
-DW _string_netclubhouse9 - _strings8c_start
-DW _string_netclubhouse_error_32_404 - _strings8c_start ;10
-DW _string_netclubhouse11 - _strings8c_start
-DW _string_netclubhouse12 - _strings8c_start
-DW _string_netclubhouse13 - _strings8c_start
-DW _string_netclubhouse14 - _strings8c_start
-DW _string_netclubhouse15 - _strings8c_start
-DW _string_netclubhouse16 - _strings8c_start
-DW _string_netclubhouse17 - _strings8c_start
-DW _string_netclubhouse18 - _strings8c_start
-DW _string_netclubhouse19 - _strings8c_start
-DW _string_netclubhouse20 - _strings8c_start
-DW _string_netclubhouse21 - _strings8c_start
-DW _string_netclubhouse22 - _strings8c_start
-DW _string_netclubhouse23 - _strings8c_start
-DW _string_netclubhouse24 - _strings8c_start
-DW _string_netclubhouse25 - _strings8c_start
-DW _string_netclubhouse26 - _strings8c_start
-DW _string_netclubhouse27 - _strings8c_start
-DW _string_netclubhouse28 - _strings8c_start
-DW _string_netclubhouse29 - _strings8c_start
-DW _string_netclubhouse30 - _strings8c_start
-DW _string_netclubhouse31 - _strings8c_start
-DW _string_netclubhouse32 - _strings8c_start
-DW _string_netclubhouse33 - _strings8c_start
-DW _string_netclubhouse34 - _strings8c_start
-DW _string_netclubhouse35 - _strings8c_start
-DW _string_netclubhouse36 - _strings8c_start
-DW _string_netclubhouse37 - _strings8c_start
-DW _string_netclubhouse38 - _strings8c_start
-DW _string_netclubhouse39 - _strings8c_start
-DW _string_netclubhouse40 - _strings8c_start
-DW _string_netclubhouse41 - _strings8c_start
-DW _string_netclubhouse42 - _strings8c_start
-DW _string_netclubhouse43 - _strings8c_start
-DW _string_netclubhouse44 - _strings8c_start
-DW _string_netclubhouse45 - _strings8c_start
-DW _string_netclubhouse46 - _strings8c_start
-DW _string_netclubhouse47 - _strings8c_start
-DW _string_netclubhouse48 - _strings8c_start
-DW _string_netclubhouse49 - _strings8c_start
-DW _string_netclubhouse50 - _strings8c_start
-DW _string_netclubhouse51 - _strings8c_start
-DW _string_netclubhouse52 - _strings8c_start
-DW _string_netclubhouse53 - _strings8c_start
-DW _string_netclubhouse54 - _strings8c_start
-DW _string_netclubhouse55 - _strings8c_start
-DW _string_netclubhouse56 - _strings8c_start
-DW _string_netclubhouse57 - _strings8c_start
-DW _string_netclubhouse58 - _strings8c_start
-DW _string_netclubhouse59 - _strings8c_start
-DW _string_netclubhouse60 - _strings8c_start
-DW _string_netclubhouse61 - _strings8c_start
-DW _string_netclubhouse62 - _strings8c_start
-DW _string_netclubhouse63 - _strings8c_start
-DW _string_netclubhouse64 - _strings8c_start
-DW _string_netclubhouse65 - _strings8c_start
-DW _string_netclubhouse66 - _strings8c_start
-DW _string_netclubhouse67 - _strings8c_start
-DW _string_netclubhouse68 - _strings8c_start
-DW _string_netclubhouse69 - _strings8c_start
-DW _string_netclubhouse70 - _strings8c_start
-DW _string_netclubhouse71 - _strings8c_start
-DW _string_netclubhouse72 - _strings8c_start
-DW _string_netclubhouse73 - _strings8c_start
-DW _string_netclubhouse74 - _strings8c_start
-DW _string_netclubhouse75 - _strings8c_start
-DW _string_netclubhouse76 - _strings8c_start
-DW _string_netclubhouse77 - _strings8c_start
-DW _string_netclubhouse78 - _strings8c_start
-DW _string_netclubhouse79 - _strings8c_start
-DW _string_netclubhouse80 - _strings8c_start
-DW _string_netclubhouse81 - _strings8c_start
-DW _string_netclubhouse82 - _strings8c_start
-DW _string_netclubhouse83 - _strings8c_start
-DW _string_netclubhouse84 - _strings8c_start
-DW _string_netclubhouse85 - _strings8c_start
-DW _string_netclubhouse86 - _strings8c_start
-DW _string_netclubhouse87 - _strings8c_start
-DW _string_netclubhouse88 - _strings8c_start
-DW _string_netclubhouse89 - _strings8c_start
-DW _string_netclubhouse90 - _strings8c_start
-DW _string_netclubhouse91 - _strings8c_start
-DW _string_netclubhouse92 - _strings8c_start
-DW _string_netclubhouse93 - _strings8c_start
-DW _string_netclubhouse94 - _strings8c_start
-DW _string_netclubhouse95 - _strings8c_start
-DW _string_netclubhouse96 - _strings8c_start
-DW _string_netclubhouse97 - _strings8c_start
-DW _string_netclubhouse98 - _strings8c_start
-DW _string_netclubhouse99 - _strings8c_start
-DW _string_netclubhouse100 - _strings8c_start
-DW _string_netclubhouse101 - _strings8c_start
-DW _string_netclubhouse102 - _strings8c_start
-DW _string_netclubhouse103 - _strings8c_start
-DW _string_netclubhouse104 - _strings8c_start
-DW _string_netclubhouse105 - _strings8c_start
-DW _string_netclubhouse106 - _strings8c_start
-DW _string_netclubhouse107 - _strings8c_start
-DW _string_netclubhouse108 - _strings8c_start
-DW _string_netclubhouse109 - _strings8c_start
-DW _string_netclubhouse110 - _strings8c_start
-DW _string_netclubhouse111 - _strings8c_start
-DW _string_netclubhouse112 - _strings8c_start
-DW _string_netclubhouse113 - _strings8c_start
-DW _string_netclubhouse114 - _strings8c_start
-DW _string_netclubhouse115 - _strings8c_start
-DW _string_netclubhouse116 - _strings8c_start
-DW _string_netclubhouse117 - _strings8c_start
-DW _string_netclubhouse118 - _strings8c_start
-DW _string_netclubhouse119 - _strings8c_start
-DW _string_netclubhouse120 - _strings8c_start
-DW _string_netclubhouse121 - _strings8c_start
-DW _string_netclubhouse122 - _strings8c_start
-DW _string_netclubhouse123 - _strings8c_start
-DW _string_netclubhouse124 - _strings8c_start
-DW _string_netclubhouse125 - _strings8c_start
-DW _string_netclubhouse126 - _strings8c_start
-DW _string_netclubhouse127 - _strings8c_start
-DW _string_netclubhouse128 - _strings8c_start
-DW _string_netclubhouse129 - _strings8c_start
-DW _string_netclubhouse130 - _strings8c_start
-DW _string_netclubhouse131 - _strings8c_start
-DW _string_netclubhouse132 - _strings8c_start
-DW _string_netclubhouse133 - _strings8c_start
-DW _string_netclubhouse134 - _strings8c_start
-DW _string_netclubhouse135 - _strings8c_start
-DW _string_netclubhouse136 - _strings8c_start
-DW _string_netclubhouse137 - _strings8c_start
-DW _string_netclubhouse138 - _strings8c_start
-DW _string_netclubhouse139 - _strings8c_start
-DW _string_netclubhouse140 - _strings8c_start
-DW _string_netclubhouse141 - _strings8c_start
-DW _string_netclubhouse142 - _strings8c_start
-DW _string_netclubhouse143 - _strings8c_start
-DW _string_netclubhouse144 - _strings8c_start
-DW _string_netclubhouse145 - _strings8c_start
-DW _string_netclubhouse146 - _strings8c_start
-DW _string_netclubhouse147 - _strings8c_start
-DW _string_netclubhouse148 - _strings8c_start
-DW _string_netclubhouse149 - _strings8c_start
-DW _string_netclubhouse150 - _strings8c_start
-DW _string_netclubhouse151 - _strings8c_start
-DW _string_netclubhouse152 - _strings8c_start
-DW _string_netclubhouse153 - _strings8c_start
-DW _string_netclubhouse154 - _strings8c_start
-DW _string_netclubhouse155 - _strings8c_start
-DW _string_netclubhouse156 - _strings8c_start
-DW _string_netclubhouse157 - _strings8c_start
-DW _string_netclubhouse158 - _strings8c_start
-DW _string_netclubhouse159 - _strings8c_start
-DW _string_netclubhouse160 - _strings8c_start
-DW _string_netclubhouse161 - _strings8c_start
-DW _string_netclubhouse162 - _strings8c_start
-DW _string_netclubhouse163 - _strings8c_start
-DW _string_netclubhouse164 - _strings8c_start
-DW _string_netclubhouse165 - _strings8c_start
-DW _string_netclubhouse166 - _strings8c_start
-DW _string_netclubhouse167 - _strings8c_start
-DW _string_netclubhouse168 - _strings8c_start
-DW _string_netclubhouse169 - _strings8c_start
-DW _string_netclubhouse170 - _strings8c_start
-DW _string_netclubhouse171 - _strings8c_start
-DW _string_netclubhouse172 - _strings8c_start
-DW _string_netclubhouse173 - _strings8c_start
-DW _string_netclubhouse174 - _strings8c_start
-DW _string_netclubhouse175 - _strings8c_start
-DW _string_netclubhouse176 - _strings8c_start
-DW _string_netclubhouse177 - _strings8c_start
-DW _string_netclubhouse178 - _strings8c_start
-DW _string_netclubhouse179 - _strings8c_start
-DW _string_netclubhouse180 - _strings8c_start
-DW _string_netclubhouse181 - _strings8c_start
-DW _string_netclubhouse182 - _strings8c_start
-DW _string_netclubhouse183 - _strings8c_start
-DW _string_netclubhouse184 - _strings8c_start
-DW _string_netclubhouse185 - _strings8c_start
-DW _string_netclubhouse186 - _strings8c_start
-DW _string_netclubhouse187 - _strings8c_start
-DW _string_netclubhouse188 - _strings8c_start
-DW _string_netclubhouse189 - _strings8c_start
-DW _string_netclubhouse190 - _strings8c_start
-DW _string_netclubhouse191 - _strings8c_start
-DW _string_netclubhouse192 - _strings8c_start
-DW _string_netclubhouse193 - _strings8c_start
-DW _string_netclubhouse194 - _strings8c_start
-DW _string_netclubhouse195 - _strings8c_start
-DW _string_netclubhouse196 - _strings8c_start
-DW _string_netclubhouse197 - _strings8c_start
-DW _string_netclubhouse198 - _strings8c_start
-DW _string_netclubhouse199 - _strings8c_start
-DW _string_netclubhouse200 - _strings8c_start
-DW _string_netclubhouse201 - _strings8c_start
-DW _string_netclubhouse202 - _strings8c_start
-DW _string_netclubhouse203 - _strings8c_start
-DW _string_netclubhouse204 - _strings8c_start
-DW _string_netclubhouse205 - _strings8c_start
-DW _string_netclubhouse206 - _strings8c_start
-DW _string_netclubhouse207 - _strings8c_start
-DW _string_netclubhouse208 - _strings8c_start
-DW _string_netclubhouse209 - _strings8c_start
-DW _string_netclubhouse210 - _strings8c_start
-DW _string_netclubhouse211 - _strings8c_start
-DW _string_netclubhouse212 - _strings8c_start
-DW _string_netclubhouse213 - _strings8c_start
-DW _string_netclubhouse214 - _strings8c_start
-DW _string_netclubhouse215 - _strings8c_start
-DW _string_netclubhouse216 - _strings8c_start
-DW _string_netclubhouse217 - _strings8c_start
-DW _string_netclubhouse218 - _strings8c_start
-DW _string_netclubhouse219 - _strings8c_start
-DW _string_netclubhouse220 - _strings8c_start
-DW _string_netclubhouse221 - _strings8c_start
-DW _string_netclubhouse222 - _strings8c_start
-DW _string_netclubhouse223 - _strings8c_start
-DW _string_netclubhouse224 - _strings8c_start
-DW _string_netclubhouse225 - _strings8c_start
-DW _string_netclubhouse226 - _strings8c_start
-DW _string_netclubhouse227 - _strings8c_start
-DW _string_netclubhouse228 - _strings8c_start
-DW _string_netclubhouse229 - _strings8c_start
-DW _string_netclubhouse230 - _strings8c_start
-DW _string_netclubhouse231 - _strings8c_start
-DW _string_netclubhouse232 - _strings8c_start
-DW _string_netclubhouse233 - _strings8c_start
-DW _string_netclubhouse234 - _strings8c_start
-DW _string_netclubhouse235 - _strings8c_start
-DW _string_netclubhouse236 - _strings8c_start
-DW _string_netclubhouse237 - _strings8c_start
-DW _string_netclubhouse238 - _strings8c_start
-DW _string_netclubhouse239 - _strings8c_start
-DW _string_netclubhouse240 - _strings8c_start
-DW _string_netclubhouse241 - _strings8c_start
-DW _string_netclubhouse242 - _strings8c_start
-DW _string_netclubhouse243 - _strings8c_start
-DW _string_netclubhouse244 - _strings8c_start
-DW _string_netclubhouse245 - _strings8c_start
-DW _string_netclubhouse246 - _strings8c_start
-DW _string_netclubhouse247 - _strings8c_start
-DW _string_netclubhouse248 - _strings8c_start
-DW _string_netclubhouse249 - _strings8c_start
-DW _string_netclubhouse250 - _strings8c_start
-DW _string_netclubhouse251 - _strings8c_start
-DW _string_netclubhouse252 - _strings8c_start
-DW _string_netclubhouse253 - _strings8c_start
-DW _string_netclubhouse254 - _strings8c_start
-DW _string_netclubhouse255 - _strings8c_start
-DW _string_netclubhouse256 - _strings8c_start
-DW _string_netclubhouse257 - _strings8c_start
-DW _string_netclubhouse258 - _strings8c_start
-DW _string_netclubhouse259 - _strings8c_start
-DW _string_netclubhouse260 - _strings8c_start
-DW _string_netclubhouse261 - _strings8c_start
-DW _string_netclubhouse262 - _strings8c_start
-DW _string_netclubhouse263 - _strings8c_start
+SECTION "Bank 140 - Net Clubhouse 2 - pointers", ROMX[$4004], BANK[$8c]
+_pointers_strings_netclubhouse2:
+DW _str_netclubhouse2_0 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_1 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_2 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_3 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_4 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_5 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_6 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_7 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_8 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_9 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_10 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_11 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_12 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_13 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_14 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_15 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_16 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_17 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_18 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_19 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_20 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_21 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_22 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_23 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_24 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_25 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_26 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_27 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_28 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_29 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_30 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_31 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_32 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_33 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_34 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_35 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_36 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_37 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_38 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_39 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_40 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_41 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_42 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_43 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_44 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_45 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_46 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_47 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_48 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_49 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_50 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_51 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_52 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_53 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_54 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_55 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_56 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_57 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_58 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_59 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_60 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_61 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_62 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_63 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_64 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_65 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_66 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_67 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_68 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_69 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_70 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_71 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_72 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_73 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_74 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_75 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_76 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_77 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_78 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_79 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_80 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_81 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_82 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_83 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_84 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_85 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_86 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_87 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_88 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_89 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_90 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_91 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_92 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_93 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_94 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_95 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_96 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_97 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_98 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_99 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_100 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_101 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_102 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_103 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_104 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_105 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_106 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_107 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_108 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_109 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_110 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_111 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_112 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_113 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_114 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_115 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_116 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_117 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_118 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_119 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_120 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_121 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_122 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_123 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_124 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_125 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_126 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_127 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_128 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_129 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_130 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_131 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_132 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_133 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_134 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_135 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_136 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_137 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_138 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_139 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_140 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_141 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_142 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_143 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_144 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_145 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_146 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_147 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_148 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_149 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_150 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_151 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_152 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_153 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_154 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_155 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_156 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_157 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_158 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_159 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_160 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_161 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_162 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_163 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_164 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_165 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_166 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_167 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_168 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_169 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_170 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_171 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_172 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_173 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_174 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_175 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_176 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_177 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_178 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_179 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_180 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_181 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_182 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_183 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_184 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_185 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_186 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_187 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_188 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_189 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_190 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_191 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_192 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_193 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_194 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_195 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_196 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_197 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_198 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_199 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_200 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_201 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_202 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_203 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_204 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_205 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_206 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_207 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_208 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_209 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_210 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_211 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_212 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_213 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_214 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_215 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_216 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_217 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_218 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_219 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_220 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_221 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_222 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_223 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_224 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_225 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_226 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_227 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_228 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_229 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_230 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_231 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_232 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_233 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_234 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_235 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_236 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_237 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_238 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_239 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_240 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_241 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_242 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_243 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_244 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_245 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_246 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_247 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_248 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_249 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_250 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_251 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_252 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_253 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_254 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_255 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_256 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_257 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_258 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_259 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_260 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_261 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_262 - _strings_netclubhouse2_start
+DW _str_netclubhouse2_263 - _strings_netclubhouse2_start
 
 SECTION "Bank 140 - Online dialogs - strings", ROMX[$4214], BANK[$8c]
-_strings8c_start:
+_strings_netclubhouse2_start:
 
-_string_netclubhouse0: ;originally $4214
+_str_netclubhouse2_0: ;originally $4214
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -297,7 +297,7 @@ _string_netclubhouse0: ;originally $4214
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse1: ;originally $4277
+_str_netclubhouse2_1: ;originally $4277
 	DB $d2, $b0, $d9, $b1, $c4, $de, $da, $bd, $86 ;メールアドレスに
 	DB BR
 	DB $8f, $81, $76, $de, $72, $76, $de, $71, $98, $8f, $7d, $61 ;まちがいがあります。
@@ -309,7 +309,7 @@ _string_netclubhouse1: ;originally $4277
 	DB $7c, $6e, $77, $84, $73, $9b, $78, $66, $7c, $83, $78, $80, $de, $7b, $72, $61 ;しょきとうろくをしてください。
 	DB END_STRING
 
-_string_netclubhouse2: ;originally $42c1
+_str_netclubhouse2_2: ;originally $42c1
 	DB $ca, $df, $bd, $dc, $b0, $c4, $de, $86, $8f, $81, $76, $de, $72, $76, $de, $71, $99, $76 ;パスワードにまちがいがあるか
 	DB BR
 	DB $bb, $b0, $ca, $de, $89, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのエラーです。
@@ -321,7 +321,7 @@ _string_netclubhouse2: ;originally $42c1
 	DB $82, $73, $7c, $9d, $7c, $85, $75, $7c, $83, $78, $80, $de, $7b, $72, $61 ;つうしんしなおしてください。
 	DB END_STRING
 
-_string_netclubhouse3: ;originally $4312
+_str_netclubhouse2_3: ;originally $4312
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -339,7 +339,7 @@ _string_netclubhouse3: ;originally $4312
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse4: ;originally $4375
+_str_netclubhouse2_4: ;originally $4375
 	DB $76, $72, $7e, $9d, $76, $de, $7a, $9d, $83, $de, $72, $99, $76 ;かいせんがこんでいるか
 	DB BR
 	DB $bb, $b0, $ca, $de, $89, $b4, $d7, $b0, $89, $80, $92 ;サーバのエラーのため
@@ -357,7 +357,7 @@ _string_netclubhouse4: ;originally $4375
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse5: ;originally $43d5
+_str_netclubhouse2_5: ;originally $43d5
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -375,7 +375,7 @@ _string_netclubhouse5: ;originally $43d5
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse6: ;originally $4438
+_str_netclubhouse2_6: ;originally $4438
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -393,7 +393,7 @@ _string_netclubhouse6: ;originally $4438
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse7: ;originally $449b
+_str_netclubhouse2_7: ;originally $449b
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -411,7 +411,7 @@ _string_netclubhouse7: ;originally $449b
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse8: ;originally $44fe
+_str_netclubhouse2_8: ;originally $44fe
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -429,7 +429,7 @@ _string_netclubhouse8: ;originally $44fe
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse9: ;originally $4561
+_str_netclubhouse2_9: ;originally $4561
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -447,7 +447,7 @@ _string_netclubhouse9: ;originally $4561
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse_error_32_404: ;id:10, originally $45c4
+_str_netclubhouse2_10: ;originally $45c4
 	DB "Content can't be" ;コンテンツダウンロードができません。
 	DB BR
 	DB "downloaded. Try" ;しばらくまって
@@ -465,7 +465,7 @@ _string_netclubhouse_error_32_404: ;id:10, originally $45c4
 	DB "Support Center." ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse11: ;originally $4632
+_str_netclubhouse2_11: ;originally $4632
 	DB $ba, $dd, $c3, $dd, $c2, $c0, $de, $b3, $dd, $db, $b0, $c4, $de, $76, $de, $83, $de, $77, $8f, $7e, $9d, $61 ;コンテンツダウンロードができません。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -483,7 +483,7 @@ _string_netclubhouse11: ;originally $4632
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse12: ;originally $46a0
+_str_netclubhouse2_12: ;originally $46a0
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -501,7 +501,7 @@ _string_netclubhouse12: ;originally $46a0
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse13: ;originally $4703
+_str_netclubhouse2_13: ;originally $4703
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -519,7 +519,7 @@ _string_netclubhouse13: ;originally $4703
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse14: ;originally $4766
+_str_netclubhouse2_14: ;originally $4766
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -537,7 +537,7 @@ _string_netclubhouse14: ;originally $4766
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse15: ;originally $47c9
+_str_netclubhouse2_15: ;originally $47c9
 	DB $c0, $b2, $d1, $b1, $b3, $c4, $86, $96, $98 ;タイムアウトにより
 	DB BR
 	DB $82, $73, $7c, $9d, $76, $de, $7e, $82, $80, $de, $9d, $7b, $9a, $8f, $7c, $80, $61 ;つうしんがせつだんされました。
@@ -551,7 +551,7 @@ _string_netclubhouse15: ;originally $47c9
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse16: ;originally $4814
+_str_netclubhouse2_16: ;originally $4814
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -565,7 +565,7 @@ _string_netclubhouse16: ;originally $4814
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse17: ;originally $485d
+_str_netclubhouse2_17: ;originally $485d
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -583,7 +583,7 @@ _string_netclubhouse17: ;originally $485d
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse18: ;originally $48c0
+_str_netclubhouse2_18: ;originally $48c0
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -597,7 +597,7 @@ _string_netclubhouse18: ;originally $48c0
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse19: ;originally $4909
+_str_netclubhouse2_19: ;originally $4909
 	DB $bb, $b0, $ca, $de, $76, $de, $7a, $9d, $83, $de, $72, $99, $80, $92 ;サーバがこんでいるため
 	DB BR
 	DB $82, $73, $7c, $9d, $83, $de, $77, $8f, $7e, $9d, $61 ;つうしんできません。
@@ -613,7 +613,7 @@ _string_netclubhouse19: ;originally $4909
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse20: ;originally $495c
+_str_netclubhouse2_20: ;originally $495c
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -627,7 +627,7 @@ _string_netclubhouse20: ;originally $495c
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse21: ;originally $49a5
+_str_netclubhouse2_21: ;originally $49a5
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -641,7 +641,7 @@ _string_netclubhouse21: ;originally $49a5
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse22: ;originally $49ee
+_str_netclubhouse2_22: ;originally $49ee
 	DB $7a, $de, $98, $96, $73, $98, $6e, $73, $77, $9d, $89, $75, $7c, $8a, $97, $72, $76, $de ;ごりようりょうきんのおしはらいが
 	DB BR
 	DB $75, $78, $9a, $80, $8a, $de, $71, $72, $86, $8a ;おくれたばあいには
@@ -655,7 +655,7 @@ _string_netclubhouse22: ;originally $49ee
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse23: ;originally $4a3d
+_str_netclubhouse2_23: ;originally $4a3d
 	DB $75, $77, $6c, $78, $7b, $8f, $89, $82, $7a, $de, $73, $86, $96, $98 ;おきゃくさまのつごうにより
 	DB BR
 	DB $7a, $de, $98, $96, $73, $83, $de, $77, $8f, $7e, $9d, $61 ;ごりようできません。
@@ -667,7 +667,7 @@ _string_netclubhouse23: ;originally $4a3d
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse24: ;originally $4a78
+_str_netclubhouse2_24: ;originally $4a78
 	DB $7a, $de, $98, $96, $73, $98, $6e, $73, $77, $9d, $76, $de ;ごりようりょうきんが
 	DB BR
 	DB $7c, $de, $6e, $73, $79, $de, $9d, $66, $7a, $74, $83, $72, $99, $80, $92 ;じょうげんをこえているため
@@ -681,7 +681,7 @@ _string_netclubhouse24: ;originally $4a78
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse25: ;originally $4ac5
+_str_netclubhouse2_25: ;originally $4ac5
 	DB $ba, $dd, $c3, $dd, $c2 ;コンテンツ
 	DB BR
 	DB $c0, $de, $b3, $dd, $db, $b0, $c4, $de, $76, $de, $83, $de, $77, $8f, $7e, $9d, $61 ;ダウンロードができません。
@@ -693,7 +693,7 @@ _string_netclubhouse25: ;originally $4ac5
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse26: ;originally $4afc
+_str_netclubhouse2_26: ;originally $4afc
 	DB $ba, $dd, $c3, $dd, $c2 ;コンテンツ
 	DB BR
 	DB $c0, $de, $b3, $dd, $db, $b0, $c4, $de, $76, $de, $83, $de, $77, $8f, $7e, $9d, $61 ;ダウンロードができません。
@@ -705,7 +705,7 @@ _string_netclubhouse26: ;originally $4afc
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse27: ;originally $4b33
+_str_netclubhouse2_27: ;originally $4b33
 	DB $79, $de, $9d, $7b, $de, $72, $d2, $dd, $c3, $c5, $dd, $bd, $81, $6d, $73, $89, $80, $92 ;げんざいメンテナンスちゅうのため
 	DB BR
 	DB $7a, $de, $98, $96, $73, $83, $de, $77, $8f, $7e, $9d, $61 ;ごりようできません。
@@ -721,7 +721,7 @@ _string_netclubhouse27: ;originally $4b33
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse28: ;originally $4b88
+_str_netclubhouse2_28: ;originally $4b88
 	DB $84, $73, $9b, $78, $7c, $6e, $89, $7c, $6e, $98, $76, $de ;とうろくしょのしょりが
 	DB BR
 	DB $76, $9d, $98, $6e, $73, $7c, $83, $72, $85, $72, $96, $73, $83, $de, $7d, $61 ;かんりょうしていないようです。
@@ -731,7 +731,7 @@ _string_netclubhouse28: ;originally $4b88
 	DB $7c, $8a, $de, $97, $78, $75, $8f, $81, $78, $80, $de, $7b, $72, $61 ;しばらくおまちください。
 	DB END_STRING
 
-_string_netclubhouse29: ;originally $4bc5
+_str_netclubhouse2_29: ;originally $4bc5
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -749,7 +749,7 @@ _string_netclubhouse29: ;originally $4bc5
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse30: ;originally $4c28
+_str_netclubhouse2_30: ;originally $4c28
 	DB $ba, $dd, $c3, $dd, $c2 ;コンテンツ
 	DB BR
 	DB $c0, $de, $b3, $dd, $db, $b0, $c4, $de, $76, $de, $83, $de, $77, $8f, $7e, $9d, $61 ;ダウンロードができません。
@@ -761,7 +761,7 @@ _string_netclubhouse30: ;originally $4c28
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse31: ;originally $4c5f
+_str_netclubhouse2_31: ;originally $4c5f
 	DB $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;つうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -779,7 +779,7 @@ _string_netclubhouse31: ;originally $4c5f
 	DB $75, $84, $72, $71, $9c, $7e, $78, $80, $de, $7b, $72, $61 ;おといあわせください。
 	DB END_STRING
 
-_string_netclubhouse32: ;originally $4cc2
+_str_netclubhouse2_32: ;originally $4cc2
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -793,7 +793,7 @@ _string_netclubhouse32: ;originally $4cc2
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse33: ;originally $4d0b
+_str_netclubhouse2_33: ;originally $4d0b
 	DB $ba, $dd, $c3, $dd, $c2 ;コンテンツ
 	DB BR
 	DB $c0, $de, $b3, $dd, $db, $b0, $c4, $de, $76, $de, $83, $de, $77, $8f, $7e, $9d, $61 ;ダウンロードができません。
@@ -805,7 +805,7 @@ _string_netclubhouse33: ;originally $4d0b
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse34: ;originally $4d42
+_str_netclubhouse2_34: ;originally $4d42
 	DB $75, $77, $6c, $78, $7b, $8f, $89, $82, $7a, $de, $73, $86, $96, $98 ;おきゃくさまのつごうにより
 	DB BR
 	DB $7a, $de, $98, $96, $73, $83, $de, $77, $8f, $7e, $9d, $61 ;ごりようできません。
@@ -817,7 +817,7 @@ _string_netclubhouse34: ;originally $4d42
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse35: ;originally $4d7d
+_str_netclubhouse2_35: ;originally $4d7d
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -831,7 +831,7 @@ _string_netclubhouse35: ;originally $4d7d
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse36: ;originally $4dc6
+_str_netclubhouse2_36: ;originally $4dc6
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -845,7 +845,7 @@ _string_netclubhouse36: ;originally $4dc6
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse37: ;originally $4e0f
+_str_netclubhouse2_37: ;originally $4e0f
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -859,7 +859,7 @@ _string_netclubhouse37: ;originally $4e0f
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse38: ;originally $4e58
+_str_netclubhouse2_38: ;originally $4e58
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -873,7 +873,7 @@ _string_netclubhouse38: ;originally $4e58
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse39: ;originally $4ea1
+_str_netclubhouse2_39: ;originally $4ea1
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -887,7 +887,7 @@ _string_netclubhouse39: ;originally $4ea1
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse40: ;originally $4eea
+_str_netclubhouse2_40: ;originally $4eea
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -901,7 +901,7 @@ _string_netclubhouse40: ;originally $4eea
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse41: ;originally $4f33
+_str_netclubhouse2_41: ;originally $4f33
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -915,7 +915,7 @@ _string_netclubhouse41: ;originally $4f33
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse42: ;originally $4f7c
+_str_netclubhouse2_42: ;originally $4f7c
 	DB $bb, $b0, $ca, $de, $89, $82, $73, $7c, $9d, $b4, $d7, $b0, $83, $de, $7d, $61 ;サーバのつうしんエラーです。
 	DB BR
 	DB $7c, $8a, $de, $97, $78, $8f, $6f, $83 ;しばらくまって
@@ -929,11 +929,11 @@ _string_netclubhouse42: ;originally $4f7c
 	DB $7a, $de, $97, $9d, $78, $80, $de, $7b, $72, $61 ;ごらんください。
 	DB END_STRING
 
-_string_netclubhouse43: ;originally $4fc5
+_str_netclubhouse2_43: ;originally $4fc5
 	DB $90, $83, $72, $77, $de, $b4, $d7, $b0, $21 ;みていぎエラー!
 	DB END_STRING
 
-_string_netclubhouse44: ;originally $4fcf
+_str_netclubhouse2_44: ;originally $4fcf
 	DB $8e, $de, $78, $20, $20, $8e, $9d, $84, $73, $8a ;ぼく  ほんとうは
 	DB BR
 	DB $b7, $ac, $c3, $de, $a8, $b0, $86, $85, $98, $80, $72, $9d, $80, $de, $61 ;キャディーになりたいんだ。
@@ -952,7 +952,7 @@ _string_netclubhouse44: ;originally $4fcf
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse45: ;originally $5031
+_str_netclubhouse2_45: ;originally $5031
 	DB $7a, $7a, $8a, $cb, $de, $bc, $de, $c0, $b0, $89, $b6, $b3, $dd, $c0, $b0, $96 ;ここはビジターのカウンターよ
 	DB BR
 	DB $83, $92, $74, $97, $b6, $de, $b7, $76, $de, $78, $99, $84, $7a, $9b ;てめえらガキがくるところ
@@ -965,7 +965,7 @@ _string_netclubhouse45: ;originally $5031
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse46: ;originally $5075
+_str_netclubhouse2_46: ;originally $5075
 	DB $90, $7d, $de, $94, $ca, $de, $dd, $b6, $b0, $89, $ca, $bb, $de, $b0, $c4, $de, $76, $de ;みずやバンカーのハザードが
 	DB BR
 	DB $7a, $89, $ba, $b0, $bd, $86, $8a, $20, $75, $75, $72, $76, $97 ;このコースには おおいから
@@ -974,7 +974,7 @@ _string_netclubhouse46: ;originally $5075
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse47: ;originally $50a3
+_str_netclubhouse2_47: ;originally $50a3
 	DB $ca, $bb, $de, $b0, $c4, $de, $8a, $20, $7c, $6e, $73, $76, $de, $72, $89, $7a, $84, $83, $de ;ハザードは しょうがいのことで
 	DB BR
 	DB $ca, $de, $b2, $b5, $ca, $bb, $de, $b0, $c4, $de, $84, $8a ;バイオハザードとは
@@ -989,7 +989,7 @@ _string_netclubhouse47: ;originally $50a3
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse48: ;originally $50f6
+_str_netclubhouse2_48: ;originally $50f6
 	DB $c4, $de, $d7, $b2, $ca, $de, $b0, $bc, $ae, $af, $c4, $89, $8b, $77, $6e, $98, $66 ;ドライバーショットのひきょりを
 	DB BR
 	DB $71, $84, $32, $30, $30, $30, $d4, $b0, $c4, $de, $89, $8a, $de, $7c, $80, $72, $9d, $80, $de ;あと2000ヤードのばしたいんだ
@@ -1004,7 +1004,7 @@ _string_netclubhouse48: ;originally $50f6
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse49: ;originally $5162
+_str_netclubhouse2_49: ;originally $5162
 	DB $31, $80, $de, $92, $89, $c4, $de, $d7, $b2, $ca, $de, $b0, $bc, $ae, $af, $c4, $94 ;1だめのドライバーショットや
 	DB BR
 	DB $32, $80, $de, $92, $89, $b1, $b2, $b1, $dd, $bc, $ae, $af, $c4, $96, $98 ;2だめのアイアンショットより
@@ -1019,7 +1019,7 @@ _string_netclubhouse49: ;originally $5162
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse50: ;originally $51ce
+_str_netclubhouse2_50: ;originally $51ce
 	DB $77, $6e, $73, $8a, $20, $ca, $bb, $de, $b0, $c4, $de, $66, $7b, $79, $99, $80, $92 ;きょうは ハザードをさけるため
 	DB BR
 	DB $31, $80, $de, $92, $89, $c3, $a8, $b0, $bc, $ae, $af, $c4, $83, $de, $71, $9b, $73, $84 ;1だめのティーショットであろうと
@@ -1028,7 +1028,7 @@ _string_netclubhouse50: ;originally $51ce
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse51: ;originally $5207
+_str_netclubhouse2_51: ;originally $5207
 	DB $74, $74, $84, $20, $76, $7e, $de, $8a, $bd, $c4, $c5, $86 ;ええと かぜはストナに
 	DB BR
 	DB $8f, $76, $7d, $84, $85, $61 ;まかすとな。
@@ -1037,7 +1037,7 @@ _string_netclubhouse51: ;originally $5207
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse52: ;originally $522c
+_str_netclubhouse2_52: ;originally $522c
 	DB $90, $9d, $85, $20, $bd, $c0, $b0, $c4, $89, $8f, $74, $8a ;みんな スタートのまえは
 	DB BR
 	DB $7c, $de, $9d, $7e, $72, $89, $7a, $84, $8a, $de, $76, $98, $76, $9d, $76, $de, $74 ;じんせいのことばかりかんがえ
@@ -1046,7 +1046,7 @@ _string_netclubhouse52: ;originally $522c
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse53: ;originally $525b
+_str_netclubhouse2_53: ;originally $525b
 	DB $7a, $89, $72, $98, $78, $de, $81, $8f, $74, $89, $ce, $b0, $d9, $86, $8a ;このいりぐちまえのホールには
 	DB BR
 	DB $7e, $72, $7c, $9d, $72, $7c, $de, $6e, $73, $7c, $6c, $76, $de ;せいしんいじょうしゃが
@@ -1061,20 +1061,20 @@ _string_netclubhouse53: ;originally $525b
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse54: ;originally $52b9
+_str_netclubhouse2_54: ;originally $52b9
 	DB $8f, $64, $8f, $7b, $76, $64, $75, $87, $7c, $8a ;ま、まさか、おぬしは
 	DB BR
 	DB $c6, $ad, $b0, $c0, $b2, $cc, $df, $76, $3f ;ニュータイプか?
 	DB END_STRING
 
-_string_netclubhouse55: ;originally $52ce
+_str_netclubhouse2_55: ;originally $52ce
 	DB $7f, $73, $76, $64 ;そうか、
 	DB BR
 	DB $7f, $9a, $8a, $96, $76, $6f, $80, $85, $61 ;それはよかったな。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse56: ;originally $52de
+_str_netclubhouse2_56: ;originally $52de
 	DB $85, $86, $93, $76, $78, $7d, $7a, $84, $8a, $85, $72, $61 ;なにもかくすことはない。
 	DB BR
 	DB $9c, $7c, $93, $c6, $ad, $b0, $c0, $b2, $cc, $df, $80, $de, $76, $97, $89, $73, $61 ;わしもニュータイプだからのう。
@@ -1085,14 +1085,14 @@ _string_netclubhouse56: ;originally $52de
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse57: ;originally $5318
+_str_netclubhouse2_57: ;originally $5318
 	DB $7c, $de, $7c, $9d, $80, $de, $21 ;じしんだ!
 	DB BR
 	DB $7c, $9d, $79, $de, $9d, $81, $8a, $84, $de, $7a, $80, $de, $9b, $73, $3f ;しんげんちはどこだろう?
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse58: ;originally $5331
+_str_netclubhouse2_58: ;originally $5331
 	DB $b8, $d7, $cc, $de, $7e, $9d, $7c, $6d, $79, $9d, $86 ;クラブせんしゅけんに
 	DB BR
 	DB $86, $6d, $73, $7c, $6e, $73, $7c, $80, $20 ;にゅうしょうした 
@@ -1106,7 +1106,7 @@ _string_netclubhouse58: ;originally $5331
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse59: ;originally $5378
+_str_netclubhouse2_59: ;originally $5378
 	DB $cf, $d8, $b5, $dd, $89, $20, $7c, $9d, $c1, $ac, $dd, $cc, $df ;マリオンの しんチャンプ
 	DB BR
 	DB $07
@@ -1118,7 +1118,7 @@ _string_netclubhouse59: ;originally $5378
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse60: ;originally $53b5
+_str_netclubhouse2_60: ;originally $53b5
 	DB $b8, $d7, $cc, $de, $7e, $9d, $7c, $6d, $79, $9d, $86, $20, $83, $de, $99, $84 ;クラブせんしゅけんに でると
 	DB BR
 	DB $7b, $72, $7c, $6e, $8a, $20, $71, $76, $de, $6f, $83, $7c, $8f, $72 ;さいしょは あがってしまい
@@ -1135,7 +1135,7 @@ _string_netclubhouse60: ;originally $53b5
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse61: ;originally $5416
+_str_netclubhouse2_61: ;originally $5416
 	DB $b8, $d7, $cc, $de, $7e, $9d, $7c, $6d, $79, $9d, $86, $20, $83, $de, $99, $84 ;クラブせんしゅけんに でると
 	DB BR
 	DB $7b, $72, $7c, $6e, $8a, $20, $71, $76, $de, $6f, $83, $7c, $8f, $72 ;さいしょは あがってしまい
@@ -1152,7 +1152,7 @@ _string_netclubhouse61: ;originally $5416
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse62: ;originally $5475
+_str_netclubhouse2_62: ;originally $5475
 	DB $ca, $df, $b0, $d1, $b8, $d7, $cc, $de, $8a ;パームクラブは
 	DB BR
 	DB $96, $73, $7c, $6e, $86, $20, $8a, $74, $80, $d4, $bc, $89, $77, $76, $de ;ようしょに はえたヤシのきが
@@ -1161,14 +1161,14 @@ _string_netclubhouse62: ;originally $5475
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse63: ;originally $549f
+_str_netclubhouse2_63: ;originally $549f
 	DB $ca, $df, $b0, $d1, $b8, $d7, $cc, $de, $7e, $9d, $7c, $6d, $79, $9d, $8a ;パームクラブせんしゅけんは
 	DB BR
 	DB $cf, $d8, $b5, $dd, $96, $98, $da, $cd, $de, $d9, $76, $de, $80, $76, $72, $9c, $61 ;マリオンよりレベルがたかいわ。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse64: ;originally $54c2
+_str_netclubhouse2_64: ;originally $54c2
 	DB $8b, $77, $6e, $98, $66, $93, $84, $92, $9a, $8a, $de, $93, $84, $92, $99, $8e, $84, $de ;ひきょりをもとめればもとめるほど
 	DB BR
 	DB $ce, $de, $b0, $d9, $8a, $8f, $76, $de, $98, $94, $7d, $78, $85, $99, $93, $89, $80, $de ;ボールはまがりやすくなるものだ
@@ -1181,7 +1181,7 @@ _string_netclubhouse64: ;originally $54c2
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse65: ;originally $5524
+_str_netclubhouse2_65: ;originally $5524
 	DB $ca, $df, $b0, $34, $89, $32, $80, $de, $94, $ca, $df, $b0, $35, $89, $33, $80, $de, $83, $de ;パー4の2だやパー5の3だで
 	DB BR
 	DB $b8, $de, $d8, $b0, $dd, $86, $ce, $de, $b0, $d9, $76, $de, $89, $99, $7a, $84, $66 ;グリーンにボールがのることを
@@ -1194,7 +1194,7 @@ _string_netclubhouse65: ;originally $5524
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse66: ;originally $5576
+_str_netclubhouse2_66: ;originally $5576
 	DB $90, $7c, $de, $76, $72, $ca, $df, $b0, $35, $76, $de, $71, $99, $84 ;みじかいパー5があると
 	DB BR
 	DB $32, $b5, $dd, $66, $88, $97, $6f, $83, $7c, $8f, $72 ;2オンをねらってしまい
@@ -1203,7 +1203,7 @@ _string_netclubhouse66: ;originally $5576
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse67: ;originally $55a0
+_str_netclubhouse2_67: ;originally $55a0
 	DB $84, $81, $6d, $73, $20, $8f, $76, $de, $6f, $83, $99, $ba, $b0, $bd, $66 ;とちゅう まがってるコースを
 	DB BR
 	DB $c4, $de, $af, $b8, $de, $da, $af, $b8, $de, $84, $72, $73, $9d, $80, $de, $79, $84, $de ;ドッグレッグというんだけど
@@ -1211,7 +1211,7 @@ _string_netclubhouse67: ;originally $55a0
 	DB $85, $9d, $83, $de, $80, $de, $76, $20, $7c, $6f, $83, $99, $76, $72, $3f ;なんでだか しってるかい?
 	DB END_STRING
 
-_string_netclubhouse68: ;originally $55d3
+_str_netclubhouse2_68: ;originally $55d3
 	DB $c4, $de, $af, $b8, $de, $da, $af, $b8, $de, $66, $7e, $92, $99, $84, $77, $8a ;ドッグレッグをせめるときは
 	DB BR
 	DB $7c, $9d, $81, $6e, $73, $86, $20, $88, $97, $73, $7a, $84, $80, $de ;しんちょうに ねらうことだ
@@ -1222,7 +1222,7 @@ _string_netclubhouse68: ;originally $55d3
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse69: ;originally $560f
+_str_netclubhouse2_69: ;originally $560f
 	DB $c4, $de, $af, $b8, $de, $8a, $72, $87, $20, $da, $af, $b8, $de, $8a, $71, $7c ;ドッグはいぬ レッグはあし
 	DB BR
 	DB $72, $87, $89, $71, $7c, $84, $72, $73, $20, $72, $90, $83, $de ;いぬのあしという いみで
@@ -1237,7 +1237,7 @@ _string_netclubhouse69: ;originally $560f
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse70: ;originally $5669
+_str_netclubhouse2_70: ;originally $5669
 	DB $07
 	DB $66, $8a, $7c, $de, $92, $83, $90, $80, $84, $77 ;をはじめてみたとき
 	DB BR
@@ -1251,7 +1251,7 @@ _string_netclubhouse70: ;originally $5669
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse71: ;originally $56b5
+_str_netclubhouse2_71: ;originally $56b5
 	DB $07
 	DB $66, $8a, $7c, $de, $92, $83, $90, $80, $84, $77 ;をはじめてみたとき
 	DB BR
@@ -1265,14 +1265,14 @@ _string_netclubhouse71: ;originally $56b5
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse72: ;originally $56fd
+_str_netclubhouse2_72: ;originally $56fd
 	DB $b8, $d7, $c1, $ac, $dd, $84, $72, $6f, $7c, $6e, $84, $8a ;クラチャンといっしょとは
 	DB BR
 	DB $cf, $af, $c1, $cc, $df, $da, $b2, $83, $de, $93, $7d, $99, $89, $76, $88, $3f ;マッチプレイでもするのかね?
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse73: ;originally $571c
+_str_netclubhouse2_73: ;originally $571c
 	DB $ba, $b0, $bd, $66, $cc, $df, $da, $b2, $7c, $80, $71, $84 ;コースをプレイしたあと
 	DB BR
 	DB $cc, $df, $da, $b2, $89, $8a, $9d, $7e, $72, $66, $76, $88, $83 ;プレイのはんせいをかねて
@@ -1285,14 +1285,14 @@ _string_netclubhouse73: ;originally $571c
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse74: ;originally $5763
+_str_netclubhouse2_74: ;originally $5763
 	DB $07
 	DB $20, $ca, $df, $b0, $d1, $b8, $d7, $cc, $de, $83, $de, $93 ; パームクラブでも
 	DB BR
 	DB $86, $6d, $73, $7c, $6e, $73, $7c, $80, $6f, $83, $3f ;にゅうしょうしたって?
 	DB END_STRING
 
-_string_netclubhouse75: ;originally $577d
+_str_netclubhouse2_75: ;originally $577d
 	DB $7c, $de, $8f, $9d, $7c, $85, $72, $84, $7a, $9b, $76, $de ;じまんしないところが
 	DB BR
 	DB $8c, $82, $73, $89, $ba, $de, $d9, $cc, $a7, $b0, $84 ;ふつうのゴルファーと
@@ -1301,28 +1301,28 @@ _string_netclubhouse75: ;originally $577d
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse76: ;originally $57a3
+_str_netclubhouse2_76: ;originally $57a3
 	DB $73, $b0, $9d, $20, $7b, $72, $89, $73, $76, $de, $85, $77, $6c ;うーん さいのうがなきゃ
 	DB BR
 	DB $83, $de, $77, $85, $72, $7a, $84, $80, $de, $84, $75, $93, $73, $85, $61 ;できないことだとおもうな。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse77: ;originally $57c2
+_str_netclubhouse2_77: ;originally $57c2
 	DB $73, $b0, $9d, $20, $7b, $72, $89, $73, $76, $de, $85, $77, $6c ;うーん さいのうがなきゃ
 	DB BR
 	DB $83, $de, $77, $85, $72, $7a, $84, $80, $de, $84, $75, $93, $73, $85, $61 ;できないことだとおもうな。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse78: ;originally $57e1
+_str_netclubhouse2_78: ;originally $57e1
 	DB $07
 	DB $20, $ca, $df, $b0, $d1, $b8, $d7, $cc, $de, $83, $de ; パームクラブで
 	DB BR
 	DB $95, $73, $7c, $6e, $73, $7c, $80, $6f, $83, $ce, $dd, $c4, $3f ;ゆうしょうしたってホント?
 	DB END_STRING
 
-_string_netclubhouse79: ;originally $57fc
+_str_netclubhouse2_79: ;originally $57fc
 	DB $b3, $bf, $66, $82, $72, $83, $93, $c0, $de, $d2, $80, $de, $96 ;ウソをついてもダメだよ
 	DB BR
 	DB $7e, $9d, $7c, $6d, $79, $9d, $89, $7c, $97, $7e, $76, $de ;せんしゅけんのしらせが
@@ -1331,7 +1331,7 @@ _string_netclubhouse79: ;originally $57fc
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse80: ;originally $5827
+_str_netclubhouse2_80: ;originally $5827
 	DB $cf, $d8, $b5, $dd, $89, $9a, $9d, $7c, $6d, $73, $7e, $72, $76, $de ;マリオンのれんしゅうせいが
 	DB BR
 	DB $ca, $df, $b0, $d1, $b8, $d7, $cc, $de, $83, $de, $76, $82, $85, $9d, $83 ;パームクラブでかつなんて
@@ -1346,7 +1346,7 @@ _string_netclubhouse80: ;originally $5827
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse81: ;originally $5880
+_str_netclubhouse2_81: ;originally $5880
 	DB $cf, $d8, $b5, $dd, $89, $b8, $d7, $cc, $de, $c1, $ac, $dd, $cc, $df, $76, $de ;マリオンのクラブチャンプが
 	DB BR
 	DB $ca, $df, $b0, $d1, $b8, $d7, $cc, $de, $83, $de, $76, $82, $85, $9d, $83 ;パームクラブでかつなんて
@@ -1361,7 +1361,7 @@ _string_netclubhouse81: ;originally $5880
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse82: ;originally $58db
+_str_netclubhouse2_82: ;originally $58db
 	DB $94, $99, $9c, $88, $20 ;やるわね 
 	DB $07
 	DB $6f, $80, $97 ;ったら
@@ -1378,7 +1378,7 @@ _string_netclubhouse82: ;originally $58db
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse83: ;originally $592f
+_str_netclubhouse2_83: ;originally $592f
 	DB $7d, $7a, $de, $b0, $72, $20 ;すごーい 
 	DB $07
 	DB $6f, $80, $97 ;ったら
@@ -1393,7 +1393,7 @@ _string_netclubhouse83: ;originally $592f
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse84: ;originally $5977
+_str_netclubhouse2_84: ;originally $5977
 	DB $c3, $de, $ad, $b0, $dd, $b8, $d7, $cc, $de, $8a ;デューンクラブは
 	DB BR
 	DB $72, $9c, $94, $8f, $94, $20, $7b, $8a, $de, $78, $89 ;いわやまや さばくの
@@ -1402,14 +1402,14 @@ _string_netclubhouse84: ;originally $5977
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse85: ;originally $599b
+_str_netclubhouse2_85: ;originally $599b
 	DB $c3, $de, $ad, $b0, $dd, $b8, $d7, $cc, $de, $7e, $9d, $7c, $6d, $79, $9d, $8a ;デューンクラブせんしゅけんは
 	DB BR
 	DB $84, $8a, $de, $7c, $94, $76, $de, $20, $95, $73, $98, $97, $7c, $72, $9c, $61 ;とばしやが ゆうりらしいわ。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse86: ;originally $59be
+_str_netclubhouse2_86: ;originally $59be
 	DB $c4, $de, $d7, $b2, $ca, $de, $b0, $89, $20, $8b, $77, $6e, $98, $76, $de ;ドライバーの ひきょりが
 	DB BR
 	DB $71, $99, $83, $72, $84, $de, $20, $83, $de, $83, $77, $80, $97 ;あるていど でてきたら
@@ -1422,7 +1422,7 @@ _string_netclubhouse86: ;originally $59be
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse87: ;originally $5a0a
+_str_netclubhouse2_87: ;originally $5a0a
 	DB $bd, $ba, $b1, $66, $81, $81, $de, $92, $99, $80, $92, $86, $8a ;スコアをちぢめるためには
 	DB BR
 	DB $ca, $de, $b0, $c3, $de, $a8, $76, $de, $8e, $7c, $72, $9c, $96, $88 ;バーディがほしいわよね
@@ -1435,7 +1435,7 @@ _string_netclubhouse87: ;originally $5a0a
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse88: ;originally $5a56
+_str_netclubhouse2_88: ;originally $5a56
 	DB $7f, $9a, $7f, $de, $9a, $20, $7e, $92, $99, $ce, $b0, $d9, $84 ;それぞれ せめるホールと
 	DB BR
 	DB $8f, $93, $99, $ce, $b0, $d9, $66, $90, $77, $9c, $92, $83 ;まもるホールをみきわめて
@@ -1444,7 +1444,7 @@ _string_netclubhouse88: ;originally $5a56
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse89: ;originally $5a83
+_str_netclubhouse2_89: ;originally $5a83
 	DB $ba, $b0, $bd, $89, $d1, $d8, $85, $7e, $92, $76, $80, $86, $8a ;コースのムリなせめかたには
 	DB BR
 	DB $ca, $de, $c2, $76, $de, $20, $8f, $6f, $83, $72, $99, $84, $72, $73, $76, $de ;バツが まっているというが
@@ -1457,7 +1457,7 @@ _string_netclubhouse89: ;originally $5a83
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse90: ;originally $5ac8
+_str_netclubhouse2_90: ;originally $5ac8
 	DB $72, $82, $89, $20, $8f, $86, $94, $97, $65, $65, $65 ;いつの まにやら・・・
 	DB BR
 	DB $ca, $df, $b0, $d1, $7e, $9d, $7c, $6d, $79, $9d, $83, $de, $93 ;パームせんしゅけんでも
@@ -1466,7 +1466,7 @@ _string_netclubhouse90: ;originally $5ac8
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse91: ;originally $5af2
+_str_netclubhouse2_91: ;originally $5af2
 	DB $ca, $df, $b0, $d1, $c1, $ac, $dd, $cc, $df, $20 ;パームチャンプ 
 	DB $07
 	DB BR
@@ -1476,14 +1476,14 @@ _string_netclubhouse91: ;originally $5af2
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse92: ;originally $5b1d
+_str_netclubhouse2_92: ;originally $5b1d
 	DB $b8, $d7, $c1, $ac, $dd, $84, $72, $6f, $7c, $6e, $84, $8a ;クラチャンといっしょとは
 	DB BR
 	DB $cf, $af, $c1, $cc, $df, $da, $b2, $83, $de, $93, $7d, $99, $89, $76, $88, $3f ;マッチプレイでもするのかね?
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse93: ;originally $5b3c
+_str_netclubhouse2_93: ;originally $5b3c
 	DB $91, $7d, $de, $76, $7c, $72, $c3, $de, $ad, $b0, $dd, $b8, $d7, $cc, $de, $8a ;むずかしいデューンクラブは
 	DB BR
 	DB $85, $9d, $84, $de, $93, $cc, $df, $da, $b2, $7d, $99, $7a, $84, $83, $de, $7d ;なんどもプレイすることです
@@ -1492,7 +1492,7 @@ _string_netclubhouse93: ;originally $5b3c
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse94: ;originally $5b6d
+_str_netclubhouse2_94: ;originally $5b6d
 	DB $77, $72, $80, $96, $20 ;きいたよ 
 	DB $07
 	DB BR
@@ -1508,7 +1508,7 @@ _string_netclubhouse94: ;originally $5b6d
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse95: ;originally $5bc4
+_str_netclubhouse2_95: ;originally $5bc4
 	DB $77, $72, $80, $96, $20 ;きいたよ 
 	DB $07
 	DB BR
@@ -1524,7 +1524,7 @@ _string_netclubhouse95: ;originally $5bc4
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse96: ;originally $5c1c
+_str_netclubhouse2_96: ;originally $5c1c
 	DB $8f, $71, $20, $c3, $de, $ad, $b0, $dd, $b8, $d7, $cc, $de, $83, $de, $93 ;まあ デューンクラブでも
 	DB BR
 	DB $86, $6d, $73, $7c, $6e, $73, $7c, $80, $89, $3f ;にゅうしょうしたの?
@@ -1538,7 +1538,7 @@ _string_netclubhouse96: ;originally $5c1c
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse97: ;originally $5c66
+_str_netclubhouse2_97: ;originally $5c66
 	DB $8f, $71, $20, $c3, $de, $ad, $b0, $dd, $b8, $d7, $cc, $de, $83, $de ;まあ デューンクラブで
 	DB BR
 	DB $95, $73, $7c, $6e, $73, $7c, $81, $6c, $6f, $80, $89, $88 ;ゆうしょうしちゃったのね
@@ -1551,7 +1551,7 @@ _string_netclubhouse97: ;originally $5c66
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse98: ;originally $5cb0
+_str_netclubhouse2_98: ;originally $5cb0
 	DB $d8, $dd, $b8, $bd, $b8, $d7, $cc, $de, $8a ;リンクスクラブは
 	DB BR
 	DB $73, $90, $7f, $de, $72, $89, $71, $9a, $80, $ba, $b0, $bd, $80, $de ;うみぞいのあれたコースだ
@@ -1564,7 +1564,7 @@ _string_netclubhouse98: ;originally $5cb0
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse99: ;originally $5cfa
+_str_netclubhouse2_99: ;originally $5cfa
 	DB $d8, $dd, $b8, $bd, $b8, $d7, $cc, $de, $7e, $9d, $7c, $6d, $79, $9d, $83, $de, $8a ;リンクスクラブせんしゅけんでは
 	DB BR
 	DB $32, $7c, $6d, $99, $72, $89, $cc, $aa, $b1, $b3, $aa, $b2, $66 ;2しゅるいのフェアウェイを
@@ -1579,7 +1579,7 @@ _string_netclubhouse99: ;originally $5cfa
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse100: ;originally $5d63
+_str_netclubhouse2_100: ;originally $5d63
 	DB $8b, $77, $6e, $98, $84, $20, $8e, $73, $7a, $73, $7e, $72, $89 ;ひきょりと ほうこうせいの
 	DB BR
 	DB $98, $6e, $73, $8e, $73, $76, $de, $20, $71, $99, $89, $85, $97 ;りょうほうが あるのなら
@@ -1588,7 +1588,7 @@ _string_netclubhouse100: ;originally $5d63
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse101: ;originally $5d94
+_str_netclubhouse2_101: ;originally $5d94
 	DB $cb, $b0, $bd, $94, $ce, $df, $af, $c4, $ca, $de, $dd, $b6, $b0, $94 ;ヒースやポットバンカーや
 	DB BR
 	DB $d7, $dd, $89, $75, $75, $72, $cc, $aa, $b1, $b3, $aa, $b2, $76, $de ;ランのおおいフェアウェイが
@@ -1603,7 +1603,7 @@ _string_netclubhouse101: ;originally $5d94
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse102: ;originally $5e03
+_str_netclubhouse2_102: ;originally $5e03
 	DB $7e, $92, $99, $ce, $b0, $d9, $84, $8f, $93, $99, $ce, $b0, $d9, $8a ;せめるホールとまもるホールは
 	DB BR
 	DB $76, $7b, $de, $91, $77, $86, $96, $6f, $83, $20, $76, $9c, $99, $7f, $de ;かざむきによって かわるぞ
@@ -1614,7 +1614,7 @@ _string_netclubhouse102: ;originally $5e03
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse103: ;originally $5e46
+_str_netclubhouse2_103: ;originally $5e46
 	DB $84, $78, $72, $85, $cc, $df, $da, $b2, $bd, $c0, $b2, $d9, $7a, $7f ;とくいなプレイスタイルこそ
 	DB BR
 	DB $c0, $cc, $85, $ba, $b0, $bd, $83, $de, $20, $7e, $72, $7a, $73, $7d, $99 ;タフなコースで せいこうする
@@ -1623,7 +1623,7 @@ _string_netclubhouse103: ;originally $5e46
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse104: ;originally $5e76
+_str_netclubhouse2_104: ;originally $5e76
 	DB $8c, $73, $91, $20, $c3, $de, $ad, $b0, $dd, $b8, $d7, $cc, $de, $83, $de, $93 ;ふうむ デューンクラブでも
 	DB BR
 	DB $7e, $9d, $7c, $6d, $79, $9d, $86, $6d, $73, $7c, $6e, $73, $89 ;せんしゅけんにゅうしょうの
@@ -1632,7 +1632,7 @@ _string_netclubhouse104: ;originally $5e76
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse105: ;originally $5ea5
+_str_netclubhouse2_105: ;originally $5ea5
 	DB $c3, $de, $ad, $b0, $dd, $c1, $ac, $dd, $cc, $df, $20 ;デューンチャンプ 
 	DB $07
 	DB BR
@@ -1646,14 +1646,14 @@ _string_netclubhouse105: ;originally $5ea5
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse106: ;originally $5ef5
+_str_netclubhouse2_106: ;originally $5ef5
 	DB $b8, $d7, $c1, $ac, $dd, $84, $72, $6f, $7c, $6e, $84, $8a ;クラチャンといっしょとは
 	DB BR
 	DB $cf, $af, $c1, $cc, $df, $da, $b2, $83, $de, $93, $7d, $99, $89, $76, $88, $3f ;マッチプレイでもするのかね?
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse107: ;originally $5f14
+_str_netclubhouse2_107: ;originally $5f14
 	DB $d8, $dd, $b8, $bd, $b8, $d7, $cc, $de, $8a, $91, $7d, $de, $76, $7c, $72, $84 ;リンクスクラブはむずかしいと
 	DB BR
 	DB $cc, $df, $da, $b2, $7c, $80, $8b, $84, $85, $97, $20, $80, $de, $9a, $83, $de, $93 ;プレイしたひとなら だれでも
@@ -1668,7 +1668,7 @@ _string_netclubhouse107: ;originally $5f14
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse108: ;originally $5f7b
+_str_netclubhouse2_108: ;originally $5f7b
 	DB $7d, $7a, $de, $72, $83, $de, $7d, $88, $20 ;すごいですね 
 	DB $07
 	DB BR
@@ -1684,7 +1684,7 @@ _string_netclubhouse108: ;originally $5f7b
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse109: ;originally $5fd0
+_str_netclubhouse2_109: ;originally $5fd0
 	DB $d8, $dd, $b8, $bd, $b8, $d7, $cc, $de, $7e, $9d, $7c, $6d, $79, $9d, $83, $de ;リンクスクラブせんしゅけんで
 	DB BR
 	DB $86, $6d, $73, $7c, $6e, $73, $7c, $80, $9d, $83, $de, $7d, $6f, $83, $88 ;にゅうしょうしたんですってね
@@ -1697,7 +1697,7 @@ _string_netclubhouse109: ;originally $5fd0
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse110: ;originally $600b
+_str_netclubhouse2_110: ;originally $600b
 	DB $d8, $dd, $b8, $bd, $b8, $d7, $cc, $de, $6f, $83 ;リンクスクラブって
 	DB BR
 	DB $91, $7d, $de, $76, $7c, $76, $6f, $80, $80, $de, $9b, $3f ;むずかしかっただろ?
@@ -1710,7 +1710,7 @@ _string_netclubhouse110: ;originally $600b
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse111: ;originally $604f
+_str_netclubhouse2_111: ;originally $604f
 	DB $d8, $dd, $b8, $bd, $b8, $d7, $cc, $de, $7e, $9d, $7c, $6d, $79, $9d, $8a ;リンクスクラブせんしゅけんは
 	DB BR
 	DB $76, $de, $8f, $9d, $78, $97, $8d, $de, $85, $9d, $83, $de, $7d, $6f, $83, $88 ;がまんくらべなんですってね
@@ -1721,7 +1721,7 @@ _string_netclubhouse111: ;originally $604f
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse112: ;originally $608a
+_str_netclubhouse2_112: ;originally $608a
 	DB $d8, $dd, $b8, $bd, $b8, $d7, $cc, $de, $83, $de, $20, $76, $82, $86, $8a ;リンクスクラブで かつには
 	DB BR
 	DB $71, $79, $de, $99, $77, $de, $7c, $de, $6d, $82, $93, $7a, $9b, $76, $de, $7d, $77, $de, $7c, $de, $6d, $82, $93 ;あげるぎじゅつもころがすぎじゅつも
@@ -1730,14 +1730,14 @@ _string_netclubhouse112: ;originally $608a
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse113: ;originally $60c4
+_str_netclubhouse2_113: ;originally $60c4
 	DB $c1, $ac, $dd, $bd, $89, $b6, $b9, $de, $86, $cb, $df, $dd, $c1, $71, $98 ;チャンスのカゲにピンチあり
 	DB BR
 	DB $65, $65, $65, $7f, $9a, $76, $de, $d8, $dd, $b8, $bd, $96, $61 ;・・・それがリンクスよ。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse114: ;originally $60e3
+_str_netclubhouse2_114: ;originally $60e3
 	DB $76, $7e, $de, $66, $7e, $72, $7d, $99, $93, $89, $76, $de ;かぜをせいするものが
 	DB BR
 	DB $d8, $dd, $b8, $bd, $66, $7e, $72, $7d, $99, $84 ;リンクスをせいすると
@@ -1746,7 +1746,7 @@ _string_netclubhouse114: ;originally $60e3
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse115: ;originally $610a
+_str_netclubhouse2_115: ;originally $610a
 	DB $b8, $de, $d7, $dd, $c4, $de, $c1, $ac, $dd, $cb, $df, $b5, $dd, $86, $85, $99, $84 ;グランドチャンピオンになると
 	DB BR
 	DB $85, $86, $76, $76, $de, $20, $75, $77, $99, $89, $80, $de, $7f, $73, $80, $de ;なにかが おきるのだそうだ
@@ -1759,7 +1759,7 @@ _string_netclubhouse115: ;originally $610a
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse116: ;originally $6149
+_str_netclubhouse2_116: ;originally $6149
 	DB $8c, $73, $91, $20, $d8, $dd, $b8, $bd, $b8, $d7, $cc, $de, $83, $de, $93 ;ふうむ リンクスクラブでも
 	DB BR
 	DB $7e, $9d, $7c, $6d, $79, $9d, $86, $6d, $73, $7c, $6e, $73, $89 ;せんしゅけんにゅうしょうの
@@ -1768,18 +1768,18 @@ _string_netclubhouse116: ;originally $6149
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse117: ;originally $6177
+_str_netclubhouse2_117: ;originally $6177
 	DB $44, $55, $4d, $4d, $59 ;DUMMY
 	DB END_STRING
 
-_string_netclubhouse118: ;originally $617d
+_str_netclubhouse2_118: ;originally $617d
 	DB $b8, $d7, $c1, $ac, $dd, $84, $72, $6f, $7c, $6e, $84, $8a ;クラチャンといっしょとは
 	DB BR
 	DB $cf, $af, $c1, $cc, $df, $da, $b2, $83, $de, $93, $7d, $99, $89, $76, $88, $3f ;マッチプレイでもするのかね?
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse119: ;originally $619c
+_str_netclubhouse2_119: ;originally $619c
 	DB $d8, $dd, $b8, $bd, $89, $d7, $cc, $86, $71, $99 ;リンクスのラフにある
 	DB BR
 	DB $cb, $b0, $bd, $84, $96, $8a, $de, $9a, $99, $20, $78, $7b, $8a ;ヒースとよばれる くさは
@@ -1792,7 +1792,7 @@ _string_netclubhouse119: ;originally $619c
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse120: ;originally $61e6
+_str_netclubhouse2_120: ;originally $61e6
 	DB $9c, $71, $6f, $20, $b8, $de, $d7, $dd, $c4, $de, $c1, $ac, $dd, $cc, $df, $89 ;わあっ グランドチャンプの
 	DB BR
 	DB $07
@@ -1804,7 +1804,7 @@ _string_netclubhouse120: ;originally $61e6
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse121: ;originally $6221
+_str_netclubhouse2_121: ;originally $6221
 	DB $d8, $dd, $b8, $bd, $b8, $d7, $cc, $de, $7e, $9d, $7c, $6d, $79, $9d, $83, $de ;リンクスクラブせんしゅけんで
 	DB BR
 	DB $95, $73, $7c, $6e, $73, $7c, $80, $9d, $83, $de, $7d, $6f, $83, $88 ;ゆうしょうしたんですってね
@@ -1813,7 +1813,7 @@ _string_netclubhouse121: ;originally $6221
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse122: ;originally $6254
+_str_netclubhouse2_122: ;originally $6254
 	DB $7a, $89, $cf, $d8, $b5, $dd, $b8, $d7, $cc, $de, $76, $97 ;このマリオンクラブから
 	DB BR
 	DB $b8, $de, $d7, $dd, $c4, $de, $c1, $ac, $dd, $cb, $df, $b5, $dd, $76, $de ;グランドチャンピオンが
@@ -1822,7 +1822,7 @@ _string_netclubhouse122: ;originally $6254
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse123: ;originally $6282
+_str_netclubhouse2_123: ;originally $6282
 	DB $b8, $de, $d7, $dd, $c4, $de, $c1, $ac, $dd, $cc, $df, $89 ;グランドチャンプの
 	DB $0e
 	DB $04
@@ -1831,7 +1831,7 @@ _string_netclubhouse123: ;originally $6282
 	DB $71, $85, $80, $76, $de, $94, $8c, $de, $6f, $80, $6f, $83, $ce, $dd, $c4, $3f ;あなたがやぶったってホント?
 	DB END_STRING
 
-_string_netclubhouse124: ;originally $62a3
+_str_netclubhouse2_124: ;originally $62a3
 	DB $0e
 	DB $04
 	DB $8a, $ba, $de, $d9, $cc, $a7, $b0, $89 ;はゴルファーの
@@ -1846,14 +1846,14 @@ _string_netclubhouse124: ;originally $62a3
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse125: ;originally $62d2
+_str_netclubhouse2_125: ;originally $62d2
 	DB $8f, $71, $20, $79, $9d, $7f, $9d, $7d, $99, $85, $9d, $83 ;まあ けんそんするなんて
 	DB BR
 	DB $c6, $b8, $b2, $9c, $96, $20, $7a, $89, $7a, $89, $21 ;ニクイわよ このこの!
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse126: ;originally $62ec
+_str_netclubhouse2_126: ;originally $62ec
 	DB $71, $9d, $80, $20, $d8, $dd, $b8, $bd, $b8, $d7, $cc, $de, $66 ;あんた リンクスクラブを
 	DB BR
 	DB $7e, $72, $8c, $78, $7c, $80, $9d, $80, $de, $6f, $83, $85 ;せいふくしたんだってな
@@ -1864,7 +1864,7 @@ _string_netclubhouse126: ;originally $62ec
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse127: ;originally $6325
+_str_netclubhouse2_127: ;originally $6325
 	DB $75, $75, $78, $89, $b8, $de, $d7, $dd, $c4, $de, $c1, $ac, $dd, $cc, $df, $76, $de ;おおくのグランドチャンプが
 	DB BR
 	DB $cf, $d8, $b5, $84, $80, $80, $76, $6f, $80, $97, $7c, $72, $9c ;マリオとたたかったらしいわ
@@ -1875,14 +1875,14 @@ _string_netclubhouse127: ;originally $6325
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse128: ;originally $6365
+_str_netclubhouse2_128: ;originally $6365
 	DB $cb, $df, $b0, $c1, $b6, $dd, $c4, $d8, $b0, $b8, $d7, $cc, $de, $8a ;ピーチカントリークラブは
 	DB BR
 	DB $78, $93, $89, $85, $76, $86, $20, $71, $99, $97, $7c, $72, $7f, $de, $61 ;くものなかに あるらしいぞ。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse129: ;originally $6385
+_str_netclubhouse2_129: ;originally $6385
 	DB $cb, $df, $b0, $c1, $7c, $de, $6e, $73, $76, $97, $89 ;ピーチじょうからの
 	DB BR
 	DB $7c, $6e, $73, $80, $72, $7c, $de, $6e, $73, $8a ;しょうたいじょうは
@@ -1899,7 +1899,7 @@ _string_netclubhouse129: ;originally $6385
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse130: ;originally $63d4
+_str_netclubhouse2_130: ;originally $63d4
 	DB $07
 	DB $20, $76, $de, $9d, $8a, $de, $6f, $80, $89, $73 ; がんばったのう
 	DB BR
@@ -1909,7 +1909,7 @@ _string_netclubhouse130: ;originally $63d4
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse131: ;originally $6401
+_str_netclubhouse2_131: ;originally $6401
 	DB $07
 	DB $20, $71, $85, $80, $20, $7a, $9a, $83, $de ; あなた これで
 	DB BR
@@ -1921,14 +1921,14 @@ _string_netclubhouse131: ;originally $6401
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse132: ;originally $643e
+_str_netclubhouse2_132: ;originally $643e
 	DB $07
 	DB $96, $20, $77, $6e, $73, $8a ;よ きょうは
 	DB BR
 	DB $93, $73, $20, $ba, $de, $d9, $cc, $8a, $75, $9c, $98, $76, $88, $3f ;もう ゴルフはおわりかね?
 	DB END_STRING
 
-_string_netclubhouse133: ;originally $6455
+_str_netclubhouse2_133: ;originally $6455
 	DB $7f, $73, $76, $20, $82, $76, $9a, $80, $76, $97, $80, $de, $66 ;そうか つかれたからだを
 	DB BR
 	DB $75, $93, $83, $83, $de, $20, $72, $94, $7d, $89, $80, $de, $85 ;おもてで いやすのだな
@@ -1939,7 +1939,7 @@ _string_netclubhouse133: ;originally $6455
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse134: ;originally $6492
+_str_netclubhouse2_134: ;originally $6492
 	DB $8c, $91, $20, $d8, $cc, $da, $af, $bc, $ad, $7c, $83, $76, $97 ;ふむ リフレッシュしてから
 	DB BR
 	DB $8f, $80, $c4, $da, $b0, $c6, $dd, $b8, $de, $89, $82, $82, $de, $77, $76, $3f ;またトレーニングのつづきか?
@@ -1950,14 +1950,14 @@ _string_netclubhouse134: ;originally $6492
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse135: ;originally $64cb
+_str_netclubhouse2_135: ;originally $64cb
 	DB $07
 	DB $96 ;よ
 	DB BR
 	DB $75, $93, $83, $86, $72, $78, $76, $88, $3f ;おもてにいくかね?
 	DB END_STRING
 
-_string_netclubhouse136: ;originally $64d8
+_str_netclubhouse2_136: ;originally $64d8
 	DB $72, $9b, $72, $9b, $85, $ba, $b0, $bd, $66, $7c, $99, $89, $8a ;いろいろなコースをしるのは
 	DB BR
 	DB $ba, $de, $d9, $cc, $86, $84, $6f, $83, $cc, $df, $d7, $bd, $86, $85, $99 ;ゴルフにとってプラスになる
@@ -1966,7 +1966,7 @@ _string_netclubhouse136: ;originally $64d8
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse137: ;originally $6506
+_str_netclubhouse2_137: ;originally $6506
 	DB $80, $8f, $86, $8a, $20, $8d, $de, $82, $89, $ba, $b0, $bd, $83, $de ;たまには べつのコースで
 	DB BR
 	DB $cc, $df, $da, $b2, $7d, $99, $89, $93, $72, $72, $93, $89, $80, $de ;プレイするのもいいものだ
@@ -1975,14 +1975,14 @@ _string_netclubhouse137: ;originally $6506
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse138: ;originally $6532
+_str_netclubhouse2_138: ;originally $6532
 	DB $07
 	DB $96 ;よ
 	DB BR
 	DB $75, $93, $83, $86, $72, $78, $76, $88, $3f ;おもてにいくかね?
 	DB END_STRING
 
-_string_netclubhouse139: ;originally $653f
+_str_netclubhouse2_139: ;originally $653f
 	DB $72, $9b, $72, $9b, $85, $ba, $b0, $bd, $66, $7c, $99, $89, $8a ;いろいろなコースをしるのは
 	DB BR
 	DB $ba, $de, $d9, $cc, $86, $84, $6f, $83, $cc, $df, $d7, $bd, $86, $85, $99 ;ゴルフにとってプラスになる
@@ -1991,7 +1991,7 @@ _string_netclubhouse139: ;originally $653f
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse140: ;originally $656d
+_str_netclubhouse2_140: ;originally $656d
 	DB $80, $8f, $86, $8a, $20, $8d, $de, $82, $89, $ba, $b0, $bd, $83, $de ;たまには べつのコースで
 	DB BR
 	DB $cc, $df, $da, $b2, $7d, $99, $89, $93, $72, $72, $93, $89, $80, $de ;プレイするのもいいものだ
@@ -2000,14 +2000,14 @@ _string_netclubhouse140: ;originally $656d
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse141: ;originally $6599
+_str_netclubhouse2_141: ;originally $6599
 	DB $07
 	DB $96 ;よ
 	DB BR
 	DB $75, $93, $83, $86, $72, $78, $76, $88, $3f ;おもてにいくかね?
 	DB END_STRING
 
-_string_netclubhouse142: ;originally $65a6
+_str_netclubhouse2_142: ;originally $65a6
 	DB $d8, $dd, $b8, $bd, $7e, $9d, $7c, $6d, $79, $9d, $89, $8f, $74, $86 ;リンクスせんしゅけんのまえに
 	DB BR
 	DB $d8, $dd, $b8, $bd, $ba, $b0, $bd, $66, $90, $83, $78, $99, $76, $88 ;リンクスコースをみてくるかね
@@ -2016,21 +2016,21 @@ _string_netclubhouse142: ;originally $65a6
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse143: ;originally $65d3
+_str_netclubhouse2_143: ;originally $65d3
 	DB $71, $9d, $80, $76, $de, $20, $b8, $de, $d7, $dd, $c4, $de, $c1, $ac, $dd, $cc, $df, $86 ;あんたが グランドチャンプに
 	DB BR
 	DB $85, $99, $8b, $66, $20, $80, $89, $7c, $90, $86, $7c, $84, $99, $7f, $de, $61 ;なるひを たのしみにしとるぞ。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse144: ;originally $65f8
+_str_netclubhouse2_144: ;originally $65f8
 	DB $07
 	DB $96 ;よ
 	DB BR
 	DB $75, $93, $83, $86, $72, $78, $76, $88, $3f ;おもてにいくかね?
 	DB END_STRING
 
-_string_netclubhouse145: ;originally $6605
+_str_netclubhouse2_145: ;originally $6605
 	DB $b8, $de, $d7, $dd, $c4, $de, $c1, $ac, $dd, $cc, $df, $89 ;グランドチャンプの
 	DB BR
 	DB $c0, $b2, $c4, $d9, $66, $84, $99, $80, $92, $86 ;タイトルをとるために
@@ -2039,21 +2039,21 @@ _string_netclubhouse145: ;originally $6605
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse146: ;originally $662d
+_str_netclubhouse2_146: ;originally $662d
 	DB $71, $9d, $80, $76, $de, $20, $b8, $de, $d7, $dd, $c4, $de, $c1, $ac, $dd, $cc, $df, $86 ;あんたが グランドチャンプに
 	DB BR
 	DB $85, $99, $8b, $66, $20, $80, $89, $7c, $90, $86, $7c, $84, $99, $7f, $de, $61 ;なるひを たのしみにしとるぞ。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse147: ;originally $6652
+_str_netclubhouse2_147: ;originally $6652
 	DB $07
 	DB $96 ;よ
 	DB BR
 	DB $75, $93, $83, $86, $72, $78, $76, $88, $3f ;おもてにいくかね?
 	DB END_STRING
 
-_string_netclubhouse148: ;originally $665f
+_str_netclubhouse2_148: ;originally $665f
 	DB $d8, $dd, $b8, $bd, $ba, $b0, $bd, $89, $8e, $73, $7a, $73, $86 ;リンクスコースのほうこうに
 	DB BR
 	DB $72, $78, $84, $20, $96, $72, $76, $93, $7c, $9a, $9d, $7f, $de ;いくと よいかもしれんぞ
@@ -2068,7 +2068,7 @@ _string_netclubhouse148: ;originally $665f
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse149: ;originally $66a7
+_str_netclubhouse2_149: ;originally $66a7
 	DB $71, $9d, $80, $8a, $b8, $de, $d7, $dd, $c4, $de, $c1, $ac, $dd, $cc, $df, $7c, $de, $6c ;あんたはグランドチャンプじゃ
 	DB BR
 	DB $d8, $dd, $b8, $bd, $ba, $b0, $bd, $89, $8e, $73, $86, $93 ;リンクスコースのほうにも
@@ -2077,7 +2077,7 @@ _string_netclubhouse149: ;originally $66a7
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse150: ;originally $66da
+_str_netclubhouse2_150: ;originally $66da
 	DB $07
 	DB $20 ; 
 	DB $0e
@@ -2092,7 +2092,7 @@ _string_netclubhouse150: ;originally $66da
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse151: ;originally $6714
+_str_netclubhouse2_151: ;originally $6714
 	DB $07
 	DB $20 ; 
 	DB $0e
@@ -2107,7 +2107,7 @@ _string_netclubhouse151: ;originally $6714
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse152: ;originally $6748
+_str_netclubhouse2_152: ;originally $6748
 	DB $07
 	DB $20 ; 
 	DB $0e
@@ -2122,7 +2122,7 @@ _string_netclubhouse152: ;originally $6748
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse153: ;originally $677a
+_str_netclubhouse2_153: ;originally $677a
 	DB $07
 	DB $20 ; 
 	DB $0e
@@ -2137,7 +2137,7 @@ _string_netclubhouse153: ;originally $677a
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse154: ;originally $67af
+_str_netclubhouse2_154: ;originally $67af
 	DB $07
 	DB $20 ; 
 	DB $0e
@@ -2154,7 +2154,7 @@ _string_netclubhouse154: ;originally $67af
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse155: ;originally $67f5
+_str_netclubhouse2_155: ;originally $67f5
 	DB $07
 	DB $20 ; 
 	DB $0e
@@ -2169,7 +2169,7 @@ _string_netclubhouse155: ;originally $67f5
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse156: ;originally $682c
+_str_netclubhouse2_156: ;originally $682c
 	DB $07
 	DB $20 ; 
 	DB $0e
@@ -2186,7 +2186,7 @@ _string_netclubhouse156: ;originally $682c
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse157: ;originally $686d
+_str_netclubhouse2_157: ;originally $686d
 	DB $07
 	DB $20 ; 
 	DB $0e
@@ -2204,7 +2204,7 @@ _string_netclubhouse157: ;originally $686d
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse158: ;originally $68b1
+_str_netclubhouse2_158: ;originally $68b1
 	DB $07
 	DB $20 ; 
 	DB $0e
@@ -2221,7 +2221,7 @@ _string_netclubhouse158: ;originally $68b1
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse159: ;originally $68ee
+_str_netclubhouse2_159: ;originally $68ee
 	DB $07
 	DB $20 ; 
 	DB $0e
@@ -2238,7 +2238,7 @@ _string_netclubhouse159: ;originally $68ee
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse160: ;originally $692d
+_str_netclubhouse2_160: ;originally $692d
 	DB $0e
 	DB $04
 	DB $7b, $9d, $84, $80, $80, $76, $73, $7a, $84, $83, $de ;さんとたたかうことで
@@ -2249,7 +2249,7 @@ _string_netclubhouse160: ;originally $692d
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse161: ;originally $695e
+_str_netclubhouse2_161: ;originally $695e
 	DB $0b
 	DB $89, $80, $80, $76, $72, $86, $7f, $85, $74 ;のたたかいにそなえ
 	DB BR
@@ -2259,7 +2259,7 @@ _string_netclubhouse161: ;originally $695e
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse162: ;originally $6989
+_str_netclubhouse2_162: ;originally $6989
 	DB $0e
 	DB $09
 	DB $7b, $9d, $84, $80, $80, $76, $73, $7a, $84, $83, $de ;さんとたたかうことで
@@ -2270,7 +2270,7 @@ _string_netclubhouse162: ;originally $6989
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse163: ;originally $69b5
+_str_netclubhouse2_163: ;originally $69b5
 	DB $0e
 	DB $09
 	DB $7b, $9d, $84, $80, $80, $76, $73, $7a, $84, $83, $de ;さんとたたかうことで
@@ -2281,7 +2281,7 @@ _string_netclubhouse163: ;originally $69b5
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse164: ;originally $69e1
+_str_netclubhouse2_164: ;originally $69e1
 	DB $0e
 	DB $09
 	DB $7b, $9d, $84, $80, $80, $76, $73, $7a, $84, $83, $de ;さんとたたかうことで
@@ -2292,7 +2292,7 @@ _string_netclubhouse164: ;originally $69e1
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse165: ;originally $6a0d
+_str_netclubhouse2_165: ;originally $6a0d
 	DB $ca, $df, $b0, $d1, $89, $20, $93, $84, $b8, $d7, $c1, $ac, $dd, $84 ;パームの もとクラチャンと
 	DB BR
 	DB $0b
@@ -2302,7 +2302,7 @@ _string_netclubhouse165: ;originally $6a0d
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse166: ;originally $6a37
+_str_netclubhouse2_166: ;originally $6a37
 	DB $0e
 	DB $04
 	DB $7b, $9d, $84, $80, $80, $76, $73, $7a, $84, $83, $de ;さんとたたかうことで
@@ -2311,7 +2311,7 @@ _string_netclubhouse166: ;originally $6a37
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse167: ;originally $6a58
+_str_netclubhouse2_167: ;originally $6a58
 	DB $0b
 	DB $89, $80, $80, $76, $72, $86, $7f, $85, $74 ;のたたかいにそなえ
 	DB BR
@@ -2321,7 +2321,7 @@ _string_netclubhouse167: ;originally $6a58
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse168: ;originally $6a82
+_str_netclubhouse2_168: ;originally $6a82
 	DB $07
 	DB $20, $72, $6f, $7c, $6e, $89, $76, $80, $8a ; いっしょのかたは
 	DB BR
@@ -2337,7 +2337,7 @@ _string_netclubhouse168: ;originally $6a82
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse169: ;originally $6ac3
+_str_netclubhouse2_169: ;originally $6ac3
 	DB $07
 	DB $20, $72, $6f, $7c, $6e, $89, $76, $80, $8a ; いっしょのかたは
 	DB BR
@@ -2353,55 +2353,55 @@ _string_netclubhouse169: ;originally $6ac3
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse170: ;originally $6b06
+_str_netclubhouse2_170: ;originally $6b06
 	DB $62, $84, $79, $72, $76, $9d, $89, $7b, $82, $7c, $de, $9d, $63, $84, $72, $73 ;「とけいかんのさつじん」という
 	DB BR
 	DB $8e, $9d, $76, $de, $20, $71, $99, $61 ;ほんが ある。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse171: ;originally $6b21
+_str_netclubhouse2_171: ;originally $6b21
 	DB $62, $c4, $de, $b8, $de, $d7, $cf, $b8, $de, $d7, $63, $84, $72, $73 ;「ドグラマグラ」という
 	DB BR
 	DB $8e, $9d, $76, $de, $20, $71, $99, $61 ;ほんが ある。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse172: ;originally $6b3a
+_str_netclubhouse2_172: ;originally $6b3a
 	DB $62, $8a, $7a, $89, $85, $76, $89, $7c, $82, $97, $78, $63, $84, $72, $73 ;「はこのなかのしつらく」という
 	DB BR
 	DB $8e, $9d, $76, $de, $71, $99, $61 ;ほんがある。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse173: ;originally $6b53
+_str_netclubhouse2_173: ;originally $6b53
 	DB $62, $75, $84, $85, $89, $95, $73, $74, $9d, $81, $63, $84, $72, $73 ;「おとなのゆうえんち」という
 	DB BR
 	DB $8e, $9d, $76, $de, $20, $71, $99, $61 ;ほんが ある。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse174: ;originally $6b6c
+_str_netclubhouse2_174: ;originally $6b6c
 	DB "It's locked." ;カギが かかっている
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse175: ;originally $6b7a
+_str_netclubhouse2_175: ;originally $6b7a
 	DB $ba, $dd, $cd, $df, $80, $9d, $84, $73, $83, $de, $7d ;コンペたんとうです
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse176: ;originally $6b87
+_str_netclubhouse2_176: ;originally $6b87
 	DB $82, $73, $7c, $9d, $80, $9d, $84, $73, $83, $de, $7d ;つうしんたんとうです
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse177: ;originally $6b94
+_str_netclubhouse2_177: ;originally $6b94
 	DB $d2, $d3, $d8, $b1, $d9, $bc, $ae, $af, $c4, $80, $9d, $84, $73, $83, $de, $7d ;メモリアルショットたんとうです
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse178: ;originally $6ba6
+_str_netclubhouse2_178: ;originally $6ba6
 	DB "This is the Net" ;ここはネットクラブハウスよ
 	DB BR
 	DB "Clubhouse." ;つうしんに かんすることは
@@ -2416,7 +2416,7 @@ _string_netclubhouse178: ;originally $6ba6
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse179: ;originally $6c03
+_str_netclubhouse2_179: ;originally $6c03
 	DB "If you are" ;コンペとは しあいのことさ
 	DB BR
 	DB "participating in" ;コンペにでるなら カウンターで
@@ -2431,7 +2431,7 @@ _string_netclubhouse179: ;originally $6c03
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse180: ;originally $6c69
+_str_netclubhouse2_180: ;originally $6c69
 	DB "With communication" ;つうしんでは コースがふえたり
 	DB BR
 	DB "you can get new" ;カウンセリングがうけられたり
@@ -2452,7 +2452,7 @@ _string_netclubhouse180: ;originally $6c69
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse181: ;originally $6ccc
+_str_netclubhouse2_181: ;originally $6ccc
 	DB "What kind of" ;えっ いまどんなコンペが
 	DB BR
 	DB "competition is" ;かいさいちゅうかだって?
@@ -2467,7 +2467,7 @@ _string_netclubhouse181: ;originally $6ccc
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse182: ;originally $6d18
+_str_netclubhouse2_182: ;originally $6d18
 	DB "You know you win" ;コンペにさんかすると
 	DB BR
 	DB "mobile points for" ;もらえるポイントのことは
@@ -2492,7 +2492,7 @@ _string_netclubhouse182: ;originally $6d18
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse183: ;originally $6d6d
+_str_netclubhouse2_183: ;originally $6d6d
 	DB "In the couns.room" ;ボクは カウンセリングルームで
 	DB BR
 	DB "I was able to" ;ゴルフのなやみが かいけつして
@@ -2511,7 +2511,7 @@ _string_netclubhouse183: ;originally $6d6d
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse184: ;originally $6dce
+_str_netclubhouse2_184: ;originally $6dce
 	DB $83, $de, $9d, $84, $de, $73, $d9, $b0, $d1, $86, $72, $6f, $83, $7a, $de, $97, $9d ;でんどうルームにいってごらん
 	DB BR
 	DB $72, $8f, $8f, $83, $de, $89, $20, $77, $90, $89, $7e, $72, $7e, $77, $76, $de ;いままでの きみのせいせきが
@@ -2520,13 +2520,13 @@ _string_netclubhouse184: ;originally $6dce
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse185: ;originally $6e03
+_str_netclubhouse2_185: ;originally $6e03
 	DB $8b, $6e, $73, $7c, $6e, $73, $7c, $77, $66 ;ひょうしょうしきを
 	DB BR
 	DB $75, $7a, $85, $72, $8f, $7d, $76, $3f ;おこないますか?
 	DB END_STRING
 
-_string_netclubhouse186: ;originally $6e16
+_str_netclubhouse2_186: ;originally $6e16
 	DB $8b, $6e, $73, $7c, $6e, $73, $7c, $77, $89, $20, $71, $84, $8a ;ひょうしょうしきの あとは
 	DB BR
 	DB $ba, $dd, $cd, $df, $d9, $b0, $d1, $8a, $20, $84, $7c, $de, $83 ;コンペルームは とじて
@@ -2536,13 +2536,13 @@ _string_netclubhouse186: ;originally $6e16
 	DB $7f, $9a, $83, $de, $93, $20, $96, $9b, $7c, $72, $83, $de, $7d, $76, $3f ;それでも よろしいですか?
 	DB END_STRING
 
-_string_netclubhouse187: ;originally $6e53
+_str_netclubhouse2_187: ;originally $6e53
 	DB $ba, $dd, $cd, $df, $8a, $20, $7c, $6d, $73, $98, $6e, $73, $7c, $83, $72, $8f, $7d ;コンペは しゅうりょうしています
 	DB BR
 	DB $ba, $dd, $cd, $df, $d9, $b0, $d1, $66, $20, $84, $7c, $de, $8f, $7d, $76, $3f ;コンペルームを とじますか?
 	DB END_STRING
 
-_string_netclubhouse188: ;originally $6e76
+_str_netclubhouse2_188: ;originally $6e76
 	DB $ba, $dd, $cd, $df, $d9, $b0, $d1, $66, $20, $84, $7c, $de, $99, $84 ;コンペルームを とじると
 	DB BR
 	DB $ba, $dd, $cd, $df, $d9, $b0, $d1, $86 ;コンペルームに
@@ -2552,26 +2552,26 @@ _string_netclubhouse188: ;originally $6e76
 	DB $7f, $9a, $83, $de, $93, $20, $96, $9b, $7c, $72, $83, $de, $7d, $76, $3f ;それでも よろしいですか?
 	DB END_STRING
 
-_string_netclubhouse189: ;originally $6eaf
+_str_netclubhouse2_189: ;originally $6eaf
 	DB $04
 	DB BR
 	DB $ba, $dd, $cd, $df, $d9, $b0, $d1, $8d, $20, $96, $73, $7a, $7f, $61 ;コンペルームへ ようこそ。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse190: ;originally $6ec1
+_str_netclubhouse2_190: ;originally $6ec1
 	DB $84, $de, $9a, $66, $20, $7a, $de, $97, $9d, $86, $85, $98, $8f, $7d, $76, $3f ;どれを ごらんになりますか?
 	DB END_STRING
 
-_string_netclubhouse191: ;originally $6ed2
+_str_netclubhouse2_191: ;originally $6ed2
 	DB "Leaderbrd" ;せいせき&コメント
 	DB END_STRING
 
-_string_netclubhouse192: ;originally $6edc
+_str_netclubhouse2_192: ;originally $6edc
 	DB "Avg.Scores" ;へいきんスコアリスト
 	DB END_STRING
 
-_string_netclubhouse193: ;originally $6ee7
+_str_netclubhouse2_193: ;originally $6ee7
 	DB "Go to the comm." ;へんこうコメントをおくるときは
 	DB BR
 	DB "counter to send" ;つうしんカウンターの
@@ -2580,11 +2580,11 @@ _string_netclubhouse193: ;originally $6ee7
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse194: ;originally $6f17
+_str_netclubhouse2_194: ;originally $6f17
 	DB $7e, $72, $7e, $77, $8b, $6e, $73 ;せいせきひょう
 	DB END_STRING
 
-_string_netclubhouse195: ;originally $6f1f
+_str_netclubhouse2_195: ;originally $6f1f
 	DB $82, $72, $86, $20, $94, $6f, $80, $7f, $de, $21 ;ついに やったぞ!
 	DB BR
 	DB $c4, $af, $cc, $df, $86, $20, $85, $6f, $80, $7f, $de, $21 ;トップに なったぞ!
@@ -2593,7 +2593,7 @@ _string_netclubhouse195: ;originally $6f1f
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse196: ;originally $6f46
+_str_netclubhouse2_196: ;originally $6f46
 	DB $73, $8e, $b0, $72, $20, $76, $de, $9d, $8a, $de, $98, $8f, $7c, $80 ;うほーい がんばりました
 	DB BR
 	DB $83, $de, $93, $20, $8f, $80, $de, $8f, $80, $de, $80, $de, $88 ;でも まだまだだね
@@ -2602,7 +2602,7 @@ _string_netclubhouse196: ;originally $6f46
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse197: ;originally $6f72
+_str_netclubhouse2_197: ;originally $6f72
 	DB $96, $6f, $7c, $6c, $20, $96, $6f, $7c, $6c, $21 ;よっしゃ よっしゃ!
 	DB BR
 	DB $7c, $6e, $73, $8c, $de, $8a, $20, $84, $77, $89, $73, $9d ;しょうぶは ときのうん
@@ -2611,7 +2611,7 @@ _string_netclubhouse197: ;originally $6f72
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse198: ;originally $6f9b
+_str_netclubhouse2_198: ;originally $6f9b
 	DB $71, $b0, $9d, $20, $78, $94, $7c, $72 ;あーん くやしい
 	DB BR
 	DB $84, $de, $73, $7c, $83, $20, $7a, $73, $85, $89, $3f ;どうして こうなの?
@@ -2620,7 +2620,7 @@ _string_netclubhouse198: ;originally $6f9b
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse199: ;originally $6fbc
+_str_netclubhouse2_199: ;originally $6fbc
 	DB $ba, $dd, $cd, $df, $89, $8d, $72, $77, $9d, $8a ;コンペのへいきんは
 	DB $09
 	DB $80, $de, $79, $84, $de ;だけど
@@ -2628,7 +2628,7 @@ _string_netclubhouse199: ;originally $6fbc
 	DB $71, $85, $80, $8a, $20, $93, $6f, $84, $72, $72, $76, $7c, $97, $3f ;あなたは もっといいかしら?
 	DB END_STRING
 
-_string_netclubhouse200: ;originally $6fdc
+_str_netclubhouse2_200: ;originally $6fdc
 	DB $8f, $7d, $de, $7b, $72, $7c, $6e, $8a, $20, $7a, $9a, $66 ;まずさいしょは これを
 	DB BR
 	DB $93, $78, $8b, $6e, $73, $86, $7c, $80, $97, $72, $72, $9c ;もくひょうにしたらいいわ
@@ -2639,7 +2639,7 @@ _string_netclubhouse200: ;originally $6fdc
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse201: ;originally $7016
+_str_netclubhouse2_201: ;originally $7016
 	DB $7f, $73, $85, $89, $20, $7f, $9a, $85, $97, $82, $77, $de, $8a ;そうなの それならつぎは
 	DB BR
 	DB $84, $de, $9a, $80, $de, $79, $20, $c4, $af, $cc, $df, $66 ;どれだけ トップを
@@ -2648,7 +2648,7 @@ _string_netclubhouse201: ;originally $7016
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse202: ;originally $7041
+_str_netclubhouse2_202: ;originally $7041
 	DB $ce, $b0, $d9, $89, $85, $9d, $72, $84, $de, $66 ;ホールのなんいどを
 	DB BR
 	DB $ba, $dd, $cd, $df, $7b, $9d, $76, $cc, $df, $da, $b2, $d4, $b0, $89 ;コンペさんかプレイヤーの
@@ -2665,7 +2665,7 @@ _string_netclubhouse202: ;originally $7041
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse203: ;originally $70a9
+_str_netclubhouse2_203: ;originally $70a9
 	DB $ba, $dd, $cd, $df, $89, $8d, $72, $77, $9d, $8a ;コンペのへいきんは
 	DB BR
 	DB $09
@@ -2676,7 +2676,7 @@ _string_netclubhouse203: ;originally $70a9
 	DB $71, $85, $80, $8a, $20, $93, $6f, $84, $72, $72, $76, $7c, $97, $3f ;あなたは もっといいかしら?
 	DB END_STRING
 
-_string_netclubhouse204: ;originally $70cc
+_str_netclubhouse2_204: ;originally $70cc
 	DB $8f, $7d, $de, $7b, $72, $7c, $6e, $8a, $20, $7a, $9a, $66 ;まずさいしょは これを
 	DB BR
 	DB $93, $78, $8b, $6e, $73, $86, $7c, $80, $97, $72, $72, $9c ;もくひょうにしたらいいわ
@@ -2687,7 +2687,7 @@ _string_netclubhouse204: ;originally $70cc
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse205: ;originally $7106
+_str_netclubhouse2_205: ;originally $7106
 	DB $7f, $73, $85, $89, $20, $7f, $9a, $85, $97, $82, $77, $de, $8a ;そうなの それならつぎは
 	DB BR
 	DB $84, $de, $9a, $80, $de, $79, $20, $c4, $af, $cc, $df, $66 ;どれだけ トップを
@@ -2696,7 +2696,7 @@ _string_netclubhouse205: ;originally $7106
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse206: ;originally $7131
+_str_netclubhouse2_206: ;originally $7131
 	DB $ba, $dd, $cd, $df, $89, $8d, $72, $77, $9d, $8a ;コンペのへいきんは
 	DB BR
 	DB $09
@@ -2707,7 +2707,7 @@ _string_netclubhouse206: ;originally $7131
 	DB $71, $85, $80, $8a, $20, $93, $6f, $84, $72, $72, $76, $7c, $97, $3f ;あなたは もっといいかしら?
 	DB END_STRING
 
-_string_netclubhouse207: ;originally $7154
+_str_netclubhouse2_207: ;originally $7154
 	DB $8f, $7d, $de, $7b, $72, $7c, $6e, $8a, $20, $7a, $9a, $66 ;まずさいしょは これを
 	DB BR
 	DB $93, $78, $8b, $6e, $73, $86, $7c, $80, $97, $72, $72, $9c ;もくひょうにしたらいいわ
@@ -2718,7 +2718,7 @@ _string_netclubhouse207: ;originally $7154
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse208: ;originally $7192
+_str_netclubhouse2_208: ;originally $7192
 	DB $7f, $73, $85, $89, $20, $7f, $9a, $85, $97, $82, $77, $de, $8a ;そうなの それならつぎは
 	DB BR
 	DB $84, $de, $9a, $80, $de, $79, $20, $c4, $af, $cc, $df, $66 ;どれだけ トップを
@@ -2727,7 +2727,7 @@ _string_netclubhouse208: ;originally $7192
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse209: ;originally $71bd
+_str_netclubhouse2_209: ;originally $71bd
 	DB $ba, $dd, $cd, $df, $89, $8d, $72, $77, $9d, $8a ;コンペのへいきんは
 	DB BR
 	DB $09
@@ -2738,7 +2738,7 @@ _string_netclubhouse209: ;originally $71bd
 	DB $71, $85, $80, $8a, $20, $93, $6f, $84, $72, $72, $76, $7c, $97, $3f ;あなたは もっといいかしら?
 	DB END_STRING
 
-_string_netclubhouse210: ;originally $71e0
+_str_netclubhouse2_210: ;originally $71e0
 	DB $8f, $7d, $de, $7b, $72, $7c, $6e, $8a, $20, $7a, $9a, $66 ;まずさいしょは これを
 	DB BR
 	DB $93, $78, $8b, $6e, $73, $86, $7c, $80, $97, $72, $72, $9c ;もくひょうにしたらいいわ
@@ -2751,7 +2751,7 @@ _string_netclubhouse210: ;originally $71e0
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse211: ;originally $7224
+_str_netclubhouse2_211: ;originally $7224
 	DB $7f, $73, $85, $89, $20, $7f, $9a, $85, $97, $82, $77, $de, $8a ;そうなの それならつぎは
 	DB BR
 	DB $84, $de, $9a, $80, $de, $79, $20, $c4, $af, $cc, $df, $66 ;どれだけ トップを
@@ -2760,7 +2760,7 @@ _string_netclubhouse211: ;originally $7224
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse212: ;originally $724f
+_str_netclubhouse2_212: ;originally $724f
 	DB $ba, $dd, $cd, $df, $89, $8d, $72, $77, $9d, $8a ;コンペのへいきんは
 	DB BR
 	DB $09
@@ -2771,7 +2771,7 @@ _string_netclubhouse212: ;originally $724f
 	DB $71, $85, $80, $8a, $20, $93, $6f, $84, $72, $72, $76, $7c, $97, $3f ;あなたは もっといいかしら?
 	DB END_STRING
 
-_string_netclubhouse213: ;originally $7276
+_str_netclubhouse2_213: ;originally $7276
 	DB $8f, $7d, $de, $7b, $72, $7c, $6e, $8a, $20, $7a, $9a, $66 ;まずさいしょは これを
 	DB BR
 	DB $93, $78, $8b, $6e, $73, $86, $7c, $80, $97, $72, $72, $9c ;もくひょうにしたらいいわ
@@ -2782,7 +2782,7 @@ _string_netclubhouse213: ;originally $7276
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse214: ;originally $72b5
+_str_netclubhouse2_214: ;originally $72b5
 	DB $7f, $73, $85, $89, $20, $7f, $9a, $85, $97, $82, $77, $de, $8a ;そうなの それならつぎは
 	DB BR
 	DB $84, $de, $9a, $80, $de, $79, $20, $c4, $af, $cc, $df, $66 ;どれだけ トップを
@@ -2791,7 +2791,7 @@ _string_netclubhouse214: ;originally $72b5
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse215: ;originally $72e0
+_str_netclubhouse2_215: ;originally $72e0
 	DB $ba, $dd, $cd, $df, $89, $8d, $72, $77, $9d, $8a ;コンペのへいきんは
 	DB BR
 	DB $09
@@ -2802,7 +2802,7 @@ _string_netclubhouse215: ;originally $72e0
 	DB $71, $85, $80, $8a, $20, $93, $6f, $84, $72, $72, $76, $7c, $97, $3f ;あなたは もっといいかしら?
 	DB END_STRING
 
-_string_netclubhouse216: ;originally $7307
+_str_netclubhouse2_216: ;originally $7307
 	DB $8f, $7d, $de, $7b, $72, $7c, $6e, $8a, $20, $7a, $9a, $66 ;まずさいしょは これを
 	DB BR
 	DB $93, $78, $8b, $6e, $73, $86, $7c, $80, $97, $72, $72, $9c ;もくひょうにしたらいいわ
@@ -2813,7 +2813,7 @@ _string_netclubhouse216: ;originally $7307
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse217: ;originally $7346
+_str_netclubhouse2_217: ;originally $7346
 	DB $7f, $73, $85, $89, $20, $7f, $9a, $85, $97, $82, $77, $de, $8a ;そうなの それならつぎは
 	DB BR
 	DB $84, $de, $9a, $80, $de, $79, $20, $c4, $af, $cc, $df, $66 ;どれだけ トップを
@@ -2822,7 +2822,7 @@ _string_netclubhouse217: ;originally $7346
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse218: ;originally $7371
+_str_netclubhouse2_218: ;originally $7371
 	DB $04
 	DB $8a ;は
 	DB BR
@@ -2839,26 +2839,7 @@ _string_netclubhouse218: ;originally $7371
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse219: ;originally $7385
-	DB $04
-	DB $8a ;は
-	DB BR
-	DB $d7, $dd, $b8 ;ランク
-	DB $09
-	DB $72, $89 ;いの
-	DB BR
-	DB $04
-	DB $89 ;の
-	DB $04
-	DB $83, $de, $7d ;です
-	DB NEXT_DIALOG
-	DB $04
-	DB $20 ; 
-	DB $04
-	DB PAUSE
-	DB END_STRING
-
-_string_netclubhouse220: ;originally $739b
+_str_netclubhouse2_219: ;originally $7385
 	DB $04
 	DB $8a ;は
 	DB BR
@@ -2874,12 +2855,10 @@ _string_netclubhouse220: ;originally $739b
 	DB $04
 	DB $20 ; 
 	DB $04
-	DB BR
-	DB $04
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse221: ;originally $73b3
+_str_netclubhouse2_220: ;originally $739b
 	DB $04
 	DB $8a ;は
 	DB BR
@@ -2897,12 +2876,10 @@ _string_netclubhouse221: ;originally $73b3
 	DB $04
 	DB BR
 	DB $04
-	DB $20 ; 
-	DB $04
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse222: ;originally $73cd
+_str_netclubhouse2_221: ;originally $73b3
 	DB $04
 	DB $8a ;は
 	DB BR
@@ -2922,12 +2899,10 @@ _string_netclubhouse222: ;originally $73cd
 	DB $04
 	DB $20 ; 
 	DB $04
-	DB BR
-	DB $04
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse223: ;originally $73e9
+_str_netclubhouse2_222: ;originally $73cd
 	DB $04
 	DB $8a ;は
 	DB BR
@@ -2949,20 +2924,45 @@ _string_netclubhouse223: ;originally $73e9
 	DB $04
 	DB BR
 	DB $04
+	DB PAUSE
+	DB END_STRING
+
+_str_netclubhouse2_223: ;originally $73e9
+	DB $04
+	DB $8a ;は
+	DB BR
+	DB $d7, $dd, $b8 ;ランク
+	DB $09
+	DB $72, $89 ;いの
+	DB BR
+	DB $04
+	DB $89 ;の
+	DB $04
+	DB $83, $de, $7d ;です
+	DB NEXT_DIALOG
+	DB $04
+	DB $20 ; 
+	DB $04
+	DB BR
+	DB $04
+	DB $20 ; 
+	DB $04
+	DB BR
+	DB $04
 	DB $20 ; 
 	DB $04
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse224: ;originally $7407
+_str_netclubhouse2_224: ;originally $7407
 	DB $ce, $de, $b8 ;ボク
 	DB END_STRING
 
-_string_netclubhouse225: ;originally $740b
+_str_netclubhouse2_225: ;originally $740b
 	DB $dc, $c0, $bc ;ワタシ
 	DB END_STRING
 
-_string_netclubhouse226: ;originally $740f
+_str_netclubhouse2_226: ;originally $740f
 	DB $71, $85, $80, $76, $de, $20, $be, $dd, $c0, $b0, $86, $75, $78, $6f, $80 ;あなたが センターにおくった
 	DB BR
 	DB $ba, $dd, $cd, $df, $89, $ba, $d2, $dd, $c4, $8a, $20, $7a, $9a, $96 ;コンペのコメントは これよ
@@ -2971,18 +2971,7 @@ _string_netclubhouse226: ;originally $740f
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse227: ;originally $7431
-	DB $71, $85, $80, $76, $de, $20, $be, $dd, $c0, $b0, $86, $75, $78, $6f, $80 ;あなたが センターにおくった
-	DB BR
-	DB $ba, $dd, $cd, $df, $89, $ba, $d2, $dd, $c4, $8a, $20, $7a, $9a, $96 ;コンペのコメントは これよ
-	DB NEXT_DIALOG
-	DB $04
-	DB $20 ; 
-	DB $04
-	DB PAUSE
-	DB END_STRING
-
-_string_netclubhouse228: ;originally $7455
+_str_netclubhouse2_227: ;originally $7431
 	DB $71, $85, $80, $76, $de, $20, $be, $dd, $c0, $b0, $86, $75, $78, $6f, $80 ;あなたが センターにおくった
 	DB BR
 	DB $ba, $dd, $cd, $df, $89, $ba, $d2, $dd, $c4, $8a, $20, $7a, $9a, $96 ;コンペのコメントは これよ
@@ -2990,12 +2979,10 @@ _string_netclubhouse228: ;originally $7455
 	DB $04
 	DB $20 ; 
 	DB $04
-	DB BR
-	DB $04
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse229: ;originally $747b
+_str_netclubhouse2_228: ;originally $7455
 	DB $71, $85, $80, $76, $de, $20, $be, $dd, $c0, $b0, $86, $75, $78, $6f, $80 ;あなたが センターにおくった
 	DB BR
 	DB $ba, $dd, $cd, $df, $89, $ba, $d2, $dd, $c4, $8a, $20, $7a, $9a, $96 ;コンペのコメントは これよ
@@ -3005,12 +2992,10 @@ _string_netclubhouse229: ;originally $747b
 	DB $04
 	DB BR
 	DB $04
-	DB $20 ; 
-	DB $04
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse230: ;originally $74a3
+_str_netclubhouse2_229: ;originally $747b
 	DB $71, $85, $80, $76, $de, $20, $be, $dd, $c0, $b0, $86, $75, $78, $6f, $80 ;あなたが センターにおくった
 	DB BR
 	DB $ba, $dd, $cd, $df, $89, $ba, $d2, $dd, $c4, $8a, $20, $7a, $9a, $96 ;コンペのコメントは これよ
@@ -3022,12 +3007,10 @@ _string_netclubhouse230: ;originally $74a3
 	DB $04
 	DB $20 ; 
 	DB $04
-	DB BR
-	DB $04
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse231: ;originally $74cd
+_str_netclubhouse2_230: ;originally $74a3
 	DB $71, $85, $80, $76, $de, $20, $be, $dd, $c0, $b0, $86, $75, $78, $6f, $80 ;あなたが センターにおくった
 	DB BR
 	DB $ba, $dd, $cd, $df, $89, $ba, $d2, $dd, $c4, $8a, $20, $7a, $9a, $96 ;コンペのコメントは これよ
@@ -3041,19 +3024,36 @@ _string_netclubhouse231: ;originally $74cd
 	DB $04
 	DB BR
 	DB $04
+	DB PAUSE
+	DB END_STRING
+
+_str_netclubhouse2_231: ;originally $74cd
+	DB $71, $85, $80, $76, $de, $20, $be, $dd, $c0, $b0, $86, $75, $78, $6f, $80 ;あなたが センターにおくった
+	DB BR
+	DB $ba, $dd, $cd, $df, $89, $ba, $d2, $dd, $c4, $8a, $20, $7a, $9a, $96 ;コンペのコメントは これよ
+	DB NEXT_DIALOG
+	DB $04
+	DB $20 ; 
+	DB $04
+	DB BR
+	DB $04
+	DB $20 ; 
+	DB $04
+	DB BR
+	DB $04
 	DB $20 ; 
 	DB $04
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse232: ;originally $74f9
+_str_netclubhouse2_232: ;originally $74f9
 	DB $71, $97, $20, $71, $85, $80, $20, $ba, $dd, $cd, $df, $89, $ba, $d2, $dd, $c4, $66 ;あら あなた コンペのコメントを
 	DB BR
 	DB $be, $dd, $c0, $b0, $86, $75, $78, $6f, $83, $72, $85, $72, $89, $88, $61 ;センターにおくっていないのね。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse233: ;originally $751c
+_str_netclubhouse2_233: ;originally $751c
 	DB $04
 	DB $20 ; 
 	DB $04
@@ -3068,7 +3068,7 @@ _string_netclubhouse233: ;originally $751c
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse234: ;originally $7529
+_str_netclubhouse2_234: ;originally $7529
 	DB $71, $b0, $71, $20, $8f, $79, $81, $6c, $6f, $80 ;あーあ まけちゃった
 	DB BR
 	DB $76, $9d, $8a, $df, $72, $83, $de, $7d, $20, $8f, $72, $98, $8f, $7c, $80 ;かんぱいです まいりました
@@ -3077,14 +3077,14 @@ _string_netclubhouse234: ;originally $7529
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse235: ;originally $7554
+_str_netclubhouse2_235: ;originally $7554
 	DB $b7, $a8, $b0, $b0, $b0, $af, $20, $7c, $9d, $7c, $de, $97, $9a, $85, $72, $9c ;キィーーーッ しんじられないわ
 	DB BR
 	DB $7a, $89, $71, $80, $78, $7c, $76, $de, $20, $8f, $79, $80, $84, $72, $73, $89, $61 ;このあたくしが まけたというの。
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse236: ;originally $7578
+_str_netclubhouse2_236: ;originally $7578
 	DB $88, $6a, $20, $b7, $d0, $20, $81, $6e, $73, $7c, $8a, $20, $84, $de, $75 ;ねぇ キミ ちょうしは どお
 	DB BR
 	DB $ce, $de, $b8, $8a, $84, $72, $73, $84, $20, $7e, $de, $9d, $7e, $de, $9d, $c0, $de, $d2 ;ボクはというと ぜんぜんダメ
@@ -3093,7 +3093,7 @@ _string_netclubhouse236: ;originally $7578
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse237: ;originally $75af
+_str_netclubhouse2_237: ;originally $75af
 	DB $ba, $dd, $cd, $df, $8a, $20, $75, $9c, $98, $8f, $7c, $80, $76, $de ;コンペは おわりましたが
 	DB BR
 	DB $90, $85, $7b, $9d, $20, $8f, $80, $de, $8f, $80, $de ;みなさん まだまだ
@@ -3102,7 +3102,7 @@ _string_netclubhouse237: ;originally $75af
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse238: ;originally $75dc
+_str_netclubhouse2_238: ;originally $75dc
 	DB $ba, $dd, $cd, $df, $86, $83, $de, $83, $20, $90, $9d, $85, $84, $77, $7f, $73 ;コンペにでて みんなときそう
 	DB BR
 	DB $77, $9d, $81, $6e, $73, $76, $9d, $8a, $80, $8f, $97, $85, $72 ;きんちょうかんはたまらない
@@ -3113,7 +3113,7 @@ _string_netclubhouse238: ;originally $75dc
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse239: ;originally $761f
+_str_netclubhouse2_239: ;originally $761f
 	DB $75, $92, $83, $de, $84, $73 ;おめでとう
 	DB $07
 	DB BR
@@ -3123,7 +3123,7 @@ _string_netclubhouse239: ;originally $761f
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse240: ;originally $7648
+_str_netclubhouse2_240: ;originally $7648
 	DB $07
 	DB $8a, $20, $7d, $7a, $de, $72, $88 ;は すごいね
 	DB BR
@@ -3133,7 +3133,7 @@ _string_netclubhouse240: ;originally $7648
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse241: ;originally $7673
+_str_netclubhouse2_241: ;originally $7673
 	DB $07
 	DB $20, $7a, $9d, $76, $72, $8a, $94, $97, $9a, $80, $96 ; こんかいはやられたよ
 	DB BR
@@ -3145,7 +3145,7 @@ _string_netclubhouse241: ;originally $7673
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse242: ;originally $76ae
+_str_netclubhouse2_242: ;originally $76ae
 	DB $71, $b0, $9d, $20, $78, $94, $7c, $72 ;あーん くやしい
 	DB BR
 	DB $84, $de, $73, $7c, $83, $ba, $dd, $cd, $df, $86, $85, $99, $84 ;どうしてコンペになると
@@ -3154,7 +3154,7 @@ _string_netclubhouse242: ;originally $76ae
 	DB NEXT_DIALOG
 	DB END_STRING
 
-_string_netclubhouse243: ;originally $76d7
+_str_netclubhouse2_243: ;originally $76d7
 	DB $71, $97, $6f, $20 ;あらっ 
 	DB $07
 	DB $20, $90, $83, $80, $89, $88 ; みてたのね
@@ -3165,7 +3165,7 @@ _string_netclubhouse243: ;originally $76d7
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse244: ;originally $7707
+_str_netclubhouse2_244: ;originally $7707
 	DB $75, $92, $83, $de, $84, $73, $20 ;おめでとう 
 	DB $07
 	DB BR
@@ -3174,7 +3174,7 @@ _string_netclubhouse244: ;originally $7707
 	DB $7a, $89, $79, $6f, $76, $86, $20, $8f, $9d, $7f, $de, $78, $3f ;このけっかに まんぞく?
 	DB END_STRING
 
-_string_netclubhouse245: ;originally $7731
+_str_netclubhouse2_245: ;originally $7731
 	DB $7a, $9a, $80, $de, $79, $89, $7e, $72, $7e, $77, $66, $20, $89, $7a, $7c, $85, $76, $de, $97 ;これだけのせいせきを のこしながら
 	DB BR
 	DB $8f, $80, $de, $73, $74, $66, $92, $7b, $de, $7d, $84, $8a, $20, $7b, $7d, $76, $de, $88 ;まだうえをめざすとは さすがね
@@ -3188,7 +3188,7 @@ _string_netclubhouse245: ;originally $7731
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse246: ;originally $7786
+_str_netclubhouse2_246: ;originally $7786
 	DB $7f, $73, $88 ;そうね
 	DB BR
 	DB $7a, $89, $7e, $72, $7e, $77, $85, $97 ;このせいせきなら
@@ -3197,7 +3197,7 @@ _string_netclubhouse246: ;originally $7786
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse247: ;originally $77a3
+_str_netclubhouse2_247: ;originally $77a3
 	DB $75, $75, $78, $89, $cc, $df, $da, $b2, $d4, $b0, $76, $de, $7b, $9d, $76, $7c ;おおくのプレイヤーがさんかし
 	DB BR
 	DB $75, $75, $72, $86, $93, $98, $71, $76, $de, $6f, $6f, $83 ;おおいにもりあがっって
@@ -3212,7 +3212,7 @@ _string_netclubhouse247: ;originally $77a3
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse248: ;originally $7802
+_str_netclubhouse2_248: ;originally $7802
 	DB $71, $b0, $20, $71, $89, $ce, $b0, $d9, $83, $de, $89 ;あー あのホールでの
 	DB BR
 	DB $d0, $bd, $7b, $74, $85, $79, $9a, $8a, $de, $65, $65, $65 ;ミスさえなければ・・・
@@ -3225,7 +3225,7 @@ _string_netclubhouse248: ;originally $7802
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse249: ;originally $7848
+_str_netclubhouse2_249: ;originally $7848
 	DB $b5, $b0, $cc, $df, $dd, $ba, $dd, $cd, $df, $8a ;オープンコンペは
 	DB BR
 	DB $80, $de, $9d, $7c, $de, $6e, $7a, $9d, $7a, $de, $73, $80, $de, $76, $97 ;だんじょこんごうだから
@@ -3238,7 +3238,7 @@ _string_netclubhouse249: ;originally $7848
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse250: ;originally $7893
+_str_netclubhouse2_250: ;originally $7893
 	DB $ba, $de, $d9, $cc, $6f, $83, $20, $8c, $7c, $77, $de, $80, $de, $85, $71 ;ゴルフって ふしぎだなあ
 	DB BR
 	DB $9a, $9d, $7c, $6d, $73, $8a, $20, $71, $9d, $85, $86 ;れんしゅうは あんなに
@@ -3247,7 +3247,7 @@ _string_netclubhouse250: ;originally $7893
 	DB NEXT_DIALOG
 	DB END_STRING
 
-_string_netclubhouse251: ;originally $78c1
+_str_netclubhouse2_251: ;originally $78c1
 	DB $8e, $9d, $8a, $de, $9d, $86, $85, $99, $84, $20, $84, $de, $73, $7c, $83 ;ほんばんになると どうして
 	DB BR
 	DB $9a, $9d, $7c, $6d, $73, $84, $de, $75, $98, $86, $72, $76, $85, $72, $9d, $80, $de ;れんしゅうどおりにいかないんだ
@@ -3258,7 +3258,7 @@ _string_netclubhouse251: ;originally $78c1
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse252: ;originally $790a
+_str_netclubhouse2_252: ;originally $790a
 	DB $ce, $de, $b8, $8a, $20, $77, $de, $7c, $de, $6d, $82, $80, $de, $79, $85, $97 ;ボクは ぎじゅつだけなら
 	DB BR
 	DB $80, $de, $9a, $86, $93, $8f, $79, $85, $72, $21 ;だれにもまけない!
@@ -3266,14 +3266,14 @@ _string_netclubhouse252: ;originally $790a
 	DB $84, $7a, $9b, $83, $de, $20, $b7, $d0, $8a, $84, $de, $73, $80, $de, $72, $3f ;ところで キミはどうだい?
 	DB END_STRING
 
-_string_netclubhouse253: ;originally $7937
+_str_netclubhouse2_253: ;originally $7937
 	DB $7f, $73, $76, $20, $b7, $d0, $93, $ce, $de, $b8, $84, $75, $85, $7c, $de ;そうか キミもボクとおなじ
 	DB BR
 	DB $c3, $b8, $c6, $af, $b8, $c0, $b2, $cc, $df, $84, $72, $73, $9c, $79, $80, $de ;テクニックタイプというわけだ
 	DB NEXT_DIALOG
 	DB END_STRING
 
-_string_netclubhouse254: ;originally $7959
+_str_netclubhouse2_254: ;originally $7959
 	DB $7a, $89, $8f, $8f, $c3, $b8, $c6, $af, $b8, $c0, $b2, $cc, $df, $66 ;このままテクニックタイプを
 	DB BR
 	DB $82, $97, $87, $78, $85, $97, $20, $71, $72, $83, $89, $8b, $77, $6e, $98, $86 ;つらぬくなら あいてのひきょりに
@@ -3282,7 +3282,7 @@ _string_netclubhouse254: ;originally $7959
 	DB NEXT_DIALOG
 	DB END_STRING
 
-_string_netclubhouse255: ;originally $798e
+_str_netclubhouse2_255: ;originally $798e
 	DB $ce, $de, $b8, $8a, $ba, $dd, $cd, $df, $86, $85, $99, $84 ;ボクはコンペになると
 	DB BR
 	DB $8f, $9c, $98, $89, $ca, $df, $dc, $b0, $86, $71, $6f, $84, $73, $7b, $9a, $83 ;まわりのパワーにあっとうされて
@@ -3291,14 +3291,14 @@ _string_netclubhouse255: ;originally $798e
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse256: ;originally $79c1
+_str_netclubhouse2_256: ;originally $79c1
 	DB $7f, $73, $76, $b7, $d0, $8a, $ca, $df, $dc, $b0, $c0, $b2, $cc, $df, $85, $9d, $80, $de, $88 ;そうかキミはパワータイプなんだね
 	DB BR
 	DB $ca, $df, $dc, $b0, $8a, $80, $7c, $76, $86, $7c, $de, $6d, $73, $96, $73, $7b ;パワーはたしかにじゅうようさ
 	DB NEXT_DIALOG
 	DB END_STRING
 
-_string_netclubhouse257: ;originally $79e7
+_str_netclubhouse2_257: ;originally $79e7
 	DB $83, $de, $93, $ca, $df, $dc, $b0, $76, $de, $8c, $74, $83, $ce, $de, $b0, $d9, $76, $de, $84, $8d, $de, $8a, $de ;でもパワーがふえてボールがとべば
 	DB BR
 	DB $8f, $76, $de, $6f, $80, $84, $77, $89, $b9, $b6, $de, $93, $75, $75, $77, $72, $76, $97 ;まがったときのケガもおおきいから
@@ -3307,7 +3307,7 @@ _string_netclubhouse257: ;originally $79e7
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse258: ;originally $7a27
+_str_netclubhouse2_258: ;originally $7a27
 	DB $ba, $dd, $cd, $df, $89, $cc, $df, $da, $b2, $8a ;コンペのプレイは
 	DB BR
 	DB $31, $80, $de, $31, $80, $de, $20, $7c, $9d, $79, $9d, $7c, $6e, $73, $8c, $de, $80, $de, $76, $97 ;1だ1だ しんけんしょうぶだから
@@ -3316,7 +3316,7 @@ _string_netclubhouse258: ;originally $7a27
 	DB NEXT_DIALOG
 	DB END_STRING
 
-_string_netclubhouse259: ;originally $7a58
+_str_netclubhouse2_259: ;originally $7a58
 	DB $80, $de, $76, $97, $b7, $de, $ac, $dd, $cc, $de, $d9, $bc, $ae, $af, $c4, $76, $de ;だからギャンブルショットが
 	DB BR
 	DB $73, $8f, $78, $72, $6f, $80, $84, $77, $89, $73, $9a, $7c, $7b, $8a ;うまくいったときのうれしさは
@@ -3325,14 +3325,14 @@ _string_netclubhouse259: ;originally $7a58
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse260: ;originally $7a8c
+_str_netclubhouse2_260: ;originally $7a8c
 	DB $07
 	DB $20, $ba, $dd, $cd, $df, $8a ; コンペは
 	DB BR
 	DB $8f, $9d, $7f, $de, $78, $83, $de, $77, $99, $93, $89, $80, $de, $6f, $80, $3f ;まんぞくできるものだった?
 	DB END_STRING
 
-_string_netclubhouse261: ;originally $7aa5
+_str_netclubhouse2_261: ;originally $7aa5
 	DB $7f, $89, $81, $6e, $73, $7c, $96, $20 ;そのちょうしよ 
 	DB $07
 	DB BR
@@ -3342,7 +3342,7 @@ _string_netclubhouse261: ;originally $7aa5
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse262: ;originally $7ad1
+_str_netclubhouse2_262: ;originally $7ad1
 	DB $7f, $73, $96, $20, $7b, $72, $7c, $6e, $8a ;そうよ さいしょは
 	DB BR
 	DB $7c, $de, $8c, $de, $9d, $89, $81, $76, $97, $66 ;じぶんのちからを
@@ -3351,7 +3351,7 @@ _string_netclubhouse262: ;originally $7ad1
 	DB PAUSE
 	DB END_STRING
 
-_string_netclubhouse263: ;originally $7af8
+_str_netclubhouse2_263: ;originally $7af8
 	DB $74, $b0, $65, $65, $65, $20, $ba, $dd, $cd, $df, $8a ;えー・・・ コンペは
 	DB BR
 	DB $75, $75, $77, $85, $c4, $d7, $cc, $de, $d9, $93, $85, $78 ;おおきなトラブルもなく
@@ -3392,7 +3392,7 @@ bank8c_get_string:
 	push	bc
 	push	de
 	push	hl
-	ld		hl, _pointers_strings_netclubhouse
+	ld		hl, _pointers_strings_netclubhouse2
 	sla		e
 	rl		d
 	add		hl, de
@@ -3401,7 +3401,7 @@ bank8c_get_string:
 	inc		hl
 	ld		d, [hl]
 	;here de=string offset - 
-	ld		hl, _strings8c_start
+	ld		hl, _strings_netclubhouse2_start
 	add		hl, de
 	or		a
 	jr		nz, .set_de_d880
